@@ -1,5 +1,15 @@
 # Changes / Novità
 
+## 1.2.2 — signature pending
+
+- Shows visible cross-origin embedded domains when no video is accessible.
+- Adds a direct user-click request for one chosen player host, followed by another detection attempt.
+- Handles denial/retry and rejects stale work after tab, activation or player changes.
+- Keeps existing required permissions; host grants are optional and remain revocable in Firefox.
+- Validated with 250 Python tests (248 passed, 2 Windows privilege skips), 31 JavaScript suites and a synthetic JW-style iframe fixture on two origins. The live video of a particular website has not been exported by these tests.
+
+The update is awaiting Mozilla signature. The latest downloadable signed release remains 1.2.0; the Windows helper 1.2.0 remains compatible.
+
 Video Clipper 1.2.0
 
 - Detects HTML5 videos inside open shadow DOM components, including nested components and roots created after activation.
