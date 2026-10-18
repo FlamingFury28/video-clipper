@@ -1,0 +1,24 @@
+{
+  "name": "Video Clipper",
+  "version": "1.2.0",
+  "extensionId": "video-clipper@local",
+  "platform": "Windows 11 x64",
+  "browser": "Firefox 142+",
+  "interfaceLanguage": "it",
+  "homepage": "https://github.com/FlamingFury28/video-clipper",
+  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.2.0",
+  "pythonBundled": true,
+  "ffmpegBundled": false,
+  "projectSourcesPublic": false,
+  "signedXpiSha256": "fed4eeb43789986d9d1df53b1b776abc6f4f059b9ca8b73cd9b53e89cbec55a1",
+  "helperExeSha256": "3e5c3a82d3ab6322acf4864b6d4bfbdc261092a25cbb35ac194b42f0a4987e21",
+  "features": [
+    "selected HTML5 player",
+    "IN/OUT video trimming",
+    "0.1-second marker adjustment",
+    "preview and playback restoration",
+    "movable dock and Firefox sidebar",
+    "local MP4 export with Windows helper"
+  ],
+  "automaticUpdateUrlConfigured": false
+}
