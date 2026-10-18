@@ -8,6 +8,8 @@ The controls can reserve space on any side of the page, float over the selected 
 
 Version 1.2.1 has been submitted for the public Mozilla Add-ons catalog and is awaiting review. It updates only the manifest's version, installed name, description and homepage; player and export behavior are unchanged from 1.2.0. The Windows helper remains compatible at 1.2.0. Until Mozilla publishes the new version, use the signed 1.2.0 assets below.
 
+**Iframe detection fix 1.2.2: signature pending.** This update adds a per-domain search button when a video is embedded on another website. The button asks Firefox for the selected host only, then retries detection. Required permissions stay unchanged; HTTP/HTTPS host permissions are optional and are never requested automatically for all sites. The update has passed its local checks and Mozilla validation, but is not yet available as a signed release.
+
 [Download the Windows package](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.2.0) · [Istruzioni in italiano](INSTALLAZIONE.md) · [Privacy](PRIVACY.md) · [What's new](CHANGELOG.md)
 
 ## Install
