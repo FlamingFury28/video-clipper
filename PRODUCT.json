@@ -30,11 +30,20 @@
   "versionScope": "latest-published-github-release",
   "mozilla": {
     "catalog": {
-      "submittedVersion": "1.4.2",
+      "submittedVersion": "1.4.7",
       "status": "awaiting_review",
       "publicAvailabilityConfirmed": false,
       "productPageNotice": "not-a-public-listing-visible-with-elevated-permissions",
-      "source": "https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/"
+      "source": "https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/6610420",
+      "helperVersion": "1.4.3",
+      "manifestVersionOnlyFrom": "1.4.6",
+      "functionalFilesByteIdentical": 10,
+      "validationErrors": 0,
+      "validationWarnings": 0,
+      "previousSubmission": {
+        "version": "1.4.2",
+        "statusAfter147Submission": "disabled_by_mozilla"
+      }
     },
     "directDistribution": [
       {

@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## 1.4.7 — catalog submission; manifest version only
+
+- Inviata al solo catalogo Mozilla (listed); stato verificato **Awaiting Review**, validazione con **0 errori e 0 avvisi**. [Submission AMO](https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/6610420), accessibile all'autore.
+- Cambia esclusivamente `manifest.version` da 1.4.6 a 1.4.7. I dieci file funzionali coincidono byte per byte con la 1.4.6; nessuna modifica a funzionalità, permessi o helper.
+- L'helper resta **1.4.3**, nella [release GitHub 1.4.6](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.4.6). Le prove della coppia 1.4.6/1.4.3 sono riutilizzate dopo il confronto dei payload.
+- La **1.4.6 unlisted resta Self / Approved**, con distribuzione diretta GitHub attiva. Non è stata creata una nuova release GitHub né sostituito l'XPI firmato.
+- Il numero 1.4.7 è stato autorizzato per il catalogo dopo il rifiuto AMO del numero 1.4.6 già esistente. L'invio non attesta la pubblicazione o l'approvazione del catalogo.
+
 ## 1.4.6 — published signed extension + verified helper 1.4.3
 
 La [release GitHub v1.4.6](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.4.6) distribuisce l'estensione firmata Mozilla **1.4.6**, l'helper Windows **1.4.3**, il pacchetto completo e gli hash SHA-256. Le istruzioni di installazione correnti sono in [INSTALLAZIONE](INSTALLAZIONE.md). La firma è per distribuzione diretta unlisted; il catalogo listed rimane un flusso separato.

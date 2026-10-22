@@ -41,7 +41,7 @@ L'esportazione autenticata può scaricare tutto il filmato prima del taglio: con
 
 ## Stato Mozilla, verifiche e limiti
 
-La 1.4.6 è approvata come **Self / unlisted**, per distribuzione diretta. L'installazione passa dall'XPI firmato della release GitHub. La distinta submission **listed 1.4.2** risulta ancora **Awaiting Review** nel gestore Mozilla consultato il 22 ottobre 2026; la pagina avvisa che non è un'inserzione pubblica. Firma diretta e pubblicazione nel catalogo restano separate.
+La 1.4.6 è approvata come **Self / unlisted**, per distribuzione diretta. L'installazione passa dall'XPI firmato della release GitHub. La submission **listed 1.4.7** è **Awaiting Review**, verificata nel gestore Mozilla il 22 ottobre 2026. Cambia soltanto il numero nel manifest rispetto alla 1.4.6: i dieci file funzionali sono identici byte per byte e l'helper resta 1.4.3. La distribuzione diretta 1.4.6 rimane approvata e disponibile su GitHub. La pagina del catalogo avvisa ancora che non è un'inserzione pubblica: l'invio non equivale all'approvazione. Firma diretta e pubblicazione nel catalogo restano separate.
 
 Il pacchetto non configura un URL personalizzato per aggiornamenti automatici. Per le prossime versioni consulta le [release GitHub](https://github.com/FlamingFury28/video-clipper/releases) e aggiorna XPI e helper compatibile.
 

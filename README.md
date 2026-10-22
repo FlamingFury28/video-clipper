@@ -39,7 +39,7 @@ DRM, live streams and closed shadow roots are unsupported. Authentication, sourc
 
 ## Mozilla distribution
 
-Extension **1.4.6 is Self / Approved (unlisted)**. Its signed XPI is distributed in the GitHub release above. The separate catalog submission **1.4.2 remains Awaiting Review** in the authenticated Mozilla version manager checked on 22 October 2026. The storefront warns that it is not a public listing and is visible only with elevated permissions. Direct signing does not establish catalog publication.
+Extension **1.4.6 is Self / Approved (unlisted)**. Its signed XPI is distributed in the GitHub release above. The separate catalog submission **1.4.7 is Awaiting Review**, verified in the authenticated Mozilla version manager on 22 October 2026. It changes only the manifest version from 1.4.6; all ten functional files are byte-identical and helper 1.4.3 is unchanged. The direct 1.4.6 release remains approved and available on GitHub. The storefront warns that it is not a public listing and is visible only with elevated permissions. Direct signing does not establish catalog publication.
 
 The package has no custom automatic-update URL. Install future complete signed releases from [Releases](https://github.com/FlamingFury28/video-clipper/releases); catalog availability and update behavior are separate. The [Mozilla product page](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) is not the download route prescribed for this direct distribution.
 
