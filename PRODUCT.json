@@ -1,24 +1,66 @@
 {
   "name": "Video Clipper",
-  "version": "1.2.0",
+  "version": "1.4.1",
   "extensionId": "video-clipper@local",
   "platform": "Windows 11 x64",
   "browser": "Firefox 142+",
   "interfaceLanguage": "it",
   "homepage": "https://github.com/FlamingFury28/video-clipper",
-  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.2.0",
+  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.4.1",
   "pythonBundled": true,
   "ffmpegBundled": false,
   "projectSourcesPublic": false,
-  "signedXpiSha256": "fed4eeb43789986d9d1df53b1b776abc6f4f059b9ca8b73cd9b53e89cbec55a1",
-  "helperExeSha256": "3e5c3a82d3ab6322acf4864b6d4bfbdc261092a25cbb35ac194b42f0a4987e21",
+  "signedXpiSha256": "1402043cfe1634b0785e95cefc0ebdbc6113ad4af6e7ce24f6657284b3fe1f2a",
+  "helperExeSha256": "ce57274250f0ffeb734737dbed9b9eaa3fff8a32f8e0d5040537b226337ab17b",
   "features": [
     "selected HTML5 player",
     "IN/OUT video trimming",
     "0.1-second marker adjustment",
     "preview and playback restoration",
     "movable dock and Firefox sidebar",
-    "local MP4 export with Windows helper"
+    "local MP4 export with Windows helper",
+    "multiple intervals from the same video joined in list order",
+    "optional interval reordering"
   ],
-  "automaticUpdateUrlConfigured": false
+  "automaticUpdateUrlConfigured": false,
+  "extensionVersion": "1.4.1",
+  "helperVersion": "1.4.1",
+  "windowsZipSha256": "8d97bef26b14ec28aef609f3b05e09ceef34b295289cb3a927339433a7f6b570",
+  "verifiedOn": "2026-10-22",
+  "versionScope": "latest-published-github-release",
+  "mozilla": {
+    "catalog": {
+      "submittedVersion": "1.4.2",
+      "status": "awaiting_review",
+      "publicAvailabilityConfirmed": false,
+      "productPageNotice": "not-a-public-listing-visible-with-elevated-permissions",
+      "source": "https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/"
+    },
+    "directDistribution": [
+      {
+        "extensionVersion": "1.4.5",
+        "channel": "unlisted",
+        "status": "approved",
+        "requiredHelperVersion": "1.4.2",
+        "helperPublishedOnGitHub": false,
+        "helper141V3Compatible": false,
+        "source": "https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/6609010",
+        "download": "https://addons.mozilla.org/firefox/downloads/file/5153129/video_clipper_in_out_mp4-1.4.5.xpi",
+        "signedXpiSha256": "de8f882794f210647ab7f7ab0cb4e4718e71ba2b546aae0805afdfb16524339c"
+      },
+      {
+        "extensionVersion": "1.4.6",
+        "channel": "unlisted",
+        "status": "approved",
+        "requiredHelperVersion": "1.4.3",
+        "helperPublishedOnGitHub": false,
+        "source": "https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/6609239"
+      }
+    ]
+  },
+  "compatibilityEvidence": {
+    "extension145Helper141": "binary-capabilities-and-extracted-extension-version-gate-rejection",
+    "mixedPairEndToEndExportTested": false,
+    "additionalLiveSitesVerified": false
+  }
 }

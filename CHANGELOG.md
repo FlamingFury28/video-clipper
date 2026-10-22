@@ -1,6 +1,37 @@
 # Changes / Novità
 
-## 1.3.1 — public AMO submission
+Stato verificato il 22 ottobre 2026. Le voci storiche descrivono il loro contesto; per installare valgono [README](README.md) e [INSTALLAZIONE](INSTALLAZIONE.md).
+
+## 1.4.6 — Mozilla direct distribution approved; helper 1.4.3 required
+
+- Il [gestore AMO](https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/) mostra **Self / Approved**; è la versione diretta approvata più recente osservata.
+- Le [note AMO](https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/6609239) richiedono helper **1.4.3**.
+- Nessuna release GitHub 1.4.6 o asset helper 1.4.3 è stato trovato nella verifica. L'approvazione non prova la pubblicazione nel catalogo né la disponibilità del pacchetto Windows su GitHub.
+
+## 1.4.5 — Mozilla direct distribution approved; helper 1.4.2 required
+
+- Approvazione automatica comunicata il 22 ottobre 2026 alle 18:21 circa, ora italiana. AMO registra la versione come **Self / Approved**, non come versione pubblicata nel catalogo.
+- Le [note AMO](https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/6609010) documentano identità del contenuto selezionato, ulteriori adattatori dei player, ricerca facoltativa delle sorgenti, contesti di sessione Firefox isolati e verifica della sorgente. Queste indicazioni non certificano tutti i siti.
+- Le note richiedono helper **1.4.2**. Nel relativo [XPI approvato](https://addons.mozilla.org/firefox/downloads/file/5153129/video_clipper_in_out_mp4-1.4.5.xpi) il controllo del percorso v3 rifiuta helper 1.4.1 con `HELPER_UPDATE_REQUIRED`.
+- L'helper binario della release GitHub 1.4.1 dichiara capacità v3 ma fallisce tale controllo. Il confronto di artefatti e capacità non è una nuova prova completa di esportazione in Firefox con la coppia mista. Nessun helper 1.4.2 è stato trovato nelle release GitHub.
+- I percorsi pubblici legacy presenti nel codice non consentono di dichiarare la coppia estensione 1.4.5 / helper 1.4.1 pienamente compatibile.
+
+## 1.4.2 — catalog submission awaiting review
+
+- Il [gestore AMO](https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/) mostra **AMO / Awaiting Review**, con validazione senza errori né avvisi. La revisione non risulta conclusa.
+- La pagina del prodotto, vista dall'account dell'autore, avvisa che l'inserzione non è pubblica. Non interpretare l'email della 1.4.5 come approvazione della 1.4.2 listed.
+
+## 1.4.1 — multiple intervals in one MP4; published GitHub distribution
+
+- [Release pubblicata il 22 ottobre 2026](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.4.1), con **VideoClipper-1.4.1-signed.xpi**, **VideoClipper-1.4.1-Windows.zip** e **VideoClipper-1.4.1-SHA256SUMS.txt**.
+- Unione di più intervalli dello stesso video in un MP4 nell'ordine dell'elenco, anche sovrapposti o ripetuti; riordino facoltativo, annullamento e cronologia della composizione.
+- Anteprima della sola parte selezionata e salvataggio singolo conservati.
+- La distribuzione richiede entrambi i componenti **estensione 1.4.1 / helper 1.4.1**. Python, yt-dlp, EJS e Deno sono inclusi; FFmpeg/ffprobe con libx264/AAC restano nel PATH.
+- La release documenta installazione permanente e riavvio con firma Firefox attiva, esportazione singola e unione con il binario, ordine video/audio, durata e riproduzione fino alla fine. Prove su media sintetici locali, non certificazione di ulteriori siti.
+
+I dettagli delle versioni intermedie non sono ricostruiti per supposizione.
+
+## 1.3.1 — historical public AMO submission
 
 Video Clipper 1.3.1
 
@@ -41,7 +72,7 @@ Firefox 142+; interfaccia in italiano. Verificati media sintetici MP4/HLS/DASH e
 - Keeps existing required permissions; host grants are optional and remain revocable in Firefox.
 - Validated with 250 Python tests (248 passed, 2 Windows privilege skips), 31 JavaScript suites and a synthetic JW-style iframe fixture on two origins. The live video of a particular website has not been exported by these tests.
 
-The update is awaiting Mozilla signature. The latest downloadable signed release remains 1.2.0; the Windows helper 1.2.0 remains compatible.
+Historical status recorded for 1.2.2: signature was pending and 1.2.0 was then the latest downloadable signed release. These statements do not describe current availability or compatibility with later extensions.
 
 Video Clipper 1.2.0
 
