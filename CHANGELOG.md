@@ -2,6 +2,14 @@
 
 Stato verificato il 22 ottobre 2026. Le voci storiche descrivono il loro contesto; per installare valgono [README](README.md) e [INSTALLAZIONE](INSTALLAZIONE.md).
 
+## Verifica aggiuntiva degli artefatti — 2026-10-22
+
+- Conservati gli stati AMO e i requisiti helper documentati nella [verifica precedente](https://github.com/FlamingFury28/video-clipper/commit/fcd7230891952809081efd801569a2da1e2e1a38). La successiva lettura pubblica del link XPI 1.4.5 ha restituito HTTP 404; il codice di tale versione e le pagine AMO autenticate non sono stati riesaminati in questa verifica aggiuntiva.
+- Scaricati direttamente ZIP Windows e XPI GitHub 1.4.1: hash conformi ai checksum pubblicati, hash dell'eseguibile helper conforme a `PRODUCT.json` incluso, XPI nello ZIP identico all'asset separato.
+- Verificati nel manifest GitHub 1.4.1 versione, ID estensione e Firefox minimo 142.0; nelle preferenze il pulsante è **Verifica configurazione**. Corretta l'etichetta nelle istruzioni.
+- Il codice 1.4.1 controlla `multi-part-export-v1` per l'unione; alcuni altri messaggi di aggiornamento citano ancora helper 1.4.0. La distribuzione documentata resta la coppia 1.4.1/1.4.1.
+- Nessuna nuova prova completa di esportazione in Firefox. L'assenza di un download pubblico della 1.4.5 in questa lettura non dimostra un ritiro da Mozilla.
+
 ## 1.4.6 — Mozilla direct distribution approved; helper 1.4.3 required
 
 - Il [gestore AMO](https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/) mostra **Self / Approved**; è la versione diretta approvata più recente osservata.

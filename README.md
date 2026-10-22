@@ -20,10 +20,10 @@ The [1.4.5 AMO notes](https://addons.mozilla.org/en-US/developers/addon/video-cl
 ## Install
 
 1. Provide FFmpeg and ffprobe with libx264/AAC on Windows PATH. Start from the [official FFmpeg download page](https://ffmpeg.org/download.html#build-windows). They are not bundled. Reopen Firefox after changing PATH.
-2. Download **VideoClipper-1.4.1-Windows.zip** from the release linked above and extract every file to a permanent folder.
+2. Download [VideoClipper-1.4.1-Windows.zip](https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.1/VideoClipper-1.4.1-Windows.zip) from the release linked above and extract every file to a permanent folder.
 3. Run **Installa helper.cmd** as the Windows user running Firefox. Keep the executable together with its `_internal` folder; if you move it, register it again. Python and helper dependencies are bundled. Administrator access is not required.
 4. In Firefox open `about:addons`, choose the gear menu → **Install Add-on From File**, and select **VideoClipper-1.4.1-signed.xpi** from the complete ZIP or the separate release asset. This is a permanent signed installation; verify extension version 1.4.1. Catalog availability and future automatic updates must be checked separately.
-5. Open the extension preferences and use **Verifica collegamento**. Set the destination and reload video pages that were open before upgrading.
+5. Open the extension preferences and use **Verifica configurazione**. Set the destination and reload video pages that were open before upgrading.
 
 The helper is not Authenticode signed. Do not disable Windows protections. Firefox 142+ and Windows 11 x64 are required for full export; the Windows helper is not supported on macOS, Linux or Android.
 
@@ -41,7 +41,11 @@ The chosen player's sources are tried first. Discovery includes linked videos, a
 
 Export depends on downloadable media and yt-dlp support. The published 1.4.1 release records permanent signed installation and restart, single export, and reordered multi-part export using its helper binary, with duration, video/audio order and Firefox playback checks on synthetic local media. These checks do not certify every live website.
 
-For this documentation audit, the downloaded Mozilla 1.4.5 XPI matched the local signed release hash. The exact GitHub Windows ZIP matched GitHub's SHA-256 digest. Its helper binary reports 1.4.1 and advertises v3 capabilities; the 1.4.5 extension's actual `currentV3Helper` predicate rejects that version and raises `HELPER_UPDATE_REQUIRED` on the v3 export path. A constrained public legacy path exists, but this does not establish full compatibility. This was an artifact/capability check, not a new end-to-end browser export with the mixed pair.
+The [previous audit recorded in the repository](https://github.com/FlamingFury28/video-clipper/commit/fcd7230891952809081efd801569a2da1e2e1a38) reports that the downloaded Mozilla 1.4.5 XPI matched the local signed release hash. The exact GitHub Windows ZIP matched GitHub's SHA-256 digest. Its helper binary reports 1.4.1 and advertises v3 capabilities; the 1.4.5 extension's actual `currentV3Helper` predicate rejects that version and raises `HELPER_UPDATE_REQUIRED` on the v3 export path. A constrained public legacy path exists, but this does not establish full compatibility. This was an artifact/capability check, not a new end-to-end browser export with the mixed pair.
+
+The follow-up audit independently downloaded the GitHub 1.4.1 ZIP and XPI, matched both against the published SHA-256 checksums, verified the embedded helper executable hash and confirmed that the XPI inside the ZIP is byte-identical to the separate asset. The 1.4.1 XPI blocks joined export without `multi-part-export-v1`; some of its other helper-update messages still name 1.4.0. Use the documented 1.4.1 helper for this package.
+
+The exact Mozilla 1.4.5 download URL returned HTTP 404 in this follow-up public-access check. Its code inspection and the authenticated AMO channel/release-note findings above are therefore attributed to the linked previous audit; they were not independently repeated here. This does not establish removal of the unlisted version. No new browser export test was run.
 
 DRM, live streams and closed shadow roots are unsupported. CSS/SVG-transformed iframes can affect floating-panel alignment. Resolution limits do not promise lossless export or frame-identical output on every source. UI/preview can be used without the helper; exporting with the published 1.4.1 extension requires its helper 1.4.1 and FFmpeg/ffprobe.
 

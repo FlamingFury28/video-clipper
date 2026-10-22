@@ -61,6 +61,22 @@
   "compatibilityEvidence": {
     "extension145Helper141": "binary-capabilities-and-extracted-extension-version-gate-rejection",
     "mixedPairEndToEndExportTested": false,
-    "additionalLiveSitesVerified": false
-  }
+    "additionalLiveSitesVerified": false,
+    "mozillaAuditSource": "https://github.com/FlamingFury28/video-clipper/commit/fcd7230891952809081efd801569a2da1e2e1a38",
+    "followUpAudit": {
+      "date": "2026-10-22",
+      "github141ZipAndXpiHashesVerified": true,
+      "github141HelperExeHashVerified": true,
+      "embeddedXpiMatchesSeparateAsset": true,
+      "github141MultiPartRequiredCapability": "multi-part-export-v1",
+      "mozilla145XpiPublicDownload": "HTTP 404",
+      "mozilla145CodeInspectionRepeated": false,
+      "authenticatedMozillaPagesRechecked": false,
+      "endToEndExportTestsRun": false
+    }
+  },
+  "automaticUpdateUrlScope": "Custom update_url in the GitHub 1.4.1 XPI manifest; not a guarantee about AMO update behavior",
+  "windowsZipUrl": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.1/VideoClipper-1.4.1-Windows.zip",
+  "signedXpiUrl": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.1/VideoClipper-1.4.1-signed.xpi",
+  "checksumsUrl": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.1/VideoClipper-1.4.1-SHA256SUMS.txt"
 }
