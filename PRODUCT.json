@@ -1,17 +1,17 @@
 {
   "name": "Video Clipper",
-  "version": "1.4.1",
+  "version": "1.4.6",
   "extensionId": "video-clipper@local",
   "platform": "Windows 11 x64",
   "browser": "Firefox 142+",
   "interfaceLanguage": "it",
   "homepage": "https://github.com/FlamingFury28/video-clipper",
-  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.4.1",
+  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.4.6",
   "pythonBundled": true,
   "ffmpegBundled": false,
   "projectSourcesPublic": false,
-  "signedXpiSha256": "1402043cfe1634b0785e95cefc0ebdbc6113ad4af6e7ce24f6657284b3fe1f2a",
-  "helperExeSha256": "ce57274250f0ffeb734737dbed9b9eaa3fff8a32f8e0d5040537b226337ab17b",
+  "signedXpiSha256": "5870f9991089c175779e4ab2f8bdbcea7a8cfa3342aef3cf003d9ed93e29efe4",
+  "helperExeSha256": "f39f07a825673b73938e64b5b89e557e5523b78a516ebd25e6f10629dc136af4",
   "features": [
     "selected HTML5 player",
     "IN/OUT video trimming",
@@ -23,9 +23,9 @@
     "optional interval reordering"
   ],
   "automaticUpdateUrlConfigured": false,
-  "extensionVersion": "1.4.1",
-  "helperVersion": "1.4.1",
-  "windowsZipSha256": "8d97bef26b14ec28aef609f3b05e09ceef34b295289cb3a927339433a7f6b570",
+  "extensionVersion": "1.4.6",
+  "helperVersion": "1.4.3",
+  "windowsZipSha256": "671c65ca8bc9b56905c4a29a148dead93f7f854fc068cccec9ad0455713188ae",
   "verifiedOn": "2026-10-22",
   "versionScope": "latest-published-github-release",
   "mozilla": {
@@ -53,8 +53,9 @@
         "channel": "unlisted",
         "status": "approved",
         "requiredHelperVersion": "1.4.3",
-        "helperPublishedOnGitHub": false,
-        "source": "https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/6609239"
+        "helperPublishedOnGitHub": true,
+        "source": "https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/6609239",
+        "githubRelease": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.4.6"
       }
     ]
   },
@@ -73,10 +74,41 @@
       "mozilla145CodeInspectionRepeated": false,
       "authenticatedMozillaPagesRechecked": false,
       "endToEndExportTestsRun": false
+    },
+    "currentRelease": {
+      "extensionVersion": "1.4.6",
+      "helperVersion": "1.4.3",
+      "allArchiveHashesVerified": true,
+      "nativeCapabilitiesRechecked": true,
+      "permanentSignedInstallAndRestartPassed": 3,
+      "signedExportCases": [
+        {
+          "firefox": "142.0",
+          "passed": 3,
+          "formats": [
+            "mp4",
+            "hls",
+            "dash"
+          ]
+        },
+        {
+          "firefox": "158.0.1",
+          "passed": 6,
+          "formats": [
+            "mp4",
+            "hls",
+            "dash"
+          ]
+        }
+      ],
+      "binaryNativeChecksPassed": 4,
+      "binaryV3ChecksPassed": 34,
+      "scope": "local-synthetic-media",
+      "existingEvidenceReusedByArtifactHash": true
     }
   },
-  "automaticUpdateUrlScope": "Custom update_url in the GitHub 1.4.1 XPI manifest; not a guarantee about AMO update behavior",
-  "windowsZipUrl": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.1/VideoClipper-1.4.1-Windows.zip",
-  "signedXpiUrl": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.1/VideoClipper-1.4.1-signed.xpi",
-  "checksumsUrl": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.1/VideoClipper-1.4.1-SHA256SUMS.txt"
+  "automaticUpdateUrlScope": "Custom update_url in the published GitHub 1.4.6 XPI manifest; not a guarantee about AMO update behavior",
+  "windowsZipUrl": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.6/VideoClipper-1.4.6-Windows.zip",
+  "signedXpiUrl": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.6/VideoClipper-1.4.6-signed.xpi",
+  "checksumsUrl": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.6/VideoClipper-1.4.6-SHA256SUMS.txt"
 }

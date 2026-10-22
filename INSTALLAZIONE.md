@@ -1,43 +1,50 @@
-# Video Clipper — installazione Windows
+# Video Clipper 1.4.6 — installazione e aggiornamento
 
-Verifica del 22 ottobre 2026: la [release GitHub v1.4.1](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.4.1) distribuisce **estensione firmata 1.4.1 e helper 1.4.1**. È la coppia pubblicata cui si riferiscono i passaggi seguenti. L'aggiornamento dell'estensione non aggiorna automaticamente l'helper.
+La [release GitHub v1.4.6](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.4.6) contiene **estensione Firefox 1.4.6 firmata Mozilla e helper Windows 1.4.3 verificato**. Aggiorna entrambi i componenti: l'aggiornamento dell'estensione non aggiorna l'helper.
 
-1. Installa FFmpeg e ffprobe con libx264/AAC nel PATH, dalla [pagina ufficiale](https://ffmpeg.org/download.html#build-windows), e riapri Firefox dopo modifiche al PATH.
-2. Scarica [VideoClipper-1.4.1-Windows.zip](https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.1/VideoClipper-1.4.1-Windows.zip) dalla release indicata. Estrai **tutto** in una cartella stabile sul PC.
-3. Avvia **Installa helper.cmd** con lo stesso utente Windows di Firefox. Conserva eseguibile e cartella `_internal` nella posizione registrata. Se li sposti, registra nuovamente l'helper. Python, yt-dlp, EJS e Deno sono inclusi; FFmpeg/ffprobe restano separati.
-4. In Firefox apri `about:addons`, menu ingranaggio → **Installa componente aggiuntivo da file**, e scegli **VideoClipper-1.4.1-signed.xpi**, incluso nel pacchetto e disponibile anche come asset separato. È un'installazione permanente con XPI firmato da Mozilla. Controlla che la versione installata sia 1.4.1.
-5. Apri le preferenze, usa **Verifica configurazione**, scegli la destinazione e ricarica le pagine video già aperte.
+## Download e requisiti
 
-Non serve avviare come amministratore. L'helper non ha firma Authenticode separata. Requisiti della distribuzione: Firefox 142+, Windows 11 x64 e FFmpeg/ffprobe. Gli [hash SHA-256 dei download](https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.1/VideoClipper-1.4.1-SHA256SUMS.txt) corrispondono allo ZIP e all'XPI scaricati nella verifica aggiuntiva. Sono stati controllati anche l'hash dell'eseguibile helper e l'identità tra XPI nello ZIP e asset separato.
+- [VideoClipper-1.4.6-Windows.zip](https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.6/VideoClipper-1.4.6-Windows.zip): pacchetto completo con helper 1.4.3, runtime, XPI firmato, istruzioni e licenze.
+- [VideoClipper-1.4.6-signed.xpi](https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.6/VideoClipper-1.4.6-signed.xpi): lo stesso XPI incluso nello ZIP, disponibile separatamente.
+- [VideoClipper-1.4.6-SHA256SUMS.txt](https://github.com/FlamingFury28/video-clipper/releases/download/v1.4.6/VideoClipper-1.4.6-SHA256SUMS.txt): hash SHA-256 di ZIP e XPI.
 
-## Se hai già l'estensione 1.4.5 o 1.4.6
+Servono **Windows 11 x64, Firefox 142+ e FFmpeg/ffprobe con libx264/AAC nel PATH**. Python, yt-dlp, EJS e Deno sono inclusi; non richiedono installazioni separate. FFmpeg/ffprobe non sono inclusi: parti dalla [pagina ufficiale](https://ffmpeg.org/download.html#build-windows) e riapri Firefox dopo modifiche al PATH.
 
-| Estensione | Requisito verificato | Disponibilità dell'helper su GitHub |
-|---|---|---|
-| 1.4.1 | Helper 1.4.1 della stessa release | Pubblicato nella v1.4.1 |
-| 1.4.5 | Le note AMO richiedono helper 1.4.2; il codice rifiuta 1.4.1 per il protocollo v3 | Nessun asset 1.4.2 trovato nella verifica |
-| 1.4.6 | Le note AMO richiedono helper 1.4.3 | Nessun asset 1.4.3 trovato nella verifica |
+## Installazione permanente
 
-La [verifica precedente registrata nel repository](https://github.com/FlamingFury28/video-clipper/commit/fcd7230891952809081efd801569a2da1e2e1a38) conferma il requisito della 1.4.5 tramite le [note AMO](https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/6609010), la ricevuta locale di firma e il codice dell'[XPI Mozilla approvato](https://addons.mozilla.org/firefox/downloads/file/5153129/video_clipper_in_out_mp4-1.4.5.xpi). Il binario estratto dallo ZIP GitHub 1.4.1 dichiara capacità v3 ma non supera il controllo di versione della 1.4.5: il percorso v3 produce `HELPER_UPDATE_REQUIRED`. Alcuni percorsi pubblici legacy restano nel codice; non costituiscono una garanzia di compatibilità della coppia mista.
+1. Estrai **tutto** lo ZIP in una cartella stabile.
+2. Avvia **Installa helper.cmd** con lo stesso utente Windows di Firefox. Non servono privilegi amministrativi. Mantieni `VideoClipperHelper.exe` e `_internal` insieme; se sposti la cartella, ripeti la registrazione dalla nuova posizione.
+3. In Firefox apri `about:addons`, menu ingranaggio → **Installa componente aggiuntivo da file**, e scegli **VideoClipper-1.4.6-signed.xpi**. È un'installazione permanente con firma Mozilla.
+4. Controlla versione estensione **1.4.6**. Nelle preferenze premi **Verifica configurazione**, controlla il collegamento e la versione helper **1.4.3**, poi scegli la destinazione.
+5. Ricarica le pagine video aperte prima dell'aggiornamento.
 
-Le [note AMO 1.4.6](https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/6609239) richiedono l'helper 1.4.3. Non installare un XPI più recente da solo aspettandoti che aggiorni il companion. Se hai già una di queste versioni, procurati il pacchetto completo con l'helper richiesto e registra quello; rieseguire **Installa helper.cmd** sullo ZIP 1.4.1 non aggiorna il binario. L'eventuale disponibilità di un nuovo pacchetto completo va controllata nelle [release](https://github.com/FlamingFury28/video-clipper/releases). Non viene prescritto un downgrade dell'estensione.
+L'helper non ha una firma Authenticode separata. L'XPI è firmato da Mozilla. L'helper Windows non è supportato su macOS, Linux o Android.
 
-## Stato Mozilla e istruzioni precedenti
+## Se stai aggiornando
 
-Il [gestore versioni AMO](https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/), consultato con l'account dell'autore, mostra **1.4.5 e 1.4.6: Self / Approved** (distribuzione diretta, unlisted) e **1.4.2: AMO / Awaiting Review** (catalogo, listed). La pagina del prodotto avvisa che non è un'inserzione pubblica e viene mostrata per i privilegi dell'account. La visibilità configurata su **Visible** non equivale alla conclusione della revisione.
+| Situazione | Azione |
+|---|---|
+| Estensione e helper 1.4.1 | Installa l'XPI 1.4.6 e registra l'helper 1.4.3 dal nuovo ZIP |
+| Estensione già 1.4.6, helper precedente | Estrai il nuovo ZIP e avvia il suo Installa helper.cmd; verifica helper 1.4.3 |
+| Estensione 1.4.5 | Aggiorna entrambi alla coppia distribuita 1.4.6 / 1.4.3 |
+| Helper assente o versione ancora vecchia | Controlla la cartella da cui esegui l'installer; quello del vecchio ZIP registra il vecchio binario |
 
-L'email di approvazione automatica della 1.4.5 del 22 ottobre alle 18:21, ora italiana, non prova la pubblicazione nel catalogo. Firma diretta, pubblicazione listed e aggiornamenti automatici sono aspetti distinti. Non occorre attendere il catalogo per installare l'XPI già firmato della release GitHub 1.4.1.
+La 1.4.5 richiede helper 1.4.2 per il protocollo v3 e rifiuta helper 1.4.1 su quel percorso. La nuova release distribuisce la coppia 1.4.6/1.4.3 verificata insieme. Non occorre ricorrere al caricamento temporaneo né disattivare i controlli di firma.
 
-La verifica precedente della descrizione AMO rileva ancora estensione 1.3.1, helper 1.3.0 e il collegamento alla v1.3.1: sono riferimenti precedenti e non soddisfano i requisiti della 1.4.5/1.4.6. Le modifiche a questi quattro documenti non aggiornano la scheda AMO né cambiano i canali di pubblicazione.
+## Uso e consenso
 
-Nella verifica aggiuntiva tramite accesso pubblico, il link esatto all'XPI Mozilla 1.4.5 ha restituito HTTP 404. Le informazioni del gestore autenticato e l'analisi del codice 1.4.5 riportate sopra provengono dalla verifica precedente: non sono state ripetute indipendentemente. Questo non dimostra che la versione unlisted sia stata ritirata. Il pacchetto GitHub 1.4.1, invece, è stato scaricato e controllato direttamente.
+Scegli il video, imposta IN/OUT, prova **Anteprima** e salva una clip. Per più intervalli dello stesso video usa **Aggiungi parte** e **Salva video unito**. L'ordine dell'elenco determina il risultato; il riordino è facoltativo e l'anteprima riproduce solo la parte selezionata. Controlla i timestamp dopo una correzione automatica.
 
-## Uso, sessione e limiti
+**Ricerca avanzata** richiede consenso per sito: riproduci il video e scegli il candidato quando la sorgente è ambigua. **Usa la sessione Firefox per questo sito** è un consenso separato, inizialmente disattivato e revocabile. Per contenuti autenticati concedilo nel profilo/contesto dove sei autenticato. Non usare cookie di altri profili per aggirare il consenso.
 
-Attiva Video Clipper, scegli il video, imposta IN/OUT, prova **Anteprima** e salva una clip. Per più intervalli dello stesso video usa **Aggiungi parte** e **Salva video unito**; l'ordine dell'elenco determina il risultato e il riordino è facoltativo. L'anteprima riproduce solo la parte selezionata.
+L'esportazione autenticata può scaricare tutto il filmato prima del taglio: considera tempo, spazio temporaneo e traffico. Una traccia audio identificata deve essere risolvibile univocamente; altrimenti l'operazione termina con errore.
 
-**Usa la sessione Firefox per questo sito** è facoltativo e disattivato inizialmente. Per video autenticati concedilo nel profilo in cui sei autenticato, per i domini mostrati. L'estensione usa il contesto della scheda e della partizione; il consenso è revocabile nelle impostazioni. Non usare cookie di un altro profilo per aggirare il consenso.
+## Stato Mozilla, verifiche e limiti
 
-MP4, HLS e DASH dipendono dall'accessibilità del media. Le prove su media sintetici e Firefox isolato non garantiscono il funzionamento su ulteriori siti reali. DRM, dirette e shadow DOM chiuso sono esclusi. L'helper non è supportato su macOS, Linux o Android.
+La 1.4.6 è approvata come **Self / unlisted**, per distribuzione diretta. L'installazione passa dall'XPI firmato della release GitHub. La distinta submission **listed 1.4.2** risulta ancora **Awaiting Review** nel gestore Mozilla consultato il 22 ottobre 2026; la pagina avvisa che non è un'inserzione pubblica. Firma diretta e pubblicazione nel catalogo restano separate.
 
-Per errori controlla versione dell'helper, collegamento, PATH, accesso alla sorgente e scadenza degli URL. Usa [Issues](https://github.com/FlamingFury28/video-clipper/issues) senza inviare cookie, token, URL privati o media personali. Consulta [privacy](PRIVACY.md), [novità](CHANGELOG.md) e le licenze incluse nel pacchetto; i sorgenti Python del progetto restano privati.
+Il pacchetto non configura un URL personalizzato per aggiornamenti automatici. Per le prossime versioni consulta le [release GitHub](https://github.com/FlamingFury28/video-clipper/releases) e aggiorna XPI e helper compatibile.
+
+I file pubblicati coincidono con gli hash delle ricevute. Sono già verificati installazione permanente e riavvio con firma obbligatoria, ed esportazioni con XPI firmato/helper 1.4.3 su Firefox 142.0 (3 casi) e 158.0.1 (6 casi), con media MP4/HLS/DASH locali. Le prove sintetiche non certificano ogni sito reale. DRM, dirette e shadow DOM chiuso sono esclusi; un player visibile non garantisce il download.
+
+Per problemi controlla versione helper, configurazione, PATH, accesso alla sorgente e scadenza degli URL. Usa [Issues](https://github.com/FlamingFury28/video-clipper/issues) senza inviare cookie, token, URL privati o media personali. [Privacy](PRIVACY.md) · [Novità](CHANGELOG.md). I sorgenti Python del progetto restano privati.

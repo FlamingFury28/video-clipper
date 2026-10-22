@@ -1,5 +1,21 @@
 # Changes / Novità
 
+## 1.4.6 — published signed extension + verified helper 1.4.3
+
+La [release GitHub v1.4.6](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.4.6) distribuisce l'estensione firmata Mozilla **1.4.6**, l'helper Windows **1.4.3**, il pacchetto completo e gli hash SHA-256. Le istruzioni di installazione correnti sono in [INSTALLAZIONE](INSTALLAZIONE.md). La firma è per distribuzione diretta unlisted; il catalogo listed rimane un flusso separato.
+
+- Migliora il riconoscimento Vidstack e i cambi di stato del player, compresi pubblicità, dirette e contenuti cifrati.
+- Migliora trasporto HLS/DASH, mantenimento della traccia audio identificata, gestione degli header e degli errori transitori.
+- Verifica la copertura temporale della traccia video MP4 prima di pubblicare il risultato; migliora le anteprime e i montaggi quando l'audio termina prima del video.
+- Conserva taglio singolo e unione ordinata di più intervalli dello stesso video, con riordino facoltativo e anteprima della sola parte selezionata.
+- Verificati gli hash di tutti i file del pacchetto, XPI firmato e helper. Riutilizzate le prove già registrate di installazione permanente/riavvio, esportazioni con XPI firmato su Firefox 142.0 (3 casi) e 158.0.1 (6 casi), 4 controlli nativi e 34 test v3/refresh del binario. Ricontrollata la risposta nativa del binario 1.4.3 estratto dallo ZIP.
+- Aggiornare entrambi i componenti. Python, yt-dlp, EJS e Deno sono inclusi; FFmpeg/ffprobe con libx264/AAC restano separati.
+- Le prove locali non attestano ogni sito reale. DRM, dirette e shadow DOM chiuso restano esclusi.
+
+## Cronologia delle verifiche prima della pubblicazione GitHub 1.4.6
+
+Le indicazioni seguenti su asset mancanti e descrizione Mozilla obsoleta descrivono le verifiche precedenti a questa pubblicazione. Per download e installazione valgono i collegamenti correnti sopra.
+
 Stato verificato il 22 ottobre 2026. Le voci storiche descrivono il loro contesto; per installare valgono [README](README.md) e [INSTALLAZIONE](INSTALLAZIONE.md).
 
 ## Verifica aggiuntiva degli artefatti — 2026-10-22
