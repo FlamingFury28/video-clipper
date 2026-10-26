@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## 1.12.1 + helper 1.8.1 — reliable Unicode filenames, 26 October 2026
+
+- Fixes a final-publication failure reproduced on the old Linux helper: emoji, accented and non-Latin titles exceeded the filesystem’s UTF-8 filename limit after range/part metadata was added. Complete names now fit UTF-8 and UTF-16 limits, including collision suffixes. Existing clips are preserved; normal filenames retain their form.
+- The extension previews the naming contract advertised by the helper. Read-only capability checks are shared, cached and bounded; an absent or slow helper keeps the editor usable, and stale player requests are rejected.
+- Helper 1.8.1 binaries and guided Windows installer verified; no extraction, session-consent, permission or encoding changes. Upstream dependencies/notices are reused because their versions are unchanged.
+- Verification: 480 Python tests (6 environment skips), 81 JavaScript suites, 7 exact-binary cases on each OS, signed Firefox MP4/HLS exports after restart on Windows 142/158 and Linux 158, a Unicode-named clip with preview/file equality from the signed 1.12.1 editor, 3 signature/install/restart checks and 4 Chromium MV3 language cases.
+- Developer diagnostics now recognize nested localization catalogs and report changed/extra files correctly. Release and installer builds retain version/hash guards.
+
 ## 1.12.0 — English and guided helper setup, 26 October 2026
 
 - Full English and Italian interface with automatic browser-language selection and a persistent manual choice. Includes editor, settings, history, projects, diagnostics, consents and crop controls; original user/video data remains unchanged.

@@ -1,10 +1,10 @@
 # Privacy / Trattamento dei dati
 
-Applies to Video Clipper 1.12.0 and local helper 1.8.0. Updated 26 October 2026.
+Applies to Video Clipper 1.12.1 and local helper 1.8.1. Updated 26 October 2026.
 
 ## English
 
-The interface language preference is stored locally. Translation catalogs are packaged with the extension; no text is sent to a translation service. First installation opens a local setup page. The Windows installer embeds the unchanged helper 1.8.0 binary. When you choose Install and missing video tools are allowed, it may download the fixed FFmpeg 8.1.2 archive directly from gyan.dev, verifying its size and SHA-256 before preparing it. The vendor receives an ordinary download request (including IP address and installer user-agent), never your clips, page addresses or browser cookies. Installed tools and licenses remain on your computer. The extension does not launch the installer or download tools automatically.
+The interface language preference is stored locally. Translation catalogs are packaged with the extension; no text is sent to a translation service. First installation opens a local setup page. The Windows installer embeds the verified helper 1.8.1 binary. When you choose Install and missing video tools are allowed, it may download the fixed FFmpeg 8.1.2 archive directly from gyan.dev, verifying its size and SHA-256 before preparing it. The vendor receives an ordinary download request (including IP address and installer user-agent), never your clips, page addresses or browser cookies. Installed tools and licenses remain on your computer. The extension does not launch the installer or download tools automatically.
 
 When activated, Video Clipper reads the chosen tab's accessible HTML5 players: source addresses, title, duration, playback position and geometry. It uses active-tab access; optional access to embedded-player domains is requested through your actions. Persistent access to all websites is not granted by default.
 
@@ -26,9 +26,9 @@ Firefox's theme palette, or native browser light/dark colors, is used locally. B
 
 ## Italiano
 
-La preferenza della lingua resta sul dispositivo. I cataloghi di traduzione sono inclusi nell’estensione: nessun testo viene inviato a servizi di traduzione. La prima installazione apre una pagina locale di configurazione. L’installer Windows include lo stesso helper binario 1.8.0. Quando premi Installa e consenti gli strumenti mancanti, può scaricare FFmpeg 8.1.2 direttamente da gyan.dev, verificando dimensione e SHA-256 prima di prepararlo. Il fornitore riceve una normale richiesta di download (indirizzo IP e user-agent dell’installer), mai clip, indirizzi delle pagine o cookie del browser. Strumenti e licenze restano sul computer. L’estensione non avvia l’installer e non scarica gli strumenti automaticamente.
+La preferenza della lingua resta sul dispositivo. I cataloghi di traduzione sono inclusi nell’estensione: nessun testo viene inviato a servizi di traduzione. La prima installazione apre una pagina locale di configurazione. L’installer Windows include l’helper binario verificato 1.8.1. Quando premi Installa e consenti gli strumenti mancanti, può scaricare FFmpeg 8.1.2 direttamente da gyan.dev, verificando dimensione e SHA-256 prima di prepararlo. Il fornitore riceve una normale richiesta di download (indirizzo IP e user-agent dell’installer), mai clip, indirizzi delle pagine o cookie del browser. Strumenti e licenze restano sul computer. L’estensione non avvia l’installer e non scarica gli strumenti automaticamente.
 
-Questa informativa riguarda Video Clipper 1.12.0 e helper locale 1.8.0, aggiornata il 26 ottobre 2026.
+Questa informativa riguarda Video Clipper 1.12.1 e helper locale 1.8.1, aggiornata il 26 ottobre 2026.
 
 Quando lo attivi, Video Clipper legge i player HTML5 accessibili della scheda scelta: indirizzi delle sorgenti, titolo, durata, posizione di riproduzione e geometria. Usa l'accesso alla scheda attiva; gli eventuali permessi per domini dei player incorporati vengono richiesti tramite tue azioni. Non ottiene inizialmente accesso permanente a tutti i siti.
 

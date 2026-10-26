@@ -6,7 +6,7 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 
 **English and Italian**, with automatic browser-language selection and an immediate language switch in Settings.
 
-**[Install for Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Download Windows helper installer](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-Helper-1.8.0-Windows-Setup.exe)** · **[English setup guide](INSTALL.md)** · **[Guida italiana](INSTALLAZIONE.md)**
+**[Install for Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Download Windows helper installer](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Windows-Setup.exe)** · **[English setup guide](INSTALL.md)** · **[Guida italiana](INSTALLAZIONE.md)**
 
 ## Start clipping
 
@@ -14,16 +14,16 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-Already using helper **1.8.0**? Keep it. The new installer wraps the same verified helper; the export engine has not been rebuilt. Extension and helper update separately.
+This update uses **helper 1.8.1**, which fixes final save failures for long Unicode filenames on Linux. Update the helper as well as the extension for this fix. Helper 1.8.0 remains compatible with crop, format and audio; extension and helper updates are separate.
 
 | Download | Use |
 |---|---|
-| [Firefox extension 1.12.0](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-1.12.0-signed.xpi) | Mozilla-signed permanent installation |
-| [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-Helper-1.8.0-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
-| [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-Helper-1.8.0-Windows.zip) | Advanced manual installation |
-| [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-Helper-1.8.0-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
-| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-1.12.0-Chromium.zip) | Unpacked desktop installation; no store publication |
-| [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-1.12.0-SHA256SUMS.txt) | Verify downloaded packages |
+| [Firefox extension 1.12.1](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-1.12.1-signed.xpi) | Mozilla-signed permanent installation |
+| [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
+| [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Windows.zip) | Advanced manual installation |
+| [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
+| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-1.12.1-Chromium.zip) | Unpacked desktop installation; no store publication |
+| [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-1.12.1-SHA256SUMS.txt) | Verify downloaded packages |
 
 ## Make it yours
 
