@@ -1,5 +1,14 @@
 # Changes / Novità
 
+## 1.12.12 + helper 1.8.3 — native Firefox MP4 timing, 26 October 2026
+
+- Fixes a reproduced native Firefox MP4 case where the video track starts after audio. Saving the full range shown by the player could fail with SOURCE_RANGE_INVALID; shorter exports could show earlier frames while audio remained correct.
+- A narrowly verified native MP4 timeline is aligned by copying video packets with corrected timestamps. Audio, chosen markers and the existing range tolerance stay unchanged. Manual sources, MSE, other browsers, page extraction, selected audio and ambiguous tracks do not qualify; truly shorter video remains rejected.
+- Actual native Firefox duration/decoded frames/audio and independent output checks cover full, partial, joined and separate clips. Windows Firefox 142 and signed permanent/restarted Windows and Ubuntu Firefox 158 pass. No duration getter is overridden and no authenticated-site coverage is claimed.
+- Both extension 1.12.12 and helper 1.8.3 are required. The new Windows/Linux binaries retain MP4/HLS compatibility with signed extension 1.12.11. Guided downloads point to the new helper; clean Windows setup and portable video tools are verified.
+- All 92 JavaScript suites, 496 Python tests (six environment skips), twelve Chromium/native checks and signature/install/restart checks pass. The private test runner now terminates timed-out owned Windows process trees immediately; this was a test-infrastructure issue, separate from the product correction.
+- Italiano: corregge un falso errore di durata e i fotogrammi anticipati negli MP4 nativi Firefox con video e audio che iniziano in momenti diversi. Audio e marcatori restano invariati. Aggiornare sia estensione sia helper; nessun nuovo permesso.
+
 ## 1.12.11 — queued clips across multiple tabs, 26 October 2026
 
 - Fixes a queue that could stay waiting when the same video was open in several tabs and the first tab reported an incompatible duration. The old signed 1.12.10 reproduces this in isolated Firefox with real MediaSource duration changes.
