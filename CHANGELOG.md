@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## 1.12.7 — explicit queue resume without draft autosave, 26 October 2026
+
+- Fixes explicitly queued clips left idle after the selected player/audio returns or the browser restarts when automatic draft saving is off.
+- Separates queue context discovery from draft persistence/restoration. Captured ranges and output remain attached to the queued intent; no automatic drafts are written or restored while the option is off.
+- Keeps selected media/audio, duration, private-tab, source and session-consent guards. A finished or uncertain interrupted intent is not automatically replayed.
+- Verified before the fix in signed 1.12.6, ten targeted Firefox/Chromium cases, 86 JavaScript suites and real MP4 exports after permanent restart on Windows and Linux. Helper 1.8.1 is unchanged.
+- Italiano: la coda esplicita riparte anche con Conserva automaticamente il lavoro disattivato, senza salvare o ripristinare bozze. Intervalli e impostazioni catturati restano validi; media/audio diversi, finestre private e durate incompatibili rimangono esclusi.
+
 ## 1.12.6 — queue outcome recovery, 26 October 2026
 
 - Fixes a queue item stuck Running after a completed native export when its completion record could not be written. The visible status reflects the real result.
@@ -193,5 +201,6 @@ Video Clipper 1.2.0
 - Migliora verifica dell’esportazione locale, nomi Windows, limiti di risoluzione, annullamento, avanzamento e gestione dei temporanei.
 
 La distribuzione Windows include ora un helper eseguibile con Python e dipendenze. FFmpeg/ffprobe restano necessari separatamente.
+
 
 

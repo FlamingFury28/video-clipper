@@ -1,34 +1,28 @@
 {
-  "extensionVersion": "1.12.6",
+  "extensionVersion": "1.12.7",
   "helperVersion": "1.8.1",
   "verifiedOn": "2026-10-26",
   "changedPayloadFiles": [
     "manifest.json",
-    "background.js",
-    "_locales/en/messages.json",
-    "_locales/it/messages.json"
+    "background.js"
   ],
-  "unchangedPayloadFiles": 10,
-  "javascriptSuitesPassed": 84,
-  "newQueueDurabilityCasesFirefoxAndChromium": 12,
+  "unchangedPayloadFiles": 12,
+  "javascriptSuitesPassed": 86,
+  "newExplicitQueueCasesFirefoxAndChromium": 10,
+  "queueDurabilityCasesRetained": 12,
+  "projectIdentityCasesRetained": 12,
   "targetedPythonTests": 41,
   "targetedPythonEnvironmentSkips": 2,
-  "oldSigned1125FailureReproduced": true,
-  "realNativeQueueRecoveryCases": {
+  "oldSigned1126QueueStallReproducedAfterRestart": true,
+  "realNativeQueueResumeCases": {
     "Windows142Unsigned": 3,
-    "Windows158SignedPermanentAfterRestart": 4,
-    "Linux158SignedPermanentAfterRestart": 4
+    "Windows158SignedPermanentAfterRestart": 3,
+    "Linux158SignedPermanentAfterRestart": 3
   },
-  "videoAudioRangeAndNoDuplicateOutputsVerified": true,
-  "completedQueueRecordsAndFileHashesSurviveLaterRestart": true,
+  "capturedRangeVideoAudioAndNoDuplicateOutputsVerified": true,
+  "automaticDraftWritesAndRestorationRemainOff": true,
   "signatureAndRestartCasesPassed": 3,
   "chromiumMV3LocalizationCasesPassed": 4,
-  "metadataRetryDelaysSeconds": [
-    1,
-    5,
-    30
-  ],
-  "completedNativeExportsAutomaticallyRetried": false,
   "firefoxSignatureEnforcementEnabled": true,
   "personalFirefoxProfilesModified": false,
   "browserProtectionsWeakened": false,
@@ -41,25 +35,26 @@
     "publicDigestsRechecked": true
   },
   "reusedVerification": {
-    "release": "1.12.5",
-    "backgroundOutsideQueueAndContentScriptByteIdentical": true,
+    "release": "1.12.6",
+    "backgroundOutsideSyncWorkAndOtherTwelveFilesByteIdentical": true,
     "helperFullPythonTestsFrom1121": 480,
     "helperPythonEnvironmentSkips": 6,
-    "helperWindowsLinuxUnicodeCasesPerOS": 7
+    "helperWindowsLinuxUnicodeCasesPerOS": 7,
+    "selectedAudioSigned1126ShakaCodecsAndCodeclessExports": 2
   },
-  "scope": "Unmodified signed payload in disposable Firefox profiles; a local DevTools wrapper rejects one terminal project write. Real MP4 frames/audio/ranges and no duplicate files are verified, then completed queue records and file hashes are checked after restart. Failed/cancelled/persistent-storage/concurrent cases also run in the production background fixture for both browser modes. Unchanged player/source/helper evidence is reused by hash.",
+  "scope": "Unmodified signed payload in disposable Firefox profiles. A local DevTools wrapper pauses one durable claim while its selected document leaves. The explicit intent remains queued, then resumes once with draft autosave off after a browser restart. Real MP4 frames/audio/range, no draft-marker restoration and no duplicate after another reload are verified. Privacy/audio/duration and queue durability also run in both production background modes. Unchanged component verification is reused by hash.",
   "assets": [
     {
-      "name": "VideoClipper-1.12.6-signed.xpi",
-      "size": 319415,
-      "sha256": "a164feb21551bdb71c517370aa205b2f6d4eac7914e6bca6de75f442e3bc5c3a",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.6/VideoClipper-1.12.6-signed.xpi"
+      "name": "VideoClipper-1.12.7-signed.xpi",
+      "size": 319523,
+      "sha256": "3ef08b71f3271a20fd6357488c4bcef597369c393c5bb97b80e29d776712a31a",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.7/VideoClipper-1.12.7-signed.xpi"
     },
     {
-      "name": "VideoClipper-1.12.6-Chromium.zip",
-      "size": 309536,
-      "sha256": "e5eec01fd9b40083a893cba8f075f1f5e0f115dbf7274e66a93e78c750749487",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.6/VideoClipper-1.12.6-Chromium.zip"
+      "name": "VideoClipper-1.12.7-Chromium.zip",
+      "size": 309656,
+      "sha256": "3821b6726edb570e1c15565418016635bdd4a17e65955068f01e72e1b8834a6f",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.7/VideoClipper-1.12.7-Chromium.zip"
     },
     {
       "name": "VideoClipper-Helper-1.8.1-Windows-Setup.exe",
@@ -80,10 +75,10 @@
       "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Linux-x86_64.tar.gz"
     },
     {
-      "name": "VideoClipper-1.12.6-SHA256SUMS.txt",
+      "name": "VideoClipper-1.12.7-SHA256SUMS.txt",
       "size": 527,
-      "sha256": "97d8f9a0677053a8f217a93a78848d455db36e62bd2859017fac57cf31bc6613",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.6/VideoClipper-1.12.6-SHA256SUMS.txt"
+      "sha256": "118d10deb4be06c44917c48efa671a1fe85ff30eb7d49e88aba00e832e4ed19e",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.7/VideoClipper-1.12.7-SHA256SUMS.txt"
     }
   ]
 }
