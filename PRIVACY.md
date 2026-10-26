@@ -1,6 +1,6 @@
 # Privacy / Trattamento dei dati
 
-Applies to Video Clipper 1.11.0 and local helper 1.8.0. Updated 26 October 2026.
+Applies to Video Clipper catalog 1.11.1 / direct 1.11.0 and local helper 1.8.0. Updated 26 October 2026.
 
 ## English
 
@@ -24,7 +24,7 @@ Firefox's theme palette, or native browser light/dark colors, is used locally. B
 
 ## Italiano
 
-Questa informativa riguarda Video Clipper 1.11.0 e helper locale 1.8.0, aggiornata il 26 ottobre 2026.
+Questa informativa riguarda Video Clipper catalogo 1.11.1 / diretta 1.11.0 e helper locale 1.8.0, aggiornata il 26 ottobre 2026.
 
 Quando lo attivi, Video Clipper legge i player HTML5 accessibili della scheda scelta: indirizzi delle sorgenti, titolo, durata, posizione di riproduzione e geometria. Usa l'accesso alla scheda attiva; gli eventuali permessi per domini dei player incorporati vengono richiesti tramite tue azioni. Non ottiene inizialmente accesso permanente a tutti i siti.
 

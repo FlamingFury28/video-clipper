@@ -1,6 +1,12 @@
-# Video Clipper — IN/OUT MP4 Trimmer
+<img src="assets/video-clipper.svg" width="72" height="72" alt="Video Clipper">
+
+# Video Clipper — Trim & Crop Video
 
 Choose a video on a web page, mark IN/OUT, preview your selection and save an MP4 on your computer. Export several intervals as **one joined video or separate numbered files**. Crop directly over the original player, choose a phone or square format, adjust export audio and add a watermark. The interface is in Italian.
+
+**[Install for Firefox — Mozilla Add-ons](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Set up local MP4 export](INSTALLAZIONE.md)**
+
+Current public catalog version: **1.11.1**, with **local helper 1.8.0**. The helper and FFmpeg/ffprobe are a one-time setup for saving. The interface is currently Italian. [See the real feature screenshots on Mozilla](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/).
 
 **Current direct release: [extension 1.11.0 + helper 1.8.0](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.11.0).** Install both components for all current export features. Updating the browser extension does not update the helper.
 
@@ -54,7 +60,7 @@ Verification covers isolated profiles and controlled media, including real outpu
 
 ## Distribution and privacy
 
-The current **1.11.0 signed XPI is approved for direct distribution (unlisted / Self)**. Mozilla's separate catalog channel remains at **1.4.7, approved**; it does not contain the new 1.11.0 features. Use the GitHub release linked above for the current complete distribution. The XPI has no custom automatic-update URL. Checking for updates and installing them are separate actions.
+**Firefox catalog 1.11.1 is approved and publicly available on [Mozilla Add-ons](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/).** Install from that page for the catalog distribution. Its ten functional files are byte-identical to direct release 1.11.0; only the manifest version changes. The signed 1.11.0 GitHub release remains available for direct distribution with the same helper 1.8.0. The extension has no custom update URL; Mozilla catalog updates and the optional GitHub version check are distinct. Updating the extension does not update the helper.
 
 Conversion runs locally. Requests go to the source websites/CDNs; there is no Video Clipper cloud editing or analytics service. Preferences, projects, watermarks and history stay on your device. Clearing history removes references, not saved files. Read the [privacy policy](PRIVACY.md), including optional session access and update checks.
 

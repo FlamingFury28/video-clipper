@@ -26,10 +26,17 @@
       "download": "https://addons.mozilla.org/firefox/downloads/file/5166701/video_clipper_in_out_mp4-1.11.0.xpi"
     },
     "catalog": {
-      "version": "1.4.7",
+      "version": "1.11.1",
       "status": "approved",
+      "publicAvailabilityConfirmed": true,
       "separateChannel": true,
-      "includes1110Features": false
+      "includes1110Features": true,
+      "helperVersion": "1.8.0",
+      "manifestVersionOnlyFrom": "1.11.0",
+      "functionalFilesByteIdentical": 10,
+      "download": "https://addons.mozilla.org/firefox/downloads/file/5166820/video_clipper_in_out_mp4-1.11.1.xpi",
+      "signedXpiSha256": "a19ebdffc8a4829c213d3829bb191cdc18c554f21cc4d74c1f9781eafe162bf1",
+      "permanentSignatureRestartChecksPassed": 3
     }
   },
   "platforms": [
@@ -108,5 +115,6 @@
       "sha256": "383f49620e426dd0686a2bd0bdcf64b98e12b94eb3fa2cfa368f23bfe1648f10",
       "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-1.11.0-SHA256SUMS.txt"
     }
-  ]
+  ],
+  "recommendedFirefoxInstall": "https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/"
 }

@@ -1,4 +1,14 @@
-# Video Clipper 1.11.0 — installazione e uso
+# Video Clipper — installazione e uso
+
+**[Installa Video Clipper dal catalogo Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) — versione pubblica 1.11.1.** Per salvare serve anche l'helper gratuito **1.8.0** sul computer. La 1.11.1 ha lo stesso codice funzionale della 1.11.0 diretta: cambia solo il numero nel manifest.
+
+## Percorso rapido — Windows
+
+1. [Scarica l'helper Windows 1.8.0](https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-Helper-1.8.0-Windows.zip), estrai **tutto** in una cartella stabile ed esegui **Installa helper.cmd** come utente del browser.
+2. Installa **FFmpeg e ffprobe con libx264/AAC nel PATH** dalla [pagina ufficiale](https://ffmpeg.org/download.html), se non sono già disponibili. Riapri Firefox.
+3. [Installa l'estensione da Mozilla](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/), apri **Impostazioni → Verifica configurazione**, controlla helper **1.8.0** e scegli dove salvare. Poi apri un video, attiva Video Clipper e prova una breve clip.
+
+L'estensione da sola controlla selezione e anteprima; il programma desktop svolge il salvataggio locale. Non servono account o abbonamenti. Per Linux e Chrome/Edge trovi le istruzioni sotto.
 
 La [release corrente](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.11.0) distribuisce **estensione 1.11.0 firmata Mozilla e helper 1.8.0**. Installa entrambi per ritaglio, formati e audio. Aggiornare l'estensione non aggiorna l'helper. L'interfaccia è in italiano.
 
@@ -20,7 +30,7 @@ Verificato su Windows 11 x64 con Firefox 142.0/158.0.1 e Chrome 155/Edge 156; Li
 
 1. Estrai **tutto** lo ZIP dell'helper in una cartella permanente, mantenendo insieme `VideoClipperHelper` e `_internal`. Conserva la vecchia cartella se stai aggiornando.
 2. Esegui **Installa helper.cmd** dalla nuova cartella, con lo stesso utente di Firefox. Non servono privilegi amministrativi.
-3. In Firefox apri `about:addons`, menu ingranaggio → **Installa componente aggiuntivo da file**, e scegli **VideoClipper-1.11.0-signed.xpi**. Non occorre il caricamento temporaneo.
+3. [Installa la versione pubblica 1.11.1 da Mozilla Add-ons](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/). In alternativa usa l'XPI diretto firmato **1.11.0** da `about:addons` → ingranaggio → **Installa componente aggiuntivo da file**: le funzioni sono identiche. Entrambe sono installazioni permanenti.
 4. Riapri Firefox per rinnovare il collegamento all'helper e ricarica le pagine video. Questo passaggio serve anche dopo modifiche al PATH.
 5. Apri le impostazioni di Video Clipper, premi **Verifica configurazione**, controlla helper **1.8.0** e scegli la cartella di destinazione. **Verifica installazione.cmd** mostra la registrazione effettiva.
 
@@ -75,7 +85,7 @@ In **Impostazioni → Salvataggi → Quando selezioni più parti**, scegli **Un 
 
 **Impostazioni → Aggiornamenti** controlla in un solo punto le versioni pubblicate di estensione e helper. La richiesta a GitHub è facoltativa e richiede un permesso separato. Non scarica né installa automaticamente. L'XPI non imposta un URL personalizzato di aggiornamento; il canale Mozilla listed resta separato.
 
-La **1.11.0 è approvata per distribuzione diretta unlisted/Self**. Il catalogo Mozilla resta alla **1.4.7 approvata**, che non include le funzioni della 1.11.0. Per la versione corrente completa usa i pacchetti GitHub sopra.
+Il **catalogo Mozilla 1.11.1 è approvato e disponibile al pubblico**: [installa da qui](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/). La **1.11.0 diretta unlisted/Self** resta disponibile su GitHub. Tutti i dieci file funzionali sono identici; cambiano solo il numero nel manifest e il canale di distribuzione. Entrambe usano helper 1.8.0.
 
 ## Verifiche e limiti
 

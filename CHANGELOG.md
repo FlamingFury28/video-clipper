@@ -1,5 +1,12 @@
 # Changes / Novità
 
+## 1.11.1 — public Mozilla catalog, 26 October 2026
+
+- Approved and publicly downloadable from [Mozilla Add-ons](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/). Replaces catalog 1.4.7 with the current trim/crop/audio/separate-file features.
+- Only `manifest.version` changes from verified direct release 1.11.0. All ten functional files match byte for byte; helper 1.8.0 is unchanged. Existing functional evidence is reused by payload equality. The new signed XPI also passes permanent installation, signature enforcement and restart checks in isolated Firefox 158.0.1.
+- Store listing: clearer English/Italian name and summary, benefits-first description, original icon and three actual-extension screenshots with localized captions. Helper requirements and supported platforms are visible before installation.
+- The approved 1.11.0 direct/GitHub distribution remains available. Current catalog status supersedes the historical 1.4.7 statements below. Installation guide and privacy version scope are updated.
+
 ## 1.11.0 + helper 1.8.0 — current direct distribution (26 October 2026)
 
 The [signed GitHub release](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.11.0) replaces 1.4.6 as the latest public direct download. It includes the verified 1.11.0 extension and separate helper 1.8.0 binaries for Windows and Linux x86_64. Intermediate direct releases developed since 1.4.6 are included in this cumulative update.
