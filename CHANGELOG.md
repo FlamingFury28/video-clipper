@@ -1,5 +1,12 @@
 # Changes / Novità
 
+## 1.12.5 — Firefox update guidance, 26 October 2026
+
+- Replaces the blocked XPI update link with a local two-step guide to Firefox’s add-on manager. The Mozilla catalog is a separate link; the guide also works without a successful optional GitHub check.
+- Chrome and Edge receive their own ZIP instead of a Firefox XPI. English and Italian messages distinguish GitHub releases from Mozilla catalog availability.
+- Verified signed permanent upgrade from 1.12.2 and restart with settings retained. No new permissions or helper reinstall; helper 1.8.1 is unchanged.
+- Italiano: aggiornamento guidato dal gestore Firefox, nessun XPI aperto dal contesto dell’estensione. Catalogo separato, ZIP corretto per Chrome/Edge, guida disponibile anche senza esito GitHub. Impostazioni conservate e helper 1.8.1 invariato.
+
 ## 1.12.3 — embedded player reconnects, 26 October 2026
 
 - Fixes a reproduced editor lock after an iframe player reconnects during a native export. The player stays pinned, the active job reclaims its token on the new port, and completed/orphaned locks are released safely after success, cancellation or error.
@@ -178,3 +185,4 @@ Video Clipper 1.2.0
 - Migliora verifica dell’esportazione locale, nomi Windows, limiti di risoluzione, annullamento, avanzamento e gestione dei temporanei.
 
 La distribuzione Windows include ora un helper eseguibile con Python e dipendenze. FFmpeg/ffprobe restano necessari separatamente.
+
