@@ -1,12 +1,12 @@
 {
   "name": "Video Clipper",
-  "version": "1.12.9",
-  "extensionVersion": "1.12.9",
+  "version": "1.12.10",
+  "extensionVersion": "1.12.10",
   "helperVersion": "1.8.2",
   "extensionId": "video-clipper@local",
   "interfaceLanguage": "auto",
   "homepage": "https://github.com/FlamingFury28/video-clipper",
-  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.12.9",
+  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.12.10",
   "versionScope": "latest-published-extension",
   "pythonBundled": true,
   "ffmpegBundled": false,
@@ -30,13 +30,13 @@
       "download": "https://addons.mozilla.org/firefox/downloads/file/5166701/video_clipper_in_out_mp4-1.11.0.xpi"
     },
     "catalog": {
-      "version": "1.12.9",
+      "version": "1.12.10",
       "status": "approved",
       "publicAvailabilityConfirmed": true,
       "separateChannel": true,
       "helperVersion": "1.8.2",
-      "download": "https://addons.mozilla.org/firefox/downloads/file/5170101/video_clipper_in_out_mp4-1.12.9.xpi",
-      "signedXpiSha256": "21b29e78ed285cf2be5b8088f9c1de87ec20524b249584d58797dc401cc125f6",
+      "download": "https://addons.mozilla.org/firefox/downloads/file/5170391/video_clipper_in_out_mp4-1.12.10.xpi",
+      "signedXpiSha256": "6b587d6b7cd72892ba20b4db592ad1cdae5467c8fa271cf60ff47914da12ce8d",
       "permanentSignatureRestartChecksPassed": 3
     }
   },
@@ -93,20 +93,21 @@
     "bounded queue outcome persistence recovery without replaying completed exports",
     "explicit queued work resumes independently of automatic draft saving",
     "queued cancellation recovers from temporary storage errors and stays cancelled after restart",
-    "helper 1.8.2 publishes verified files atomically without replacing an occupied output name"
+    "helper 1.8.2 publishes verified files atomically without replacing an occupied output name",
+    "confirmed clip parts survive shorter player duration metadata and recover automatically when compatible"
   ],
   "assets": [
     {
-      "name": "VideoClipper-1.12.9-signed.xpi",
-      "size": 319949,
-      "sha256": "21b29e78ed285cf2be5b8088f9c1de87ec20524b249584d58797dc401cc125f6",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.9/VideoClipper-1.12.9-signed.xpi"
+      "name": "VideoClipper-1.12.10-signed.xpi",
+      "size": 320238,
+      "sha256": "6b587d6b7cd72892ba20b4db592ad1cdae5467c8fa271cf60ff47914da12ce8d",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.10/VideoClipper-1.12.10-signed.xpi"
     },
     {
-      "name": "VideoClipper-1.12.9-Chromium.zip",
-      "size": 310076,
-      "sha256": "24af3f887d2a2c983587a2b1e84bcee46d1e4c8c6f964a73b2dcd7adcd378e98",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.9/VideoClipper-1.12.9-Chromium.zip"
+      "name": "VideoClipper-1.12.10-Chromium.zip",
+      "size": 310340,
+      "sha256": "02544c089bbe323ebe6b574b661fb1caf068a00b9dda6c2851e7337baad45765",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.10/VideoClipper-1.12.10-Chromium.zip"
     },
     {
       "name": "VideoClipper-Helper-1.8.2-Windows-Setup.exe",
@@ -127,10 +128,10 @@
       "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.8.2/VideoClipper-Helper-1.8.2-Linux-x86_64.tar.gz"
     },
     {
-      "name": "VideoClipper-1.12.9-SHA256SUMS.txt",
-      "size": 527,
-      "sha256": "e5d2f7830d7967ed2fccbfd678907d5b24847617bc37ebfd51bb7d832ef7f93d",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.9/VideoClipper-1.12.9-SHA256SUMS.txt"
+      "name": "VideoClipper-1.12.10-SHA256SUMS.txt",
+      "size": 529,
+      "sha256": "93199267eb8e3c0dc7185b98798142c1450ae6088a50004d3a4616680b09e365",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.10/VideoClipper-1.12.10-SHA256SUMS.txt"
     }
   ],
   "recommendedFirefoxInstall": "https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/",
@@ -153,7 +154,7 @@
     },
     "authenticodeSigned": false,
     "wrapperVersion": "1.8.2.1",
-    "helperEngineRebuilt": true,
+    "helperEngineRebuilt": false,
     "reusedFromRelease": "helper-v1.8.2",
     "updateRequiredFromHelper181": true
   },

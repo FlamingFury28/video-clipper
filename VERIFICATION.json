@@ -1,34 +1,35 @@
 {
-  "extensionVersion": "1.12.9",
+  "extensionVersion": "1.12.10",
   "helperVersion": "1.8.2",
   "verifiedOn": "2026-10-26",
   "changedExtensionFiles": [
     "manifest.json",
-    "options.html",
-    "options.js"
+    "content.js"
   ],
-  "unchangedExtensionFiles": 11,
-  "optionsChangeIsExactlyTwoDownloadUrls": true,
-  "pythonTestsPassed": 483,
-  "pythonEnvironmentSkips": 6,
-  "targetedAtomicPublicationCasesPerOS": 8,
-  "nativePublicationCasesPerOS": 4,
-  "nativeCompatibilityCasesPerOS": 4,
-  "nativeUnicodeCasesPerOS": 7,
-  "oldHelper181SourceRaceReproducedBeforeFixOnWindows": true,
-  "currentSignedFirefoxNativeMp4HlsCases": {
-    "Windows142": 2,
-    "Windows158": 2,
-    "Linux158": 2
+  "unchangedExtensionFiles": 12,
+  "fullJavaScriptSuitesExecuted": 89,
+  "initialFullRunPassed": 88,
+  "initialEnvironmentNavigationFailures": 1,
+  "failedSuitePassedOnTargetedRecheck": true,
+  "all89SuitesHavePassingEvidence": true,
+  "cleanFull89SuiteRunClaimed": false,
+  "targetedDurationDomCases": 8,
+  "actualMediaSourceFirefoxCases": {
+    "Windows142": 3,
+    "signedWindows158AfterRestart": 3,
+    "signedLinux158AfterRestart": 3
   },
+  "actualNativeVideoAudioRangeVerified": true,
+  "durationGetterOverriddenInFirefox": false,
+  "providerContractFixture": true,
+  "oldSigned1129ReproducedMarkerLoss": true,
   "signatureAndRestartCasesPassed": 3,
-  "guidedSetupPublishedDownloadVerifiedOnBothSystems": true,
-  "chromiumMV3LocalizationCasesPassed": 4,
-  "targetedOptionsJavaScriptSuitesPassed": 3,
-  "previous87JavaScriptSuitesReusedForUnchangedCode": true,
-  "newFull88JavaScriptRunClaimed": false,
-  "helperCompatibilityAlsoVerifiedWithSigned1128": true,
-  "sourcePlayerBackgroundUnchanged": true,
+  "chromiumMV3CasesPassed": 4,
+  "targetedReleasePythonTestsRun": 41,
+  "targetedReleasePythonEnvironmentSkips": 2,
+  "helperBinaryUnchanged": true,
+  "helperRebuilt": false,
+  "helperVerificationReusedFrom": "helper-v1.8.2",
   "nativeProtocolVersions": [
     1,
     2,
@@ -37,30 +38,22 @@
   "newPermissions": false,
   "consentChanges": false,
   "personalFirefoxProfilesModified": false,
-  "browserProtectionsWeakened": false,
   "privateProjectPythonSourcesPublished": false,
-  "helperAndInstaller": {
-    "version": "1.8.2",
-    "newBinariesBuilt": true,
-    "dependenciesChanged": false,
-    "noticesReusedWithHashesFrom": "1.8.1",
-    "installerCodeUnchanged": true,
-    "newInstallerPayloadAndIsolatedPortableToolsPreparationPassed": true,
-    "authenticodeSigned": false
-  },
-  "scope": "The old helper-source fault is reproduced with a controlled competing writer on a real temporary filesystem. Tests of fixed native binaries use real concurrent MP4 exports, verify frames/audio/ranges and preserve foreign files, empty reservations and earlier outputs. The current signed extension and exact helper run after permanent Firefox restarts on Windows and Linux; Guided setup selects already-published binaries. Native publication changed; extraction/session and extension source/player/background code did not. Tests use disposable profiles. Existing byte-identical component evidence is reused; no universal filesystem/site compatibility is claimed.",
+  "workspaceArchivesPublished": false,
+  "directUnlistedChannelChanged": false,
+  "signedXpiSha256": "6b587d6b7cd72892ba20b4db592ad1cdae5467c8fa271cf60ff47914da12ce8d",
   "assets": [
     {
-      "name": "VideoClipper-1.12.9-signed.xpi",
-      "size": 319949,
-      "sha256": "21b29e78ed285cf2be5b8088f9c1de87ec20524b249584d58797dc401cc125f6",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.9/VideoClipper-1.12.9-signed.xpi"
+      "name": "VideoClipper-1.12.10-signed.xpi",
+      "size": 320238,
+      "sha256": "6b587d6b7cd72892ba20b4db592ad1cdae5467c8fa271cf60ff47914da12ce8d",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.10/VideoClipper-1.12.10-signed.xpi"
     },
     {
-      "name": "VideoClipper-1.12.9-Chromium.zip",
-      "size": 310076,
-      "sha256": "24af3f887d2a2c983587a2b1e84bcee46d1e4c8c6f964a73b2dcd7adcd378e98",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.9/VideoClipper-1.12.9-Chromium.zip"
+      "name": "VideoClipper-1.12.10-Chromium.zip",
+      "size": 310340,
+      "sha256": "02544c089bbe323ebe6b574b661fb1caf068a00b9dda6c2851e7337baad45765",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.10/VideoClipper-1.12.10-Chromium.zip"
     },
     {
       "name": "VideoClipper-Helper-1.8.2-Windows-Setup.exe",
@@ -81,11 +74,10 @@
       "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.8.2/VideoClipper-Helper-1.8.2-Linux-x86_64.tar.gz"
     },
     {
-      "name": "VideoClipper-1.12.9-SHA256SUMS.txt",
-      "size": 527,
-      "sha256": "e5d2f7830d7967ed2fccbfd678907d5b24847617bc37ebfd51bb7d832ef7f93d",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.9/VideoClipper-1.12.9-SHA256SUMS.txt"
+      "name": "VideoClipper-1.12.10-SHA256SUMS.txt",
+      "size": 529,
+      "sha256": "93199267eb8e3c0dc7185b98798142c1450ae6088a50004d3a4616680b09e365",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.10/VideoClipper-1.12.10-SHA256SUMS.txt"
     }
-  ],
-  "pythonTestsRun": 489
+  ]
 }

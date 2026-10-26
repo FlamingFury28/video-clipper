@@ -1,5 +1,14 @@
 # Changes / Novità
 
+## 1.12.10 — preserve ranges during duration recovery, 26 October 2026
+
+- Fixes silent marker truncation when a player temporarily reports a shorter duration. Active and inactive parts retain their original intervals; the old signed XPI reproduces the loss with real MediaSource duration changes in Firefox.
+- Saving waits while any part is outside the duration, then recovers automatically when compatible metadata returns. Source revisions invalidate pending snapshots. A real video replacement still requires its existing confirmation.
+- Explicit confirmation can adapt intervals to a source that remains shorter. Reset is not offered for an initial interval outside the current duration.
+- Eight focused native/Video.js DOM cases and three actual Firefox MediaSource/native MP4 cases per tested browser cover active ranges, inactive parts, recovery and explicit confirmation. Exact signed 1.12.10 passes after restart on Windows and Ubuntu Firefox 158; Firefox 142 passes on the same functional source bytes. Exported frames, audio and intervals are verified.
+- All 89 JavaScript suites have passing evidence: 88 in the full run and one successful repeat after a local browser navigation buffer error. Four Chromium MV3 checks and three signature/permanent/restart checks pass. Existing helper evidence is reused by hash; helper 1.8.2 needs no reinstall.
+- Italiano: i marcatori non vengono più accorciati silenziosamente se il player cambia durata. Sono protette anche le parti non selezionate; al ritorno della durata corretta il recupero è automatico. Nessun nuovo permesso.
+
 ## 1.12.9 / helper 1.8.2 — protect existing output files, 26 October 2026
 
 - Helper 1.8.2 fixes a race where another application's file replacing the output reservation could be overwritten, or deleted after a failed final move. A verified file now commits atomically without replacing an occupied name.
@@ -218,6 +227,7 @@ Video Clipper 1.2.0
 - Migliora verifica dell’esportazione locale, nomi Windows, limiti di risoluzione, annullamento, avanzamento e gestione dei temporanei.
 
 La distribuzione Windows include ora un helper eseguibile con Python e dipendenze. FFmpeg/ffprobe restano necessari separatamente.
+
 
 
 
