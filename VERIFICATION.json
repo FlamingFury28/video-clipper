@@ -69,5 +69,11 @@
       "sha256": "329ca5799572b3aa7402ad5cd1523e150d8ff7033bfb479c181930a6e6365fcc",
       "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Linux-x86_64.tar.gz"
     }
-  ]
+  ],
+  "signedFirefoxMinimum142MediaCasesPassed": 2,
+  "localProjectDiagnostics": {
+    "localizedFrozenPayloadVerified": true,
+    "hashBoundHelperProofsVerified": true,
+    "unitCasesPassed": 15
+  }
 }
