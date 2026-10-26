@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## 1.12.11 — queued clips across multiple tabs, 26 October 2026
+
+- Fixes a queue that could stay waiting when the same video was open in several tabs and the first tab reported an incompatible duration. The old signed 1.12.10 reproduces this in isolated Firefox with real MediaSource duration changes.
+- Candidate selection now includes the existing duration and interval checks, so another compatible document can consume the queued intent. Video/audio identity, normal-profile requirements, post-claim checks, captured parts/settings and one export per intent remain enforced.
+- Twenty-four focused Firefox/Chromium API cases cover compatible alternatives and rejection of other video/audio, private tabs, invalid players and wrong durations, with automatic draft saving on and off. Twenty audio snapshot/renewal boundary cases also pass.
+- All 92 JavaScript suites pass. Native Firefox exports verify frames, audio and joined intervals on Windows 142 and the signed package after restart on Windows/Linux 158. Permanent signature/restart and four Chromium MV3 checks pass. Existing helper evidence is reused unchanged.
+- Italiano: una scheda con durata incompatibile non blocca più una clip in coda se un’altra scheda dello stesso video è pronta. Nessun nuovo permesso o aggiornamento helper; resta compatibile la 1.8.2.
+
 ## 1.12.10 — preserve ranges during duration recovery, 26 October 2026
 
 - Fixes silent marker truncation when a player temporarily reports a shorter duration. Active and inactive parts retain their original intervals; the old signed XPI reproduces the loss with real MediaSource duration changes in Firefox.
@@ -227,7 +235,3 @@ Video Clipper 1.2.0
 - Migliora verifica dell’esportazione locale, nomi Windows, limiti di risoluzione, annullamento, avanzamento e gestione dei temporanei.
 
 La distribuzione Windows include ora un helper eseguibile con Python e dipendenze. FFmpeg/ffprobe restano necessari separatamente.
-
-
-
-
