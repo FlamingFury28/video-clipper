@@ -1,5 +1,14 @@
 # Changes / Novità
 
+## 1.12.9 / helper 1.8.2 — protect existing output files, 26 October 2026
+
+- Helper 1.8.2 fixes a race where another application's file replacing the output reservation could be overwritten, or deleted after a failed final move. A verified file now commits atomically without replacing an occupied name.
+- Keeps collision suffixes, separate-part ordering/rollback and cancellation after successful publication. The fault was reproduced in helper 1.8.1 source on a real temporary Windows filesystem before the fix.
+- Real Windows/Linux binaries pass concurrent exports, foreign-file and empty-reservation preservation, Unicode titles and separate parts. The full Windows Python run passes 489 tests with six environment skips; eight targeted publication cases pass on each OS.
+- Extension 1.12.9 changes only the two Guided setup download URLs and manifest version. No new permissions, source/player changes or session access. The already signed 1.12.8 also works with the new helper.
+- The exact 1.12.9 XPI and helper pass MP4/HLS exports after permanent restart on Windows Firefox 142/158 and Ubuntu Firefox 158. Installer payload verification and isolated setup with verified portable tools pass. Upstream dependencies/notices are unchanged.
+- Italiano: il nuovo helper evita sovrascritture o eliminazioni di file estranei durante la pubblicazione della clip. Aggiornare il programma desktop per ricevere la correzione; la nuova estensione aggiorna i download della guida, senza nuovi permessi.
+
 ## 1.12.8 — durable queue cancellation, 26 October 2026
 
 - Fixes a cancelled queued clip resuming after a browser restart when its cancellation record encountered a temporary storage failure.
