@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## 1.12.8 — durable queue cancellation, 26 October 2026
+
+- Fixes a cancelled queued clip resuming after a browser restart when its cancellation record encountered a temporary storage failure.
+- Recovers cancellation metadata automatically through bounded retries. Pending cancellation blocks the queue; a message explains when to wait before closing the browser. No cancelled export is restarted.
+- Preserves known completed results and the real terminal acknowledgement of active native jobs, including completion winning a cancellation race.
+- Reproduced in signed 1.12.7 before the fix. Eight targeted Firefox/Chromium cases, 87 JavaScript suites and signed native MP4/restart checks on Windows and Linux pass. No new permissions; helper 1.8.1 is unchanged.
+- Italiano: l'annullamento della coda recupera da solo un errore temporaneo di registrazione e resta valido dopo riavvio. Gli esiti nativi restano autorevoli; nessuna reinstallazione helper necessaria.
+
 ## 1.12.7 — explicit queue resume without draft autosave, 26 October 2026
 
 - Fixes explicitly queued clips left idle after the selected player/audio returns or the browser restarts when automatic draft saving is off.

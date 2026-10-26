@@ -1,26 +1,30 @@
 {
-  "extensionVersion": "1.12.7",
+  "extensionVersion": "1.12.8",
   "helperVersion": "1.8.1",
   "verifiedOn": "2026-10-26",
   "changedPayloadFiles": [
     "manifest.json",
-    "background.js"
+    "background.js",
+    "_locales/en/messages.json",
+    "_locales/it/messages.json"
   ],
-  "unchangedPayloadFiles": 12,
-  "javascriptSuitesPassed": 86,
-  "newExplicitQueueCasesFirefoxAndChromium": 10,
+  "unchangedPayloadFiles": 10,
+  "javascriptSuitesPassed": 87,
+  "newCancellationRecoveryCasesFirefoxAndChromium": 8,
   "queueDurabilityCasesRetained": 12,
+  "explicitQueueResumeCasesRetained": 10,
   "projectIdentityCasesRetained": 12,
   "targetedPythonTests": 41,
   "targetedPythonEnvironmentSkips": 2,
-  "oldSigned1126QueueStallReproducedAfterRestart": true,
-  "realNativeQueueResumeCases": {
+  "oldSigned1127CancelledReplayReproducedAfterRestart": true,
+  "realNativeQueueCancellationCases": {
     "Windows142Unsigned": 3,
     "Windows158SignedPermanentAfterRestart": 3,
     "Linux158SignedPermanentAfterRestart": 3
   },
-  "capturedRangeVideoAudioAndNoDuplicateOutputsVerified": true,
-  "automaticDraftWritesAndRestorationRemainOff": true,
+  "cancelledIntentDoesNotExportAfterRestart": true,
+  "newExplicitRequestVideoAudioRangeVerified": true,
+  "activeNativeAcknowledgementAndKnownCompletionPreserved": true,
   "signatureAndRestartCasesPassed": 3,
   "chromiumMV3LocalizationCasesPassed": 4,
   "firefoxSignatureEnforcementEnabled": true,
@@ -28,33 +32,18 @@
   "browserProtectionsWeakened": false,
   "newPermissions": false,
   "privateProjectPythonSourcesPublished": false,
-  "helperAndInstaller": {
-    "version": "1.8.1",
-    "rebuilt": false,
-    "distributionReusedFrom": "1.12.1",
-    "publicDigestsRechecked": true
-  },
-  "reusedVerification": {
-    "release": "1.12.6",
-    "backgroundOutsideSyncWorkAndOtherTwelveFilesByteIdentical": true,
-    "helperFullPythonTestsFrom1121": 480,
-    "helperPythonEnvironmentSkips": 6,
-    "helperWindowsLinuxUnicodeCasesPerOS": 7,
-    "selectedAudioSigned1126ShakaCodecsAndCodeclessExports": 2
-  },
-  "scope": "Unmodified signed payload in disposable Firefox profiles. A local DevTools wrapper pauses one durable claim while its selected document leaves. The explicit intent remains queued, then resumes once with draft autosave off after a browser restart. Real MP4 frames/audio/range, no draft-marker restoration and no duplicate after another reload are verified. Privacy/audio/duration and queue durability also run in both production background modes. Unchanged component verification is reused by hash.",
   "assets": [
     {
-      "name": "VideoClipper-1.12.7-signed.xpi",
-      "size": 319523,
-      "sha256": "3ef08b71f3271a20fd6357488c4bcef597369c393c5bb97b80e29d776712a31a",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.7/VideoClipper-1.12.7-signed.xpi"
+      "name": "VideoClipper-1.12.8-signed.xpi",
+      "size": 319942,
+      "sha256": "3052abaa4b40fcf36d1f03204de69910f447e1ccb9a135d93d58fd49874c3c1b",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.8/VideoClipper-1.12.8-signed.xpi"
     },
     {
-      "name": "VideoClipper-1.12.7-Chromium.zip",
-      "size": 309656,
-      "sha256": "3821b6726edb570e1c15565418016635bdd4a17e65955068f01e72e1b8834a6f",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.7/VideoClipper-1.12.7-Chromium.zip"
+      "name": "VideoClipper-1.12.8-Chromium.zip",
+      "size": 310078,
+      "sha256": "3f6aec74609062c6ca61b2e208f1e5f603554f84a5fa2bb7d2c0266324ee2b1c",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.8/VideoClipper-1.12.8-Chromium.zip"
     },
     {
       "name": "VideoClipper-Helper-1.8.1-Windows-Setup.exe",
@@ -75,10 +64,25 @@
       "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Linux-x86_64.tar.gz"
     },
     {
-      "name": "VideoClipper-1.12.7-SHA256SUMS.txt",
+      "name": "VideoClipper-1.12.8-SHA256SUMS.txt",
       "size": 527,
-      "sha256": "118d10deb4be06c44917c48efa671a1fe85ff30eb7d49e88aba00e832e4ed19e",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.7/VideoClipper-1.12.7-SHA256SUMS.txt"
+      "sha256": "0c22883c4ded88a05ee80ff5bbe6ad91e9ac191712866c4348cf7913ac0e9241",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.8/VideoClipper-1.12.8-SHA256SUMS.txt"
     }
-  ]
+  ],
+  "helperAndInstaller": {
+    "version": "1.8.1",
+    "rebuilt": false,
+    "distributionReusedFrom": "1.12.1",
+    "publicDigestsRechecked": true
+  },
+  "reusedVerification": {
+    "release": "1.12.7",
+    "backgroundOutsideQueueAndOtherTenFilesByteIdentical": true,
+    "helperFullPythonTestsFrom1121": 480,
+    "helperPythonEnvironmentSkips": 6,
+    "helperWindowsLinuxUnicodeCasesPerOS": 7,
+    "selectedAudioSigned1126ShakaCodecsAndCodeclessExports": 2
+  },
+  "scope": "Disposable Firefox profiles and unmodified payload. A test-only DevTools wrapper pauses one queued claim and rejects one cancellation metadata write. The old signed package exports the cancelled clip after restart; the new signed package records cancellation automatically, preserves it after restart and produces one verified MP4 from a separate explicit new intent. The storage failure is controlled; this is not a universal guarantee against permanent disk failure. Initial harness assumptions and a local Chromium network failure are preserved in private logs; the final full 87-suite run passes. Unchanged components are reused by hash."
 }

@@ -14,18 +14,18 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-**1.12.7 fixes explicit queue resume with automatic draft saving off.** Queued clips reconnect when the selected player/audio returns or after a browser restart, keeping their captured ranges and output settings. Disabling automatic draft saving still prevents automatic draft writes and marker restoration. Media/audio identity, duration and private-tab checks remain enforced. Helper **1.8.1** remains current.
+**1.12.8 makes queue cancellation survive temporary storage errors.** A cancelled queued clip now records its cancellation automatically, so it stays cancelled after a browser restart. Pending records show when to wait before closing Firefox. Completed results and active native-job acknowledgements remain authoritative. Helper **1.8.1** remains current.
 
 **Already installed in Firefox?** Open **Add-ons and themes → gear menu → Check for Updates**. For a signed XPI already downloaded, choose **Install Add-on From File** in the same menu. Keep the installed extension: its settings are preserved. Firefox controls installation and catalog update availability.
 
 | Download | Use |
 |---|---|
-| [Firefox extension 1.12.7](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.7/VideoClipper-1.12.7-signed.xpi) | Mozilla-signed permanent installation |
+| [Firefox extension 1.12.8](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.8/VideoClipper-1.12.8-signed.xpi) | Mozilla-signed permanent installation |
 | [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
 | [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Windows.zip) | Advanced manual installation |
 | [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
-| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.7/VideoClipper-1.12.7-Chromium.zip) | Unpacked desktop installation; no store publication |
-| [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.7/VideoClipper-1.12.7-SHA256SUMS.txt) | Verify downloaded packages |
+| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.8/VideoClipper-1.12.8-Chromium.zip) | Unpacked desktop installation; no store publication |
+| [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.8/VideoClipper-1.12.8-SHA256SUMS.txt) | Verify downloaded packages |
 
 ## Make it yours
 
@@ -41,7 +41,7 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 
 The extension works with accessible HTML5 players, embedded frames, open shadow roots and dynamic pages. Choose another player manually when necessary. Source identity and duration checks help prevent saving the wrong video.
 
-This release’s queue resume is verified with real native MP4 frames/audio/ranges in Windows 11 x64 / Firefox 142.0 and 158.0.1, and Ubuntu 24.04 x86_64 / Firefox 158.0.1. The new signed package resumes an explicitly queued clip after a permanent browser restart, preserves its range without restoring draft markers and does not repeat it on another reload. Chromium MV3 and 86 JavaScript suites pass. Earlier source/player and queue-durability evidence remains applicable to the byte-identical code outside context synchronization. The guided installer is for **Windows x64**. Linux uses the archive and system FFmpeg; Snap/Flatpak helper access is unverified. No verified helper package is available for macOS, Android or iOS.
+Queue cancellation recovery is verified in Windows 11 x64 / Firefox 142.0 and 158.0.1, and Ubuntu 24.04 x86_64 / Firefox 158.0.1. The older signed package reproduces the unwanted replay after one failed cancellation write and restart. The new signed package keeps the cancelled intent stopped after restart, then exports a separate new request once with verified MP4 frames, audio and range. Chromium MV3 and 87 JavaScript suites pass. Earlier source/player and helper evidence remains applicable to unchanged components. The guided installer is for **Windows x64**. Linux uses the archive and system FFmpeg; Snap/Flatpak helper access is unverified. No verified helper package is available for macOS, Android or iOS.
 
 Some sites require optional, revocable per-site session access in the authenticated browser context. Advanced search and session access are separate. No other browser profile is read. DRM, live streams and closed shadow roots are unsupported. A full source video may need downloading before trimming. “Original” quality is not lossless. Website compatibility is not universal.
 
