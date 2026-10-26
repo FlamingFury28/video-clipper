@@ -1,5 +1,11 @@
 # Changes / Novità
 
+## 1.12.2 — selected media identity, 26 October 2026
+
+- Fixes a reproduced X identity error when one post reuses the same player, blob URL and duration for another video. The previous media’s cached/manual sources are discarded and the interval remains pending confirmation for a different video.
+- URL tokens and cover changes for the same media item still renew normally. No extra requests, permissions, session access or helper update. Helper 1.8.1 and its verified Windows/Linux packages are reused unchanged.
+- The old signed 1.12.1 package reproduces the error with controlled X/CDN replies and actual Firefox/native exports. The corrected payload passes 82 JavaScript suites, including 87 existing X cases and six new identity/cache/manual/renewal cases. Real Firefox 142/158 checks cover replacement with and without a poster; signature-enforced installation/restart evidence is recorded with the delivered XPI. Fixtures do not establish universal or authenticated live-X compatibility.
+
 ## 1.12.1 + helper 1.8.1 — reliable Unicode filenames, 26 October 2026
 
 - Fixes a final-publication failure reproduced on the old Linux helper: emoji, accented and non-Latin titles exceeded the filesystem’s UTF-8 filename limit after range/part metadata was added. Complete names now fit UTF-8 and UTF-16 limits, including collision suffixes. Existing clips are preserved; normal filenames retain their form.

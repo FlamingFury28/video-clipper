@@ -14,16 +14,16 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-This update uses **helper 1.8.1**, which fixes final save failures for long Unicode filenames on Linux. Update the helper as well as the extension for this fix. Helper 1.8.0 remains compatible with crop, format and audio; extension and helper updates are separate.
+**1.12.2 updates the extension only.** It distinguishes different videos when X reuses one player inside the same post, while keeping harmless source renewals automatic. Existing helper **1.8.1** and its verified installer are reused; no helper reinstall is needed. For older helper versions, 1.8.1 also fixes long Unicode filenames on Linux.
 
 | Download | Use |
 |---|---|
-| [Firefox extension 1.12.1](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-1.12.1-signed.xpi) | Mozilla-signed permanent installation |
+| [Firefox extension 1.12.2](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.2/VideoClipper-1.12.2-signed.xpi) | Mozilla-signed permanent installation |
 | [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
 | [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Windows.zip) | Advanced manual installation |
 | [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
-| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-1.12.1-Chromium.zip) | Unpacked desktop installation; no store publication |
-| [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-1.12.1-SHA256SUMS.txt) | Verify downloaded packages |
+| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.2/VideoClipper-1.12.2-Chromium.zip) | Unpacked desktop installation; no store publication |
+| [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.2/VideoClipper-1.12.2-SHA256SUMS.txt) | Verify downloaded packages |
 
 ## Make it yours
 
@@ -39,7 +39,7 @@ This update uses **helper 1.8.1**, which fixes final save failures for long Unic
 
 The extension works with accessible HTML5 players, embedded frames, open shadow roots and dynamic pages. Choose another player manually when necessary. Source identity and duration checks help prevent saving the wrong video.
 
-Windows 11 x64 / Firefox 158.0.1 are verified for this update. Earlier checks cover Firefox 142+, Chrome/Edge on Windows and desktop Firefox on Ubuntu 24.04 x86_64. The new guided installer is for **Windows x64**. Linux uses the archive and system FFmpeg; Snap/Flatpak helper access is unverified. No verified helper package is available for macOS, Android or iOS.
+Windows 11 x64 / Firefox 142.0 and 158.0.1 are verified for this update. Earlier checks cover Firefox 142+, Chrome/Edge on Windows and desktop Firefox on Ubuntu 24.04 x86_64. The new guided installer is for **Windows x64**. Linux uses the archive and system FFmpeg; Snap/Flatpak helper access is unverified. No verified helper package is available for macOS, Android or iOS.
 
 Some sites require optional, revocable per-site session access in the authenticated browser context. Advanced search and session access are separate. No other browser profile is read. DRM, live streams and closed shadow roots are unsupported. A full source video may need downloading before trimming. “Original” quality is not lossless. Website compatibility is not universal.
 
