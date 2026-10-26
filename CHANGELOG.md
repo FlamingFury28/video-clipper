@@ -1,5 +1,14 @@
 # Changes / Novità
 
+## 1.12.13 — keep clip parts when the player moves, 26 October 2026
+
+- Fixes a reproduced case where a site moves the same video element into newly created open Shadow DOM components. Candidate cleanup previously ran before discovery, reset the selected parts and could export a default segment instead.
+- Follow only already-observed connected videos through reachable open ancestors before cleanup. No whole-document scan, closed-root access or extra permission. Manual selection, busy players and nested open roots keep their identity and ranges; genuinely changed sources still require confirmation.
+- Thirteen focused actual-DOM cases pass, including delayed sources, replacement, known/new/nested roots, manual/busy selection, changed sources, closed roots, detached nodes and adoption into another document.
+- Old signed 1.12.12 reproduces the wrong export after restart. Firefox 142 source checks and signed permanent/restarted 1.12.13 on Windows/Ubuntu Firefox 158 verify two retained parts and independently check frames, audio, order and duration. Local synthetic media; no authenticated-site claim.
+- All 93 JavaScript suites, twelve Chromium/native checks and three signature/install/restart checks pass. Helper 1.8.3 and its Windows/Linux packages are unchanged; existing hash-matched helper/Python evidence is reused.
+- Italiano: i siti che riorganizzano il player non azzerano più le parti scelte spostando lo stesso video. Correzione provata con salvataggi reali; nessun nuovo permesso, helper 1.8.3 invariato.
+
 ## 1.12.12 + helper 1.8.3 — native Firefox MP4 timing, 26 October 2026
 
 - Fixes a reproduced native Firefox MP4 case where the video track starts after audio. Saving the full range shown by the player could fail with SOURCE_RANGE_INVALID; shorter exports could show earlier frames while audio remained correct.

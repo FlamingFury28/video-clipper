@@ -1,12 +1,12 @@
 {
   "name": "Video Clipper",
-  "version": "1.12.12",
-  "extensionVersion": "1.12.12",
+  "version": "1.12.13",
+  "extensionVersion": "1.12.13",
   "helperVersion": "1.8.3",
   "extensionId": "video-clipper@local",
   "interfaceLanguage": "auto",
   "homepage": "https://github.com/FlamingFury28/video-clipper",
-  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.12.12",
+  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.12.13",
   "versionScope": "latest-published-extension",
   "pythonBundled": true,
   "ffmpegBundled": false,
@@ -30,13 +30,13 @@
       "download": "https://addons.mozilla.org/firefox/downloads/file/5166701/video_clipper_in_out_mp4-1.11.0.xpi"
     },
     "catalog": {
-      "version": "1.12.12",
+      "version": "1.12.13",
       "status": "approved",
       "publicAvailabilityConfirmed": true,
       "separateChannel": true,
       "helperVersion": "1.8.3",
-      "download": "https://addons.mozilla.org/firefox/downloads/file/5170773/video_clipper_in_out_mp4-1.12.12.xpi",
-      "signedXpiSha256": "744fa70b89847d7ed281aed55f5548ff614ff487a86cff0133cb469ba0ecfa78",
+      "download": "https://addons.mozilla.org/firefox/downloads/file/5170873/video_clipper_in_out_mp4-1.12.13.xpi",
+      "signedXpiSha256": "7d01b62e6605e4e90051e5c9c74ce57a00ee01bf034d5ade4c599b61bbbbcb06",
       "permanentSignatureRestartChecksPassed": 3
     }
   },
@@ -99,20 +99,21 @@
     "helper 1.8.2 publishes verified files atomically without replacing an occupied output name",
     "confirmed clip parts survive shorter player duration metadata and recover automatically when compatible",
     "queued clips select a compatible document among multiple tabs of the same video and audio",
-    "verified native Firefox MP4 video timestamps align with the player without moving audio or markers"
+    "verified native Firefox MP4 video timestamps align with the player without moving audio or markers",
+    "clip parts survive movement of the same player into newly created open page components"
   ],
   "assets": [
     {
-      "name": "VideoClipper-1.12.12-signed.xpi",
-      "size": 320427,
-      "sha256": "744fa70b89847d7ed281aed55f5548ff614ff487a86cff0133cb469ba0ecfa78",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.12/VideoClipper-1.12.12-signed.xpi"
+      "name": "VideoClipper-1.12.13-signed.xpi",
+      "size": 320596,
+      "sha256": "7d01b62e6605e4e90051e5c9c74ce57a00ee01bf034d5ade4c599b61bbbbcb06",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.13/VideoClipper-1.12.13-signed.xpi"
     },
     {
-      "name": "VideoClipper-1.12.12-Chromium.zip",
-      "size": 310558,
-      "sha256": "e23a4d0efa17b7e942d5b3ddbf06921e633c33fcabe7e2c9c0a5d4ab9fe06704",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.12/VideoClipper-1.12.12-Chromium.zip"
+      "name": "VideoClipper-1.12.13-Chromium.zip",
+      "size": 310723,
+      "sha256": "db9fe58583d973ddbf993298afed73eed39c0136c22b2f0385d19803684c23a5",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.13/VideoClipper-1.12.13-Chromium.zip"
     },
     {
       "name": "VideoClipper-Helper-1.8.3-Windows-Setup.exe",
@@ -133,10 +134,10 @@
       "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.8.3/VideoClipper-Helper-1.8.3-Linux-x86_64.tar.gz"
     },
     {
-      "name": "VideoClipper-1.12.12-SHA256SUMS.txt",
+      "name": "VideoClipper-1.12.13-SHA256SUMS.txt",
       "size": 524,
-      "sha256": "73f125c0641f167df9e6a69906ca1d111e6c1b1bfb24d36f0973b7402278d86f",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.12/VideoClipper-1.12.12-SHA256SUMS.txt"
+      "sha256": "64c1a45ff1049d057fb59903ab5fb0b8ee1d631e13358f7374217d436c2c64b6",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.13/VideoClipper-1.12.13-SHA256SUMS.txt"
     }
   ],
   "recommendedFirefoxInstall": "https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/",

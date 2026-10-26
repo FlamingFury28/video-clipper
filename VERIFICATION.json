@@ -1,61 +1,55 @@
 {
-  "extensionVersion": "1.12.12",
+  "extensionVersion": "1.12.13",
   "helperVersion": "1.8.3",
   "verifiedOn": "2026-10-26",
   "changedExtensionFiles": [
     "manifest.json",
-    "content.js",
-    "options.html",
-    "options.js"
+    "content.js"
   ],
-  "unchangedExtensionFiles": 10,
-  "fullJavaScriptSuitesPassed": 92,
-  "pythonTestsRun": 496,
-  "pythonEnvironmentSkips": 6,
-  "focusedNativePythonTests": 6,
-  "oldSigned11211AndHelper182Reproduced": true,
-  "actualNativeMp4Timeline": true,
-  "durationGetterOverridden": false,
+  "unchangedExtensionFiles": 12,
+  "fullJavaScriptSuitesPassed": 93,
+  "focusedActualDOMCasesPassed": 13,
+  "singleCleanFullJavaScriptRun": false,
+  "javaScriptEvidence": {
+    "originalPassingSuites": 88,
+    "correctedDOMFixtureRerunsPassed": 5
+  },
+  "oldSigned11212ReproducedWrongExport": true,
+  "actualNativeMp4": true,
   "nativeFirefoxCases": {
-    "Windows142": 5,
-    "signedWindows158AfterRestart": 5,
-    "signedLinux158AfterRestart": 5
+    "sourceWindows142": 1,
+    "signedWindows158AfterRestart": 1,
+    "signedLinux158AfterRestart": 1
   },
-  "helperBinaryCasesPerPlatform": 9,
-  "helperCompatibilitySigned11211Mp4Hls": {
-    "Windows142": 2,
-    "Windows158": 2,
-    "Linux158": 2
-  },
-  "actualNativeVideoAudioRangeVerified": true,
+  "framesAudioOrderAndRangesVerified": true,
   "signatureAndRestartCasesPassed": 3,
   "chromiumMV3CasesPassed": 12,
-  "helperBinaryUnchanged": false,
-  "helperRebuilt": true,
-  "nativeProtocolVersions": [
-    1,
-    2,
-    3
-  ],
+  "helperBinaryUnchanged": true,
+  "helperRebuilt": false,
+  "reusedPythonEvidence": {
+    "fromRelease": "1.12.12",
+    "tests": 496,
+    "environmentSkips": 6
+  },
   "newPermissions": false,
   "consentChanges": false,
   "personalFirefoxProfilesModified": false,
   "privateProjectPythonSourcesPublished": false,
   "workspaceArchivesPublished": false,
   "directUnlistedChannelChanged": false,
-  "signedXpiSha256": "744fa70b89847d7ed281aed55f5548ff614ff487a86cff0133cb469ba0ecfa78",
+  "signedXpiSha256": "7d01b62e6605e4e90051e5c9c74ce57a00ee01bf034d5ade4c599b61bbbbcb06",
   "assets": [
     {
-      "name": "VideoClipper-1.12.12-signed.xpi",
-      "size": 320427,
-      "sha256": "744fa70b89847d7ed281aed55f5548ff614ff487a86cff0133cb469ba0ecfa78",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.12/VideoClipper-1.12.12-signed.xpi"
+      "name": "VideoClipper-1.12.13-signed.xpi",
+      "size": 320596,
+      "sha256": "7d01b62e6605e4e90051e5c9c74ce57a00ee01bf034d5ade4c599b61bbbbcb06",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.13/VideoClipper-1.12.13-signed.xpi"
     },
     {
-      "name": "VideoClipper-1.12.12-Chromium.zip",
-      "size": 310558,
-      "sha256": "e23a4d0efa17b7e942d5b3ddbf06921e633c33fcabe7e2c9c0a5d4ab9fe06704",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.12/VideoClipper-1.12.12-Chromium.zip"
+      "name": "VideoClipper-1.12.13-Chromium.zip",
+      "size": 310723,
+      "sha256": "db9fe58583d973ddbf993298afed73eed39c0136c22b2f0385d19803684c23a5",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.13/VideoClipper-1.12.13-Chromium.zip"
     },
     {
       "name": "VideoClipper-Helper-1.8.3-Windows-Setup.exe",
@@ -76,10 +70,10 @@
       "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.8.3/VideoClipper-Helper-1.8.3-Linux-x86_64.tar.gz"
     },
     {
-      "name": "VideoClipper-1.12.12-SHA256SUMS.txt",
+      "name": "VideoClipper-1.12.13-SHA256SUMS.txt",
       "size": 524,
-      "sha256": "73f125c0641f167df9e6a69906ca1d111e6c1b1bfb24d36f0973b7402278d86f",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.12/VideoClipper-1.12.12-SHA256SUMS.txt"
+      "sha256": "64c1a45ff1049d057fb59903ab5fb0b8ee1d631e13358f7374217d436c2c64b6",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.13/VideoClipper-1.12.13-SHA256SUMS.txt"
     }
   ]
 }
