@@ -1,13 +1,17 @@
-# Third-party notices — Video Clipper 1.2.0 Windows bundle
+# Third-party notices — helper 1.8.0
 
-The Video Clipper project sources remain private. Third-party license rights are unaffected. No open-source license is granted to the project's own code by this notice.
+Project Python sources remain private. This notice grants no open-source license to Video Clipper's own code. Upstream license rights are unaffected.
 
-- Python 3.14.5 and its bundled libraries: see THIRD-PARTY/Python-LICENSE.txt, including the bundled-library notices.
-- yt-dlp 2026.8.19: Unlicense.
-- curl-cffi 0.16.3: MIT; the package credits httpx (BSD). The included libcurl reports curl 8.21.0-IMPERSONATE, BoringSSL, zlib 1.3.1, brotli 1.2.0, zstd 1.5.7, nghttp2 1.63.0, ngtcp2 1.20.0 and nghttp3 1.15.0. Their notices are in THIRD-PARTY/.
-- cffi 2.1.1: MIT-0; pycparser 3.11: BSD-3-Clause.
-- lz4 4.4.5: BSD-3-Clause, with bundled LZ4 library under BSD terms.
-- certifi 2026.7.22: MPL-2.0. Its complete unmodified upstream source archive, including license text, is supplied in THIRD-PARTY/sources/.
-- PyInstaller 6.22.3: bootloader and loader under GPL with the bootloader exception permitting combined non-free programs; runtime hooks under Apache-2.0. See THIRD-PARTY/PyInstaller-COPYING.txt and Apache-2.0.txt. Build-only PyInstaller modules are excluded from the runtime module graph.
+The Windows and Linux binary packages include a `THIRD-PARTY` directory, retained dependency license files, upstream source archives and `UPSTREAM-ARTIFACTS.json` with their origins/hashes. These upstream archives are not project source archives.
 
-The dependency-specific notices included under VideoClipperHelper/_internal/*.dist-info/licenses/ are retained. THIRD-PARTY/sources/ also includes unmodified upstream source archives for the Python dependencies and the credited httpx component. UPSTREAM-ARTIFACTS.json records their source URLs and hashes. FFmpeg/ffprobe are not included in this package; install them separately from the links in the installation guide.
+- **Python 3.14.5** and bundled standard libraries: Python license and bundled-library notices.
+- **yt-dlp 2026.8.19:** Unlicense. **yt-dlp-ejs 0.8.0:** upstream license supplied with the package.
+- **Deno 2.9.8:** MIT, with upstream notices/source references in `THIRD-PARTY/deno`. The official runtime contains V8 and other components. `NOTICE-COVERAGE.json` explicitly records that a complete version-specific transitive license inventory has not been established; this package is not a complete SBOM.
+- **curl-cffi 0.16.3:** MIT, including the credited httpx component under BSD terms. libcurl/curl-impersonate and its crypto/compression/HTTP dependencies have their supplied notices in `THIRD-PARTY`.
+- **cffi 2.1.1:** MIT-0. **pycparser 3.11:** BSD-3-Clause.
+- **lz4 4.4.5:** BSD-3-Clause, including the bundled LZ4 library under BSD terms.
+- **certifi 2026.7.22:** MPL-2.0; the complete unmodified upstream source archive and license are supplied in `THIRD-PARTY/sources`.
+- **Public Suffix List**, snapshot 2026-10-22: MPL-2.0; data, license and provenance are supplied in `THIRD-PARTY/public-suffix`.
+- **PyInstaller 6.22.3:** bootloader/loader under GPL with the bootloader exception permitting combined non-free programs; runtime hooks under Apache-2.0. See `PyInstaller-COPYING.txt` and `Apache-2.0.txt`. Build-only PyInstaller modules are excluded from the runtime graph.
+
+**FFmpeg/ffprobe are not bundled.** Install a suitable build separately and follow its own license terms. The browser extension XPI is Mozilla signed; that signature does not sign or certify the companion helper or its dependencies. Package integrity and verification scope are described in [VERIFICATION.json](VERIFICATION.json).

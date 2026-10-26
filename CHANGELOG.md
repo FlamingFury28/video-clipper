@@ -1,5 +1,19 @@
 # Changes / Novità
 
+## 1.11.0 + helper 1.8.0 — current direct distribution (26 October 2026)
+
+The [signed GitHub release](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.11.0) replaces 1.4.6 as the latest public direct download. It includes the verified 1.11.0 extension and separate helper 1.8.0 binaries for Windows and Linux x86_64. Intermediate direct releases developed since 1.4.6 are included in this cumulative update.
+
+- Rectangular crop over the original page player; Original/free, phone 9:16, 16:9, 1:1 and 4:5 without stretching. Export volume 0–200% or remove audio; optional controls and remembered settings. Watermark applied after cropping.
+- Multiple parts can become one MP4 or separate numbered files; one source acquisition, ordered intervals, no overwriting existing results.
+- Firefox browser-theme palette, native light/dark fallback in other browsers, customizable editor shortcuts and browser commands, one settings page for checking published extension/helper updates.
+- Cumulative improvements: local watermark, filename sources/templates/defaults, separate history, output profiles, projects/queue, privacy-preserving diagnostics and bounded recovery of expired sources.
+- Fixes cover X post/media identity, direct-source matching, visible/embedded player selection, same-video URL renewal, selection locking during save, queue/cancellation races and private-history persistence. Matching and range validation remain enforced.
+- Verified packages: Firefox permanent signed XPI, Chromium unpacked ZIP, Windows helper ZIP, Linux x86_64 helper TAR.GZ and SHA-256 list. No project Python source archive is published.
+- Verification: 79 JavaScript suites; 474 Python tests (6 environment skips); 33 signed Firefox functional cases; 9 signature/restart checks; 16 binary checks; 24 Chrome/Edge cases. Controlled media and isolated profiles; not a guarantee for all live sites.
+
+La 1.11.0 è firmata e approvata per distribuzione diretta unlisted/Self. Il catalogo listed resta alla **1.4.7, approvata**, separata e priva delle nuove funzioni. Le vecchie voci sotto descrivono gli stati storici al momento dell'invio, non lo stato corrente. Aggiornare l'XPI non aggiorna l'helper: per tutte le funzioni usa 1.11.0 / 1.8.0. [Installazione](INSTALLAZIONE.md) · [Privacy aggiornata](PRIVACY.md).
+
 ## 1.4.7 — catalog submission; manifest version only
 
 - Inviata al solo catalogo Mozilla (listed); stato verificato **Awaiting Review**, validazione con **0 errori e 0 avvisi**. [Submission AMO](https://addons.mozilla.org/en-US/developers/addon/video-clipper-in-out-mp4/versions/6610420), accessibile all'autore.

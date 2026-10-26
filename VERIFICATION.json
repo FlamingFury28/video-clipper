@@ -1,0 +1,54 @@
+{
+  "extensionVersion": "1.11.0",
+  "helperVersion": "1.8.0",
+  "javascriptSuitesPassed": 79,
+  "pythonTestsRun": 474,
+  "pythonTestsSkipped": 6,
+  "signedFirefoxFunctionalCasesPassed": 33,
+  "signatureAndRestartCasesPassed": 9,
+  "binaryCasesPassed": 16,
+  "chromiumRegressionCasesPassed": 24,
+  "verifiedOn": "2026-10-26",
+  "scope": "controlled media in isolated browser profiles",
+  "signedFirefoxInstallationAndRestartVerified": true,
+  "firefoxSignatureEnforcementEnabled": true,
+  "cropOutputPixelsChecked": true,
+  "outputAudioChecked": true,
+  "privateProjectPythonSourcesPublished": false,
+  "helperHasSeparateCodeSigningSignature": false,
+  "liveWebsiteCompatibilityGuaranteed": false,
+  "physicalKeyboardShortcutTestClaimed": false,
+  "upstreamTransitiveLicenseInventoryComplete": false,
+  "assets": [
+    {
+      "name": "VideoClipper-1.11.0-signed.xpi",
+      "size": 221684,
+      "sha256": "0f13599631bf8ec5ba8fea2a5a20995e03f8d3ff4eefea70fcb830a1d4d4a3cc",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-1.11.0-signed.xpi"
+    },
+    {
+      "name": "VideoClipper-1.11.0-Chromium.zip",
+      "size": 212844,
+      "sha256": "6f17a0bf912928aba7d68f3bce4d59a59a2f743d2ca0a0df202df6c924f7df52",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-1.11.0-Chromium.zip"
+    },
+    {
+      "name": "VideoClipper-Helper-1.8.0-Windows.zip",
+      "size": 68362071,
+      "sha256": "ad045d070e67b28e3020201d2e3da662b7d8e1283a0b05961662b2c6163a21ed",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-Helper-1.8.0-Windows.zip"
+    },
+    {
+      "name": "VideoClipper-Helper-1.8.0-Linux-x86_64.tar.gz",
+      "size": 77641943,
+      "sha256": "9b849355df1b121414fd4eeb743356a133d7172d9ed42d30d760f8fac223bcec",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-Helper-1.8.0-Linux-x86_64.tar.gz"
+    },
+    {
+      "name": "VideoClipper-1.11.0-SHA256SUMS.txt",
+      "size": 416,
+      "sha256": "383f49620e426dd0686a2bd0bdcf64b98e12b94eb3fa2cfa368f23bfe1648f10",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-1.11.0-SHA256SUMS.txt"
+    }
+  ]
+}
