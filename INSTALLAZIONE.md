@@ -1,96 +1,45 @@
-# Video Clipper — installazione e uso
+# Installa Video Clipper
 
-**[Installa Video Clipper dal catalogo Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) — versione pubblica 1.11.1.** Per salvare serve anche l'helper gratuito **1.8.0** sul computer. La 1.11.1 ha lo stesso codice funzionale della 1.11.0 diretta: cambia solo il numero nel manifest.
+[English](INSTALL.md) · [Estensione Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Download](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.12.0)
 
-## Percorso rapido — Windows
+Video Clipper 1.12.0 ha l’interfaccia italiana e inglese. Per salvare serve l’helper locale **1.8.0**. Se usi già questa versione dell’helper, puoi conservarla: il motore dei salvataggi non cambia.
 
-1. [Scarica l'helper Windows 1.8.0](https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-Helper-1.8.0-Windows.zip), estrai **tutto** in una cartella stabile ed esegui **Installa helper.cmd** come utente del browser.
-2. Installa **FFmpeg e ffprobe con libx264/AAC nel PATH** dalla [pagina ufficiale](https://ffmpeg.org/download.html), se non sono già disponibili. Riapri Firefox.
-3. [Installa l'estensione da Mozilla](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/), apri **Impostazioni → Verifica configurazione**, controlla helper **1.8.0** e scegli dove salvare. Poi apri un video, attiva Video Clipper e prova una breve clip.
+## Windows — percorso consigliato
 
-L'estensione da sola controlla selezione e anteprima; il programma desktop svolge il salvataggio locale. Non servono account o abbonamenti. Per Linux e Chrome/Edge trovi le istruzioni sotto.
+1. Installa l’estensione da Mozilla. Al primo avvio si apre **Installazione guidata**, raggiungibile anche dalle impostazioni.
+2. [Scarica il programma di installazione Windows x64](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-Helper-1.8.0-Windows-Setup.exe), aprilo e premi **Installa**. Firefox è già selezionato; aggiungi Chrome/Edge solo se li usi.
+3. Torna in **Impostazioni → Installazione guidata → Verifica collegamento**, scegli la cartella di destinazione e prova una breve clip.
 
-La [release corrente](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.11.0) distribuisce **estensione 1.11.0 firmata Mozilla e helper 1.8.0**. Installa entrambi per ritaglio, formati e audio. Aggiornare l'estensione non aggiorna l'helper. L'interfaccia è in italiano.
+Il programma prepara una cartella stabile nell’account Windows, sotto Programs/VideoClipper, e registra l’helper per i browser scelti. Non servono privilegi amministrativi, Python o configurazioni manuali del PATH. I file dell’helper precedente vengono conservati; se la registrazione non riesce, viene ripristinato il collegamento precedente.
 
-## Scegli i pacchetti
+Se FFmpeg, ffprobe e gli encoder necessari sono già disponibili e funzionanti, vengono riutilizzati. Altrimenti lascia selezionato **Prepara automaticamente gli strumenti video mancanti**: vengono scaricati circa 105 MB da gyan.dev, verificati per dimensione e SHA-256 e preparati accanto all’helper. L’archivio originale e la licenza restano nella cartella installata. Se rifiuti il download, gli strumenti con libx264/AAC devono essere già disponibili.
 
-| File | Contenuto |
-|---|---|
-| [VideoClipper-1.11.0-signed.xpi](https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-1.11.0-signed.xpi) | Estensione Firefox con installazione permanente |
-| [VideoClipper-Helper-1.8.0-Windows.zip](https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-Helper-1.8.0-Windows.zip) | Solo helper Windows x64; scarica l'XPI separatamente |
-| [VideoClipper-Helper-1.8.0-Linux-x86_64.tar.gz](https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-Helper-1.8.0-Linux-x86_64.tar.gz) | Solo helper Linux desktop x86_64 |
-| [VideoClipper-1.11.0-Chromium.zip](https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-1.11.0-Chromium.zip) | Estensione da caricare decompressa in Chrome/Edge |
-| [VideoClipper-1.11.0-SHA256SUMS.txt](https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-1.11.0-SHA256SUMS.txt) | Hash SHA-256 dei quattro pacchetti |
+L’installer non ha una firma Authenticode separata. Scaricalo da questo repository e confronta le [impronte SHA-256](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-1.12.0-SHA256SUMS.txt). Non aggira i controlli di Windows. Se l’installazione fallisce, risolvi il problema di connessione/spazio indicato e avviala di nuovo. Conserva un’eventuale vecchia cartella funzionante finché la nuova è verificata.
 
-Servono **FFmpeg e ffprobe nel PATH con libx264/AAC**, da installare separatamente: [pagina ufficiale FFmpeg](https://ffmpeg.org/download.html). Python, yt-dlp, EJS e Deno sono inclusi nell'helper; non occorre installare Python, Node o Deno.
+Se il pannello era aperto, chiudilo e riaprilo. Riavvia Firefox solo se mantiene il vecchio collegamento all’helper. L’installer non chiude il browser e non modifica i profili personali.
 
-Verificato su Windows 11 x64 con Firefox 142.0/158.0.1 e Chrome 155/Edge 156; Linux x86_64 con Firefox desktop 158.0.1 su Ubuntu 24.04 tramite WSL. La versione minima Firefox è 142. Snap/Flatpak non verificati. Non sono disponibili pacchetti helper verificati per macOS o sistemi mobili. L'XPI è firmato Mozilla; i binari helper non hanno una firma separata.
+## Lingua
 
-## Firefox su Windows
+In **Impostazioni → Generali → Lingua**, scegli **Automatico**, **Italiano** o **English**. Automatico segue la lingua del browser: italiano per le lingue italiane, inglese negli altri casi. Il cambio è immediato e viene conservato. Titoli dei video, nomi personalizzati, percorsi e testo del sito restano intatti.
 
-1. Estrai **tutto** lo ZIP dell'helper in una cartella permanente, mantenendo insieme `VideoClipperHelper` e `_internal`. Conserva la vecchia cartella se stai aggiornando.
-2. Esegui **Installa helper.cmd** dalla nuova cartella, con lo stesso utente di Firefox. Non servono privilegi amministrativi.
-3. [Installa la versione pubblica 1.11.1 da Mozilla Add-ons](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/). In alternativa usa l'XPI diretto firmato **1.11.0** da `about:addons` → ingranaggio → **Installa componente aggiuntivo da file**: le funzioni sono identiche. Entrambe sono installazioni permanenti.
-4. Riapri Firefox per rinnovare il collegamento all'helper e ricarica le pagine video. Questo passaggio serve anche dopo modifiche al PATH.
-5. Apri le impostazioni di Video Clipper, premi **Verifica configurazione**, controlla helper **1.8.0** e scegli la cartella di destinazione. **Verifica installazione.cmd** mostra la registrazione effettiva.
+## Linux x86_64
 
-Se sposti la cartella, registra nuovamente l'helper dalla nuova posizione. **Ripristina helper.cmd** recupera la registrazione precedente dopo averla verificata; non cancella clip o impostazioni. Eseguire l'installer da un vecchio archivio registra il vecchio binario.
+[Scarica l’archivio dell’helper](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-Helper-1.8.0-Linux-x86_64.tar.gz), estrailo interamente in una cartella permanente ed esegui `./installa-helper.sh firefox` come utente del browser, senza sudo. FFmpeg e ffprobe con libx264/AAC devono essere disponibili tramite il sistema. Riapri Firefox ed esegui **Verifica collegamento**.
 
-## Firefox su Linux
-
-Estrai completamente il TAR.GZ in una cartella stabile. Apri un terminale in quella cartella ed esegui:
-
-```sh
-./installa-helper.sh firefox
-./verifica-installazione.sh firefox
-```
-
-Usa lo stesso utente del browser, **senza sudo**. Installa l'XPI firmato da `about:addons`, riapri Firefox e verifica la configurazione. Conserva la cartella precedente: `./ripristina-helper.sh firefox` ripristina la registrazione verificata. Il pacchetto è per Firefox desktop; l'integrazione con browser isolati Snap/Flatpak non è verificata.
+Se sposti la cartella, registra di nuovo l’helper. Conserva insieme tutti i file estratti. Il collegamento con browser Snap/Flatpak non è verificato.
 
 ## Chrome ed Edge
 
-1. Estrai **VideoClipper-1.11.0-Chromium.zip** in una cartella permanente.
-2. Apri `chrome://extensions` o `edge://extensions`, attiva **Modalità sviluppatore**, premi **Carica estensione non pacchettizzata** e scegli la cartella estratta. Non è una pubblicazione negli store Chrome/Edge.
-3. Registra anche l'helper per quel browser. Su Windows, dal terminale nella cartella dell'helper:
+Estrai lo [ZIP Chromium](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-1.12.0-Chromium.zip) in una cartella stabile. Da `chrome://extensions` o `edge://extensions`, attiva la modalità sviluppatore e carica la cartella come estensione non pacchettizzata.
 
-```powershell
-& '.\Installa helper.cmd' chrome
-# Per Edge:
-& '.\Installa helper.cmd' edge
-```
+Nel programma di installazione Windows seleziona anche il browser scelto. La registrazione per Firefox da sola non basta. In alternativa, l’helper portatile accetta `VideoClipperHelper.exe --install --browser chrome` oppure `--browser edge`. Non è dichiarata la pubblicazione negli store Chrome/Edge.
 
-Su Linux gli script accettano `chrome`, `chromium` o `edge` al posto di `firefox`; le prove complete Chrome/Edge di questa release sono su Windows. Registrare solo Firefox non registra automaticamente gli altri browser. Riapri il browser e verifica la configurazione.
+Per macOS, Android e iOS non è ancora disponibile un pacchetto helper verificato.
 
-Per aggiornare il pacchetto Chromium conserva una cartella stabile, sostituisci i suoi file con quelli della nuova versione e premi **Ricarica** nella pagina delle estensioni. Le scorciatoie native si gestiscono anche da `chrome://extensions/shortcuts` o `edge://extensions/shortcuts`.
+## Uso e problemi
 
-## Selezione e montaggio
+Seleziona il player giusto, imposta IN/OUT, guarda l’anteprima e salva. In **Clip → Esportazione** puoi scegliere file unito/separati, formato, ritaglio e audio. Le regole per il nome e la lingua sono nelle impostazioni.
 
-Attiva Video Clipper nella pagina, avvia il video e controlla quello selezionato. Puoi cambiarlo manualmente. Imposta IN/OUT con i campi o i tasti; verifica il risultato dopo la correzione di un timestamp. **Anteprima** riproduce la parte scelta e ripristina la precedente riproduzione. **Aggiungi parte** crea altri intervalli dello stesso video, riordinabili anche se ripetuti o sovrapposti.
+**Verifica collegamento** controlla helper, strumenti e cartella. **Diagnostica** verifica player e permessi e salva un rapporto senza valori dei cookie, URL delle sorgenti, titoli o percorsi locali. Se un sito richiede l’accesso, concedi la sessione facoltativa solo nel contesto del browser dove sei autenticato. La ricerca avanzata richiede un consenso separato.
 
-In **Impostazioni → Salvataggi → Quando selezioni più parti**, scegli **Un unico file** o **Un file per parte**. Puoi modificare la scelta anche in **Clip → Esportazione**, solo per quella clip o come valore predefinito. I file separati sono numerati, rispettano l'ordine delle parti e non sovrascrivono file esistenti. La sorgente viene acquisita una volta.
-
-**Ritaglio:** in **Clip → Esportazione → Ritaglia sul video** disegna, sposta e ridimensiona un rettangolo sul player grande della pagina. Enter conferma, Esc annulla. Scegli Originale/libero, 9:16 telefono, 16:9, 1:1 o 4:5. Senza posizione manuale il formato ritaglia dal centro, mantenendo le proporzioni. Esci dal fullscreen nativo prima di modificarlo; la selezione sul player non supporta trasformazioni CSS di rotazione o riflessione.
-
-**Audio:** nelle impostazioni regola il volume esportato da 0 a 200% oppure rimuovi la traccia. Scegli se mostrare i controlli e ricordare l'ultima impostazione. L'audio del sito resta quello della sua riproduzione. **Watermark** permette di caricare un'immagine locale e scegliere posizione, dimensione, opacità e margine; viene applicato dopo il ritaglio.
-
-**Nomi:** personalizza origine del nome, nome di riserva, prefisso, suffisso e modello nelle impostazioni. Profili, associazioni ai siti, progetti e coda conservano le scelte di esportazione. La cronologia si apre in una sezione separata: apri file/cartella o copia tutti i percorsi dei risultati. Svuotarla non elimina i video dal disco.
-
-**Tema e scorciatoie:** Firefox usa la palette del tema attivo; gli altri browser usano colori nativi e chiaro/scuro. Sono disponibili temi chiaro/scuro espliciti. Le scorciatoie dell'editor sono personalizzabili; i comandi globali sono soggetti ai vincoli del browser.
-
-## Diagnosi, sessione e aggiornamenti
-
-**Diagnosi e recupero** controlla player, permessi e helper. I dettagli sono copiabili e il rapporto non contiene valori dei cookie, URL sorgenti, titoli o percorsi locali. Il recupero di una sorgente scaduta è limitato e verifica che sia lo stesso filmato. Un cambio reale di video può richiedere la conferma degli intervalli.
-
-**Ricerca avanzata** osserva temporaneamente le richieste multimediali solo dopo consenso per sito. Riproduci il video; se la sorgente è ambigua, scegli il candidato. **Usa la sessione del browser per questo sito** è un consenso distinto, inizialmente disattivato e revocabile: concedilo nel profilo dove sei autenticato. Non vengono usati cookie di altri profili per aggirare il consenso.
-
-**Impostazioni → Aggiornamenti** controlla in un solo punto le versioni pubblicate di estensione e helper. La richiesta a GitHub è facoltativa e richiede un permesso separato. Non scarica né installa automaticamente. L'XPI non imposta un URL personalizzato di aggiornamento; il canale Mozilla listed resta separato.
-
-Il **catalogo Mozilla 1.11.1 è approvato e disponibile al pubblico**: [installa da qui](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/). La **1.11.0 diretta unlisted/Self** resta disponibile su GitHub. Tutti i dieci file funzionali sono identici; cambiano solo il numero nel manifest e il canale di distribuzione. Entrambe usano helper 1.8.0.
-
-## Verifiche e limiti
-
-Superate 79 suite JavaScript, 474 test Python con 6 esclusioni per ambiente, 33 prove funzionali con XPI firmato, 9 controlli firma/riavvio, 16 prove binarie e 24 casi Chrome/Edge. Esportazioni controllate per durata, fotogrammi, pixel del ritaglio e audio in profili isolati. Queste prove non certificano tutti i siti autenticati: vedere il player non garantisce una sorgente scaricabile.
-
-DRM, dirette e shadow DOM chiuso non sono supportati. L'esportazione può acquisire tutto il filmato prima di tagliarlo: considera traffico, tempo e spazio temporaneo. “Originale” non significa senza ricodifica. Una traccia audio scelta deve poter essere identificata senza ambiguità.
-
-Segnala problemi riproducibili in [Issues](https://github.com/FlamingFury28/video-clipper/issues), evitando cookie, token, URL privati e media personali. [Privacy](PRIVACY.md) · [Novità](CHANGELOG.md) · [Verifiche](VERIFICATION.json). I sorgenti Python del progetto restano privati.
+Non eliminare la cartella registrata dell’helper prima di aver verificato la sostituzione. Il pacchetto portatile comprende comandi di verifica installazione e ripristino. Svuotare la cronologia elimina i riferimenti, non le clip. Leggi [Privacy](PRIVACY.md) e i limiti di compatibilità nel [README](README.md).

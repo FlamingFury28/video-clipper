@@ -2,66 +2,51 @@
 
 # Video Clipper — Trim & Crop Video
 
-Choose a video on a web page, mark IN/OUT, preview your selection and save an MP4 on your computer. Export several intervals as **one joined video or separate numbered files**. Crop directly over the original player, choose a phone or square format, adjust export audio and add a watermark. The interface is in Italian.
+Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, preview the selection, then save. Combine several moments into one video or export each part separately. Crop directly over the original player, choose a phone format, adjust audio and add your watermark.
 
-**[Install for Firefox — Mozilla Add-ons](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Set up local MP4 export](INSTALLAZIONE.md)**
+**English and Italian**, with automatic browser-language selection and an immediate language switch in Settings.
 
-Current public catalog version: **1.11.1**, with **local helper 1.8.0**. The helper and FFmpeg/ffprobe are a one-time setup for saving. The interface is currently Italian. [See the real feature screenshots on Mozilla](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/).
+**[Install for Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Download Windows helper installer](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-Helper-1.8.0-Windows-Setup.exe)** · **[English setup guide](INSTALL.md)** · **[Guida italiana](INSTALLAZIONE.md)**
 
-**Current direct release: [extension 1.11.0 + helper 1.8.0](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.11.0).** Install both components for all current export features. Updating the browser extension does not update the helper.
+## Start clipping
 
-| Download | Purpose |
+1. Install the extension from Mozilla Add-ons. First installation opens **Guided setup**.
+2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
+3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
+
+Already using helper **1.8.0**? Keep it. The new installer wraps the same verified helper; the export engine has not been rebuilt. Extension and helper update separately.
+
+| Download | Use |
 |---|---|
-| [Firefox 1.11.0 — signed XPI](https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-1.11.0-signed.xpi) | Permanent installation; signed by Mozilla for direct distribution |
-| [Windows helper 1.8.0](https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-Helper-1.8.0-Windows.zip) | Local export companion; extension downloaded separately |
-| [Linux x86_64 helper 1.8.0](https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-Helper-1.8.0-Linux-x86_64.tar.gz) | Desktop Linux companion; extension downloaded separately |
-| [Chromium extension 1.11.0](https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-1.11.0-Chromium.zip) | Unpacked installation in Chrome/Edge developer mode; no store publication |
-| [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-1.11.0-SHA256SUMS.txt) | Verify the four packages above |
+| [Firefox extension 1.12.0](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-1.12.0-signed.xpi) | Mozilla-signed permanent installation |
+| [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-Helper-1.8.0-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
+| [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-Helper-1.8.0-Windows.zip) | Advanced manual installation |
+| [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-Helper-1.8.0-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
+| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-1.12.0-Chromium.zip) | Unpacked desktop installation; no store publication |
+| [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-1.12.0-SHA256SUMS.txt) | Verify downloaded packages |
 
-[Installazione e guida in italiano](INSTALLAZIONE.md) · [Privacy](PRIVACY.md) · [Changes](CHANGELOG.md) · [Verification](VERIFICATION.json) · [Issues](https://github.com/FlamingFury28/video-clipper/issues)
+## Make it yours
 
-## Install or upgrade
+- **Precise parts:** type times, drag IN/OUT, adjust with configurable steps, undo, preview and reorder.
+- **One video or several files:** join parts or save numbered MP4 files. Existing files are not overwritten.
+- **Crop on the page:** move or resize a simple rectangle over the original video. Choose Original/free, 9:16 phone, 16:9, 1:1 or 4:5 without stretching.
+- **Audio and watermark:** change export volume, remove audio, remember your last choice and position a local logo.
+- **Names and profiles:** choose the title source, fallback name, prefix/suffix and filename template. Save profiles and projects or queue exports.
+- **Fits your browser:** use the Firefox theme palette, native light/dark colors and customizable shortcuts. History opens separately.
+- **Help when needed:** configuration checks, privacy-conscious diagnostic reports and bounded source/context recovery.
 
-1. Provide **FFmpeg and ffprobe with libx264/AAC on PATH**. They are not bundled. Start from the [official FFmpeg download page](https://ffmpeg.org/download.html). Python, yt-dlp, EJS and Deno are bundled with the helper; no separate Python, Node or Deno installation is needed.
-2. Extract the appropriate helper archive **in full** to a permanent folder. Keep `VideoClipperHelper` and its `_internal` directory together. Register it as the user running the browser: **Installa helper.cmd** on Windows, or `./installa-helper.sh firefox` on Linux. Do not use administrator access or sudo. Register again if you move the folder.
-3. In Firefox open `about:addons`, choose the gear menu → **Install Add-on From File**, and select **VideoClipper-1.11.0-signed.xpi**. Reopen the browser to renew its helper connection, then reload open video pages.
-4. Open extension settings, run **Verifica configurazione**, confirm helper **1.8.0**, choose the output folder and activate Video Clipper on a video page. Select the intended player before marking a clip.
+## Compatibility and limits
 
-For Chrome/Edge, extract the Chromium ZIP to a stable folder and load that folder through `chrome://extensions` or `edge://extensions` with developer mode enabled. Register the helper for that browser using the `chrome` or `edge` argument; registration for Firefox alone is insufficient. The [Italian guide](INSTALLAZIONE.md) includes exact commands and backup/restore instructions.
+The extension works with accessible HTML5 players, embedded frames, open shadow roots and dynamic pages. Choose another player manually when necessary. Source identity and duration checks help prevent saving the wrong video.
 
-| Platform | Verified scope |
-|---|---|
-| Firefox 142+ on Windows x64 | Firefox 142.0 and 158.0.1 on Windows 11 x64 |
-| Firefox desktop on Linux x86_64 | Firefox 158.0.1 on Ubuntu 24.04 via WSL; Snap/Flatpak packages unverified |
-| Chrome/Edge on Windows x64 | Chrome 155 / Edge 156, unpacked extension |
-| macOS, Android, iOS | No verified helper package available |
+Windows 11 x64 / Firefox 158.0.1 are verified for this update. Earlier checks cover Firefox 142+, Chrome/Edge on Windows and desktop Firefox on Ubuntu 24.04 x86_64. The new guided installer is for **Windows x64**. Linux uses the archive and system FFmpeg; Snap/Flatpak helper access is unverified. No verified helper package is available for macOS, Android or iOS.
 
-The XPI is Mozilla signed. The helper binaries have no separate code-signing signature; package hashes and verification metadata are provided.
+Some sites require optional, revocable per-site session access in the authenticated browser context. Advanced search and session access are separate. No other browser profile is read. DRM, live streams and closed shadow roots are unsupported. A full source video may need downloading before trimming. “Original” quality is not lossless. Website compatibility is not universal.
 
-## Edit on the page
+## Privacy and verification
 
-- **Precise intervals:** IN/OUT fields, configurable fine/coarse steps, undo and preview of the selected part. Preview restores the earlier playback state. Reorder parts or repeat/overlap intervals from the same video.
-- **Joined or separate:** choose one MP4 or a numbered file for each part in **Impostazioni → Salvataggi** or **Clip → Esportazione**. The source is acquired once and existing output files are not overwritten.
-- **Crop on the original video:** **Clip → Esportazione → Ritaglia sul video** opens a rectangle on the page player. Drag, move or resize it; confirm with Enter or cancel with Esc. Choose Original/free, **9:16 phone, 16:9, 1:1 or 4:5**. Presets crop without stretching; a centered crop is used when no manual position is chosen.
-- **Audio and watermark:** set export volume from 0 to 200% or remove the audio track. Show/hide audio controls and optionally remember the last choice. These settings affect exported files. Upload a local watermark and choose its position, size, opacity and margin; it is applied after cropping.
-- **Personal defaults:** choose how the video name is obtained, a fallback name, prefix/suffix and filename template. Save output profiles, associate them with sites, keep projects and queue exports. Queued clips retain their output settings.
-- **Less clutter:** history opens separately; completed jobs offer file/folder and copy-path actions. Firefox follows the active browser theme palette; other browsers use native colors and light/dark mode. Explicit light/dark overrides remain available.
-- **Shortcuts and updates:** customize editor shortcuts and browser commands in settings. **Aggiornamenti** checks extension and helper versions together against published GitHub releases, on request and with separate network permission. It does not download or install updates automatically.
+Conversion runs locally. There is no Video Clipper cloud editing or analytics service. Preferences, language choice, projects, watermarks and history stay on your device. Session values are excluded from exported diagnostic reports. Optional version checks contact GitHub; the installer contacts the FFmpeg vendor only when missing tools are requested. Read [Privacy](PRIVACY.md).
 
-## Source access, recovery and limits
+The XPI is Mozilla signed. The helper/installer have no separate Authenticode signature; checksums and verification metadata are supplied. This repository contains public documentation and downloads. Project Python sources remain private.
 
-Accessible HTML5 players, dynamic pages, embedded frames and open shadow roots are supported. Automatic selection can be overridden manually. Source identity, duration and interval checks guard against saving a different video. Expired-source recovery is bounded and requires the replacement to match the selected video; it is not a promise that every website can be downloaded.
-
-If needed, enable **Ricerca avanzata** for the site and play the intended video. Session access (**Usa la sessione del browser per questo sito**) is separate, optional, initially off and revocable. Grant it in the browser profile/context where you are authenticated. Cookie store and partition boundaries are preserved; another profile is not used. Configuration checks, diagnostics and context recovery are available in settings. Diagnostic reports omit cookie values, source addresses, titles and local paths.
-
-Source access may require downloading the full video before trimming, using bandwidth, time and temporary disk space. A specifically selected audio track must resolve unambiguously. DRM, live streams and closed shadow roots are unsupported. Exit native video fullscreen before editing the crop; CSS-rotated or reflected players cannot use the crop overlay. Media orientation metadata is handled separately during export. “Original” quality is not lossless.
-
-Verification covers isolated profiles and controlled media, including real output durations, frames, crop pixels and audio. For this release: **79 JavaScript suites; 474 Python tests (6 environment skips); 33 signed Firefox functional cases; 9 signature/restart checks; 16 binary checks; 24 Chrome/Edge cases**. These results do not certify every authenticated website. See [VERIFICATION.json](VERIFICATION.json).
-
-## Distribution and privacy
-
-**Firefox catalog 1.11.1 is approved and publicly available on [Mozilla Add-ons](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/).** Install from that page for the catalog distribution. Its ten functional files are byte-identical to direct release 1.11.0; only the manifest version changes. The signed 1.11.0 GitHub release remains available for direct distribution with the same helper 1.8.0. The extension has no custom update URL; Mozilla catalog updates and the optional GitHub version check are distinct. Updating the extension does not update the helper.
-
-Conversion runs locally. Requests go to the source websites/CDNs; there is no Video Clipper cloud editing or analytics service. Preferences, projects, watermarks and history stay on your device. Clearing history removes references, not saved files. Read the [privacy policy](PRIVACY.md), including optional session access and update checks.
-
-This repository contains **public documentation and downloads**. Project Python sources remain private. Helper archives contain the verified binary and upstream licenses/source material required for dependencies; GitHub-generated source archives contain only this documentation repository. See [third-party notices](THIRD-PARTY-NOTICES.md).
+[Changes](CHANGELOG.md) · [Verification](VERIFICATION.json) · [Third-party notices](THIRD-PARTY-NOTICES.md) · [Report an issue](https://github.com/FlamingFury28/video-clipper/issues)

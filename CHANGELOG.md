@@ -1,5 +1,12 @@
 # Changes / Novità
 
+## 1.12.0 — English and guided helper setup, 26 October 2026
+
+- Full English and Italian interface with automatic browser-language selection and a persistent manual choice. Includes editor, settings, history, projects, diagnostics, consents and crop controls; original user/video data remains unchanged.
+- First install opens guided setup. New Windows x64 installer embeds the unchanged helper 1.8.0, prepares a stable per-user folder and browser connection, reuses healthy video tools or verifies a pinned vendor FFmpeg download. No administrator access, Python installation or manual PATH edits. Existing helper 1.8.0 users can keep it.
+- Local translation only, no translation service, no new extension permissions. Installer updates are separate from Mozilla extension updates. Linux retains its verified binary archive and system FFmpeg requirement.
+- Verification: 80 JavaScript suites, release-package integrity checks, real Firefox language/setup/crop/export checks, clean portable-tool setup with PATH isolated, corrupt archive/payload rejection and actual per-user Firefox registration. Signature/restart verification is recorded with the signed package.
+
 ## 1.11.1 — public Mozilla catalog, 26 October 2026
 
 - Approved and publicly downloadable from [Mozilla Add-ons](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/). Replaces catalog 1.4.7 with the current trim/crop/audio/separate-file features.

@@ -1,12 +1,12 @@
 {
   "name": "Video Clipper",
-  "version": "1.11.0",
-  "extensionVersion": "1.11.0",
+  "version": "1.12.0",
+  "extensionVersion": "1.12.0",
   "helperVersion": "1.8.0",
   "extensionId": "video-clipper@local",
-  "interfaceLanguage": "it",
+  "interfaceLanguage": "auto",
   "homepage": "https://github.com/FlamingFury28/video-clipper",
-  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.11.0",
+  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.12.0",
   "versionScope": "latest-published-github-release",
   "pythonBundled": true,
   "ffmpegBundled": false,
@@ -26,16 +26,13 @@
       "download": "https://addons.mozilla.org/firefox/downloads/file/5166701/video_clipper_in_out_mp4-1.11.0.xpi"
     },
     "catalog": {
-      "version": "1.11.1",
+      "version": "1.12.0",
       "status": "approved",
       "publicAvailabilityConfirmed": true,
       "separateChannel": true,
-      "includes1110Features": true,
       "helperVersion": "1.8.0",
-      "manifestVersionOnlyFrom": "1.11.0",
-      "functionalFilesByteIdentical": 10,
-      "download": "https://addons.mozilla.org/firefox/downloads/file/5166820/video_clipper_in_out_mp4-1.11.1.xpi",
-      "signedXpiSha256": "a19ebdffc8a4829c213d3829bb191cdc18c554f21cc4d74c1f9781eafe162bf1",
+      "download": "https://addons.mozilla.org/firefox/downloads/file/5168303/video_clipper_in_out_mp4-1.12.0.xpi",
+      "signedXpiSha256": "135c86395c9e2de161b6275e598a3b4c88987731519d78dfb682cd002f691c78",
       "permanentSignatureRestartChecksPassed": 3
     }
   },
@@ -82,39 +79,60 @@
     "separate history",
     "browser theme and custom shortcuts",
     "local diagnostics and bounded same-video source recovery",
-    "unified on-request update check"
+    "unified on-request update check",
+    "English and Italian UI, automatic or manual",
+    "guided first-run and Windows helper setup"
   ],
   "assets": [
     {
-      "name": "VideoClipper-1.11.0-signed.xpi",
-      "size": 221684,
-      "sha256": "0f13599631bf8ec5ba8fea2a5a20995e03f8d3ff4eefea70fcb830a1d4d4a3cc",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-1.11.0-signed.xpi"
+      "name": "VideoClipper-1.12.0-signed.xpi",
+      "size": 315947,
+      "sha256": "135c86395c9e2de161b6275e598a3b4c88987731519d78dfb682cd002f691c78",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-1.12.0-signed.xpi"
     },
     {
-      "name": "VideoClipper-1.11.0-Chromium.zip",
-      "size": 212844,
-      "sha256": "6f17a0bf912928aba7d68f3bce4d59a59a2f743d2ca0a0df202df6c924f7df52",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-1.11.0-Chromium.zip"
+      "name": "VideoClipper-1.12.0-Chromium.zip",
+      "size": 306086,
+      "sha256": "2b449744b956b98dd1447c813a2922fa273e6fc4b16c7991cbd0ab2e89f536a6",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-1.12.0-Chromium.zip"
+    },
+    {
+      "name": "VideoClipper-Helper-1.8.0-Windows-Setup.exe",
+      "size": 68397568,
+      "sha256": "5fc1294a7f453d83352cc5eb579a4bdf0d14af6710965b161a8fd7f472e69698",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-Helper-1.8.0-Windows-Setup.exe"
     },
     {
       "name": "VideoClipper-Helper-1.8.0-Windows.zip",
       "size": 68362071,
       "sha256": "ad045d070e67b28e3020201d2e3da662b7d8e1283a0b05961662b2c6163a21ed",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-Helper-1.8.0-Windows.zip"
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-Helper-1.8.0-Windows.zip"
     },
     {
       "name": "VideoClipper-Helper-1.8.0-Linux-x86_64.tar.gz",
       "size": 77641943,
       "sha256": "9b849355df1b121414fd4eeb743356a133d7172d9ed42d30d760f8fac223bcec",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-Helper-1.8.0-Linux-x86_64.tar.gz"
-    },
-    {
-      "name": "VideoClipper-1.11.0-SHA256SUMS.txt",
-      "size": 416,
-      "sha256": "383f49620e426dd0686a2bd0bdcf64b98e12b94eb3fa2cfa368f23bfe1648f10",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.11.0/VideoClipper-1.11.0-SHA256SUMS.txt"
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.0/VideoClipper-Helper-1.8.0-Linux-x86_64.tar.gz"
     }
   ],
-  "recommendedFirefoxInstall": "https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/"
+  "recommendedFirefoxInstall": "https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/",
+  "interfaceLanguages": [
+    "en",
+    "it"
+  ],
+  "windowsSetup": {
+    "helperVersion": "1.8.0",
+    "perUser": true,
+    "administratorRequired": false,
+    "pythonInstallationRequired": false,
+    "manualPathChangesRequired": false,
+    "ffmpegDownload": {
+      "optionalWhenMissing": true,
+      "version": "8.1.2",
+      "vendor": "https://www.gyan.dev/ffmpeg/builds/",
+      "sha256": "db580001caa24ac104c8cb856cd113a87b0a443f7bdf47d8c12b1d740584a2ec",
+      "bytes": 109728040
+    },
+    "authenticodeSigned": false
+  }
 }
