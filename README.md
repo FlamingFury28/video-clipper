@@ -39,7 +39,7 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 
 The extension works with accessible HTML5 players, embedded frames, open shadow roots and dynamic pages. Choose another player manually when necessary. Source identity and duration checks help prevent saving the wrong video.
 
-Windows 11 x64 / Firefox 142.0 and 158.0.1 are verified for this update. Earlier checks cover Firefox 142+, Chrome/Edge on Windows and desktop Firefox on Ubuntu 24.04 x86_64. The new guided installer is for **Windows x64**. Linux uses the archive and system FFmpeg; Snap/Flatpak helper access is unverified. No verified helper package is available for macOS, Android or iOS.
+Windows 11 x64 / Firefox 142.0 and 158.0.1, plus Ubuntu 24.04 x86_64 / Firefox 158.0.1, are verified for this update. Signed native exports after restart cover Windows and Linux. Earlier checks cover Chrome/Edge on Windows. The new guided installer is for **Windows x64**. Linux uses the archive and system FFmpeg; Snap/Flatpak helper access is unverified. No verified helper package is available for macOS, Android or iOS.
 
 Some sites require optional, revocable per-site session access in the authenticated browser context. Advanced search and session access are separate. No other browser profile is read. DRM, live streams and closed shadow roots are unsupported. A full source video may need downloading before trimming. “Original” quality is not lossless. Website compatibility is not universal.
 

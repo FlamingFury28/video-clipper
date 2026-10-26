@@ -19,7 +19,9 @@
     "Windows158SignedPermanent": 5,
     "actualNativeMp4Exports": true,
     "videoAudioIntervalsAndSubsequentSavesVerified": true,
-    "payloadInstrumented": false
+    "payloadInstrumented": false,
+    "Windows158SignedPermanentAfterRestart": 5,
+    "Linux158SignedPermanentAfterRestart": 2
   },
   "previousSigned1122FailureReproducedCases": 5,
   "signatureAndRestartCasesPassed": 3,
