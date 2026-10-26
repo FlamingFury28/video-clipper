@@ -1,5 +1,12 @@
 # Changes / Novità
 
+## 1.12.3 — embedded player reconnects, 26 October 2026
+
+- Fixes a reproduced editor lock after an iframe player reconnects during a native export. The player stays pinned, the active job reclaims its token on the new port, and completed/orphaned locks are released safely after success, cancellation or error.
+- Handles a retry made while disconnected and a video removed during saving. Source renewal follows the verified same-document connection; document/player/job guards and audio/range checks remain enforced. Another document cannot receive the old job’s token.
+- Verification: 82 JavaScript suites, including 11 added lifecycle scenarios and the existing Save ownership cases; five failures reproduced with the old signed 1.12.2 in Firefox, then five corrected real-port/native MP4 cases with subsequent saves. Firefox 142 checks and signed installation/restart evidence are recorded in the verification metadata. Test-only DevTools listeners target the selected iframe port without changing the extension payload.
+- No helper rebuild, new permissions, external requests or session-consent changes. Helper 1.8.1, installers and upstream notices are reused unchanged.
+
 ## 1.12.2 — selected media identity, 26 October 2026
 
 - Fixes a reproduced X identity error when one post reuses the same player, blob URL and duration for another video. The previous media’s cached/manual sources are discarded and the interval remains pending confirmation for a different video.

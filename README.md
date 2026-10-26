@@ -14,16 +14,16 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-**1.12.2 updates the extension only.** It distinguishes different videos when X reuses one player inside the same post, while keeping harmless source renewals automatic. Existing helper **1.8.1** and its verified installer are reused; no helper reinstall is needed. For older helper versions, 1.8.1 also fixes long Unicode filenames on Linux.
+**1.12.3 updates the extension only.** Embedded players recover their controls when a connection returns during or after export, including cancellation, errors and a retry while disconnected. A running job keeps its player and can renew its source through the verified new connection. Existing helper **1.8.1** and its installer remain current; no helper reinstall is needed.
 
 | Download | Use |
 |---|---|
-| [Firefox extension 1.12.2](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.2/VideoClipper-1.12.2-signed.xpi) | Mozilla-signed permanent installation |
+| [Firefox extension 1.12.3](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.3/VideoClipper-1.12.3-signed.xpi) | Mozilla-signed permanent installation |
 | [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
 | [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Windows.zip) | Advanced manual installation |
 | [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.1/VideoClipper-Helper-1.8.1-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
-| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.2/VideoClipper-1.12.2-Chromium.zip) | Unpacked desktop installation; no store publication |
-| [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.2/VideoClipper-1.12.2-SHA256SUMS.txt) | Verify downloaded packages |
+| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.3/VideoClipper-1.12.3-Chromium.zip) | Unpacked desktop installation; no store publication |
+| [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.3/VideoClipper-1.12.3-SHA256SUMS.txt) | Verify downloaded packages |
 
 ## Make it yours
 
