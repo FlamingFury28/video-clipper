@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## 1.12.6 — queue outcome recovery, 26 October 2026
+
+- Fixes a queue item stuck Running after a completed native export when its completion record could not be written. The visible status reflects the real result.
+- Retries terminal metadata at 1, 5 and 30 seconds, without replaying the native export. New queue claims wait for a durable outcome. A later successful project operation also commits pending results and resumes the queue.
+- Preserves interrupted/no-auto-replay behavior after a worker/browser restart. English and Italian explain pending records. No new permissions or helper update; helper 1.8.1 is unchanged.
+- Verified in the older signed XPI before the fix, 12 Firefox/Chromium durability/concurrency/restart cases, 84 JavaScript suites and real signed Firefox MP4/restart checks on Windows and Linux.
+- Italiano: recupera automaticamente gli errori temporanei di registrazione della coda senza esportare di nuovo le clip concluse. Stato reale visibile, tentativi limitati e recupero anche da una successiva operazione sul progetto. Dopo riavvio i lavori incerti restano interrotti; helper 1.8.1 invariato.
+
 ## 1.12.5 — Firefox update guidance, 26 October 2026
 
 - Replaces the blocked XPI update link with a local two-step guide to Firefox’s add-on manager. The Mozilla catalog is a separate link; the guide also works without a successful optional GitHub check.
@@ -185,4 +193,5 @@ Video Clipper 1.2.0
 - Migliora verifica dell’esportazione locale, nomi Windows, limiti di risoluzione, annullamento, avanzamento e gestione dei temporanei.
 
 La distribuzione Windows include ora un helper eseguibile con Python e dipendenze. FFmpeg/ffprobe restano necessari separatamente.
+
 
