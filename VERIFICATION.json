@@ -9,7 +9,7 @@
   ],
   "unchangedExtensionFiles": 11,
   "optionsChangeIsExactlyTwoDownloadUrls": true,
-  "pythonTestsPassed": 489,
+  "pythonTestsPassed": 483,
   "pythonEnvironmentSkips": 6,
   "targetedAtomicPublicationCasesPerOS": 8,
   "nativePublicationCasesPerOS": 4,
@@ -86,5 +86,6 @@
       "sha256": "e5d2f7830d7967ed2fccbfd678907d5b24847617bc37ebfd51bb7d832ef7f93d",
       "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.9/VideoClipper-1.12.9-SHA256SUMS.txt"
     }
-  ]
+  ],
+  "pythonTestsRun": 489
 }
