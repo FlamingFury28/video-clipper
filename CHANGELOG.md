@@ -1,5 +1,17 @@
 # Changes / Novità
 
+## Extension 1.13.9 — safer project recovery
+
+Video Clipper 1.13.9 improves project recovery and protects edits made while a project is being saved or restored.
+
+- A saved composition is kept as a recoverable previous version when all of its ranges are replaced, even if the number of parts stays the same.
+- Manual recovery checks that the current ranges have not changed while the request was pending. Automatic recovery verifies all ranges and the active part before reporting success.
+- Disabling automatic project saving stops a pending automatic draft before its write starts. If the video duration changes during capture, the stale project is rejected.
+
+An isolated Firefox test saved and recovered eight distinct ranges; additional tests cover the races above. These safeguards cannot reconstruct cuts already absent from saved data. The native helper remains 1.9.3.
+
+Italiano: migliora il recupero dei progetti e protegge le modifiche ai tagli quando il salvataggio o il ripristino sono in corso. I tagli già assenti dai dati salvati non possono essere ricostruiti automaticamente.
+
 ## Extension 1.13.7 — protect and verify project recovery
 
 - Recovery now checks all saved ranges and the active part before reporting success. A document change during a pending save cancels the stale snapshot. Backups retain distinct names and durations, and stale recovery messages clear when a project is removed.

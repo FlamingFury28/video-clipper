@@ -1,34 +1,32 @@
 {
-  "extensionVersion": "1.13.7",
+  "extensionVersion": "1.13.9",
   "helperVersion": "1.9.3",
-  "signedXpiSha256": "43fa3e5cf4e1f6fe1a3065e9abaf88af1aa5ecb61f567b4b706d71e96237790e",
+  "signedXpiSha256": "223ccd46fcce532b2ccaddcb60ee2b22c9b1f4fd270dd6ccccc63dbae5be6562",
   "permanentInstallAndRestartCases": 3,
   "signedProjectRecoveryVerified": true,
   "projectRangesVerified": 8,
-  "autoBackupAndRecoveryVerified": true,
-  "fullArchivePreservesExistingProject": true,
   "personalProfilesModified": false,
   "privateUserDataPublished": false,
+  "mozillaCatalogVersion": "1.13.8",
   "assets": [
     {
-      "name": "VideoClipper-1.13.7-signed.xpi",
-      "size": 333126,
-      "sha256": "43fa3e5cf4e1f6fe1a3065e9abaf88af1aa5ecb61f567b4b706d71e96237790e",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.7/VideoClipper-1.13.7-signed.xpi"
+      "name": "VideoClipper-1.13.9-signed.xpi",
+      "size": 333314,
+      "sha256": "223ccd46fcce532b2ccaddcb60ee2b22c9b1f4fd270dd6ccccc63dbae5be6562",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.9/VideoClipper-1.13.9-signed.xpi"
     },
     {
-      "name": "VideoClipper-1.13.7-Chromium.zip",
-      "size": 323003,
-      "sha256": "e452ba8194755adce8d9f7289a6909443104185727fbb29d57525b400ef1b870",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.7/VideoClipper-1.13.7-Chromium.zip"
+      "name": "VideoClipper-1.13.9-Chromium.zip",
+      "size": 323186,
+      "sha256": "399747f1baffa8f7f12201771349f176164b273a68c0939b3de9cf4ec7e399f2",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.9/VideoClipper-1.13.9-Chromium.zip"
     },
     {
-      "name": "VideoClipper-1.13.7-SHA256SUMS.txt",
+      "name": "VideoClipper-1.13.9-SHA256SUMS.txt",
       "size": 196,
-      "sha256": "8ef07b4a8ec3ebe5d09fde9a0403f7f9106b9bee2ca30a52834c105fb6eead97",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.7/VideoClipper-1.13.7-SHA256SUMS.txt"
+      "sha256": "30ba5eef7a830119cecd251b6f0568d425668ca746d72b16d4d0ed3e3065f00c",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.9/VideoClipper-1.13.9-SHA256SUMS.txt"
     }
   ],
-  "limitations": "No claim to recover ranges already missing from stored project data.",
-  "mozillaCatalogReview": "separate"
+  "limitations": "Cannot reconstruct cuts already absent from saved data."
 }

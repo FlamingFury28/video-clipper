@@ -1,8 +1,8 @@
 # Installa Video Clipper
 
-[English](INSTALL.md) · [Estensione Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Download](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.7)
+[English](INSTALL.md) · [Estensione Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Download](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.9)
 
-Usa estensione **1.13.7** e helper **1.9.3**. Il pacchetto firmato è disponibile su GitHub; l’aggiornamento del catalogo Mozilla segue una revisione separata. Si aggiornano separatamente; l’helper recupera automaticamente alcuni casi di manifest non disponibili.
+Usa estensione **1.13.9** e helper **1.9.3**. Il pacchetto firmato è disponibile su GitHub; l’aggiornamento del catalogo Mozilla segue una revisione separata. Si aggiornano separatamente; l’helper recupera automaticamente alcuni casi di manifest non disponibili.
 
 Se hai l’helper 1.9.1 o precedente, aggiorna anche quello: il solo aggiornamento dell’estensione non include queste correzioni.
 
