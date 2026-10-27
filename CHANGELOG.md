@@ -1,5 +1,14 @@
 # Changes / Novità
 
+## Helper 1.9.1 — valid source containers and reliable first Save, 27 October 2026
+
+- Fixes automatic page recovery incorrectly applying encoded-MP4 frame-count requirements to downloaded sources. Valid WebM, Matroska and fragmented MP4 can omit nb_frames. Source video coverage is checked separately; the final encoded MP4 still requires positive frames, valid duration and full video coverage.
+- Gives complete MPEG-TS downloads a local MP4 seek index through packet copying. A real fixture reproduced input seeking producing only audio; the indexed path matches decoded-seek pixels and retains strict output checks. No re-encoding is used for indexing, and source/indexed timelines must agree.
+- The reported public-page failure and exact interval reproduce VIDEO_OUTPUT_MISSING with helper 1.9.0. Helper 1.9.1 saves that interval on one normal Save with the actual signed/permanent extension 1.13.3 after restart. Output video, audio and duration pass; the user URL, HTML and media are private.
+- Nine real-container tests, native compatibility (4), Collection (8) and page-recovery (3) cases per platform pass. MP4/HLS exports pass on Firefox 142/158 Windows and 158 Linux. Three signed first-click container cases pass per platform. Twelve Chromium/native checks pass. Python coverage: 516 cases with six environment skips, including an affected-suite rerun after correcting a fake-media test fixture; unchanged product payload.
+- New Windows guided installer and Linux archive contain binary helper 1.9.1 and upstream notices. Installer payload and clean preparation are verified without changing personal registrations. Extension 1.13.3 remains unchanged and Mozilla signed. No new permissions or session access.
+- Italiano: corretto il rifiuto di sorgenti valide senza conteggio fotogrammi e il taglio MPEG-TS senza indice. Verificato il caso reale al primo clic. Per questo errore serve aggiornare l’helper alla1.9.1, oltre all’estensione1.13.3 per le correzioni dei player pubblicitari.
+
 ## 1.13.3 — explicit advertising markers and embedded players, 27 October 2026
 
 - Fixes three additional failures reproduced with signed 1.13.2: a larger data-ad=true player winning selection, an ad-only child frame blocking main-page recovery, and an advertising marker placed around the frame in its parent document.

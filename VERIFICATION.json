@@ -1,13 +1,13 @@
 {
   "extensionVersion": "1.13.3",
-  "helperVersion": "1.9.0",
-  "helperChanged": false,
+  "helperVersion": "1.9.1",
+  "helperChanged": true,
   "verifiedOn": "2026-10-27",
   "javaScriptSuitesPassed": 102,
   "javaScriptSnapshotDifference": null,
-  "helperPythonTestsReused": 507,
+  "helperPythonTestsReused": 0,
   "pythonEnvironmentSkips": 6,
-  "helperEvidenceReusedFrom": "1.13.0 / helper 1.9.0, source and binary hashes matched",
+  "helperEvidenceReusedFrom": null,
   "collectionEvidenceReusedFrom": "signed 1.13.2, unchanged panel/background/helper",
   "chromiumNativeCases": 12,
   "releaseToolTests": 15,
@@ -21,8 +21,8 @@
     "signedLinux158AfterRestart": 4
   },
   "temporalFramesAudioAndDurationVerified": true,
-  "fixtures": "local",
-  "publicWebsiteVisitedThisCycle": false,
+  "fixtures": "local plus supplied public page",
+  "publicWebsiteVisitedThisCycle": true,
   "signatureInstallRestartChecks": 3,
   "newManifestPermissions": false,
   "personalProfilesModified": false,
@@ -43,22 +43,28 @@
       "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.3/VideoClipper-1.13.3-Chromium.zip"
     },
     {
-      "name": "VideoClipper-Helper-1.9.0-Windows-Setup.exe",
-      "size": 68413952,
-      "sha256": "f815c61f9c377baca8a8c47f8bc65e9e4382fcfe89fb267115d9927894a7e2da",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Windows-Setup.exe"
+      "name": "VideoClipper-Helper-1.9.1-Windows-Setup.exe",
+      "size": 68414976,
+      "sha256": "b81b4fd45be1b97a28376796e3f1daf4b632eb1785243c8bc36ad31ed76357d0",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.1/VideoClipper-Helper-1.9.1-Windows-Setup.exe"
     },
     {
-      "name": "VideoClipper-Helper-1.9.0-Windows.zip",
-      "size": 68378741,
-      "sha256": "6937bfe7a26dd0f0e5897464725b3e9a38fc9efa17899c2afb3b35be67f2dcbd",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Windows.zip"
+      "name": "VideoClipper-Helper-1.9.1-Windows.zip",
+      "size": 68379580,
+      "sha256": "f7926b56d81db09efcc7fe610d96191dece6b060f3f50bc44e2c60ebb4516973",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.1/VideoClipper-Helper-1.9.1-Windows.zip"
     },
     {
-      "name": "VideoClipper-Helper-1.9.0-Linux-x86_64.tar.gz",
-      "size": 77658337,
-      "sha256": "6c95c0a3ebd9e61ce638d885877f9df2f96ac39cdf0aadbd6647054fa6b520a0",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Linux-x86_64.tar.gz"
+      "name": "VideoClipper-Helper-1.9.1-Linux-x86_64.tar.gz",
+      "size": 77664426,
+      "sha256": "4789df2cf26010d2b794c71eaa2ec038f412f4b793b060f32df775571aafee1e",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.1/VideoClipper-Helper-1.9.1-Linux-x86_64.tar.gz"
+    },
+    {
+      "name": "VideoClipper-Helper-1.9.1-SHA256SUMS.txt",
+      "size": 326,
+      "sha256": "602bf03eb51420f2ff622c56046f133a58789aee6c84e262e74f8052a63b9b83",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.1/VideoClipper-Helper-1.9.1-SHA256SUMS.txt"
     },
     {
       "name": "VideoClipper-1.13.3-SHA256SUMS.txt",
@@ -66,5 +72,32 @@
       "sha256": "628b37652b0353b55f14d8c4561666db66c7aef21f42b01a69b2d4bc45f3f0a3",
       "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.3/VideoClipper-1.13.3-SHA256SUMS.txt"
     }
-  ]
+  ],
+  "helperPythonCases": 516,
+  "pythonVerification": "Full run retained; one refresh-only fake-media fixture corrected and its affected suite rerun, product unchanged.",
+  "affectedSuiteRerun": 23,
+  "helperHashes": {
+    "windows": "9bfb94168610b9d131cc5eb9b7a5afe4ffb495372763b0c054c55d6b7098a0c6",
+    "linux": "84bc6467ceac87ed8000a4404ae0d046fd08634e50658b9ea2bd25c3bc5037ef"
+  },
+  "targetedContainerTests": 9,
+  "helperNativeCompatibilityCasesPerPlatform": 4,
+  "helperNativeCollectionCasesPerPlatform": 8,
+  "helperNativePageRecoveryCasesPerPlatform": 3,
+  "signedContainerFirstClickCasesPerPlatform": 3,
+  "signedMp4HlsEndpoints": {
+    "windows": [
+      "142",
+      "158"
+    ],
+    "linux": [
+      "158"
+    ]
+  },
+  "userPublicPageFailureReproduced": true,
+  "userExactIntervalFirstClickPassed": true,
+  "userUrlAndMediaPublished": false,
+  "installerPayloadVerified": true,
+  "installerCleanPreparationVerified": true,
+  "extensionPayloadChanged": false
 }
