@@ -1,5 +1,16 @@
 # Changes / Novità
 
+## 1.13.0 — verified page recovery and clips from multiple videos, 27 October 2026
+
+- Fixes the repeated first-click block for a unique visible opaque player. Page recovery starts automatically when appropriate, with a new helper capability gate, unique extraction, known provider/video identity checks and full-duration verification before output publication.
+- Missing extractor duration is verified against the downloaded media. Multiple results, incompatible durations, ads, live/DRM media, ambiguous matched configurations and previews remain excluded. Existing X/YouTube identity paths and scoped session choices are retained.
+- New Collection saves verified individual MP4s, supports clips from different videos in one tab, ordering, one joined export or separate copies. Hash checks detect changed local files; originals are kept and output names are never overwritten. Storage failure can retry metadata registration without downloading again.
+- YouTube page/player IDs must agree before selecting a new video. Full same-site navigation resumes with existing or explicitly granted optional site access; temporary activeTab access expires in Firefox.
+- Joined output preserves order, fits the first clip frame without stretching, handles missing audio and avoids cumulative frame-rounding drift. Collection is excluded from private windows.
+- Real Firefox 142/158 Windows/Linux exports, signed restart persistence, frame/audio checks, exact separate hashes, 97 JavaScript suites, 507 Python tests (6 environment skips), 12 Chromium/native checks and 12 bilingual narrow-panel layouts verified. Local synthetic media; no universal or authenticated-site success claim.
+- Requires extension 1.13.0 and helper 1.9.0. Installer engine and third-party dependencies are unchanged; the helper remains compatible with signed 1.12.13. One isolated installer preparation initially failed with a staging access error; a clean second run of the identical package passed. Cause is not established.
+- Italiano: salvataggio diretto dal pulsante con recupero verificato della pagina e nuova Raccolta da video diversi, unita o separata. Aggiornare entrambi i componenti; file originali e consensi conservati.
+
 ## 1.12.13 — keep clip parts when the player moves, 26 October 2026
 
 - Fixes a reproduced case where a site moves the same video element into newly created open Shadow DOM components. Candidate cleanup previously ran before discovery, reset the selected parts and could export a default segment instead.

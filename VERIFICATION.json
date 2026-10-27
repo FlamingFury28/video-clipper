@@ -1,79 +1,71 @@
 {
-  "extensionVersion": "1.12.13",
-  "helperVersion": "1.8.3",
-  "verifiedOn": "2026-10-26",
-  "changedExtensionFiles": [
-    "manifest.json",
-    "content.js"
+  "extensionVersion": "1.13.0",
+  "helperVersion": "1.9.0",
+  "verifiedOn": "2026-10-27",
+  "javaScriptSuitesPassed": 97,
+  "pythonTests": 507,
+  "pythonEnvironmentSkips": 6,
+  "chromiumNativeCases": 12,
+  "bilingualCollectionLayouts": 12,
+  "postSnapshotChanges": [
+    "manifest formatting normalized by prepare",
+    "Open file label and collection footer visibility rechecked in final UI and Chromium"
   ],
-  "unchangedExtensionFiles": 12,
-  "fullJavaScriptSuitesPassed": 93,
-  "focusedActualDOMCasesPassed": 13,
-  "singleCleanFullJavaScriptRun": false,
-  "javaScriptEvidence": {
-    "originalPassingSuites": 88,
-    "correctedDOMFixtureRerunsPassed": 5
-  },
-  "oldSigned11212ReproducedWrongExport": true,
-  "actualNativeMp4": true,
   "nativeFirefoxCases": {
-    "sourceWindows142": 1,
-    "signedWindows158AfterRestart": 1,
-    "signedLinux158AfterRestart": 1
+    "sourceWindows142": 5,
+    "signedWindows158AfterRestart": 6,
+    "signedLinux158AfterRestart": 6
   },
   "framesAudioOrderAndRangesVerified": true,
-  "signatureAndRestartCasesPassed": 3,
-  "chromiumMV3CasesPassed": 12,
-  "helperBinaryUnchanged": true,
-  "helperRebuilt": false,
-  "reusedPythonEvidence": {
-    "fromRelease": "1.12.12",
-    "tests": 496,
-    "environmentSkips": 6
-  },
-  "newPermissions": false,
-  "consentChanges": false,
-  "personalFirefoxProfilesModified": false,
-  "privateProjectPythonSourcesPublished": false,
+  "separateCopiesByteIdentical": true,
+  "collectionPersistsAfterRestart": true,
+  "signatureInstallRestartChecks": 3,
+  "helperCollectionBinaryCasesPerPlatform": 8,
+  "helperPageRecoveryBinaryCasesPerPlatform": 3,
+  "helperCompatibilityWithSigned11213": true,
+  "newManifestPermissions": false,
+  "optionalSiteAccessOnlyOnUserClick": true,
+  "personalBrowserProfilesModified": false,
+  "privatePythonSourcesPublished": false,
   "workspaceArchivesPublished": false,
   "directUnlistedChannelChanged": false,
-  "signedXpiSha256": "7d01b62e6605e4e90051e5c9c74ce57a00ee01bf034d5ade4c599b61bbbbcb06",
+  "signedXpiSha256": "c9dce843e4b0df00735e36993ff2a1beed65fba5e5e21f8967f4bbaf8dc6510f",
   "assets": [
     {
-      "name": "VideoClipper-1.12.13-signed.xpi",
-      "size": 320596,
-      "sha256": "7d01b62e6605e4e90051e5c9c74ce57a00ee01bf034d5ade4c599b61bbbbcb06",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.13/VideoClipper-1.12.13-signed.xpi"
+      "name": "VideoClipper-1.13.0-signed.xpi",
+      "size": 331296,
+      "sha256": "c9dce843e4b0df00735e36993ff2a1beed65fba5e5e21f8967f4bbaf8dc6510f",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.0/VideoClipper-1.13.0-signed.xpi"
     },
     {
-      "name": "VideoClipper-1.12.13-Chromium.zip",
-      "size": 310723,
-      "sha256": "db9fe58583d973ddbf993298afed73eed39c0136c22b2f0385d19803684c23a5",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.13/VideoClipper-1.12.13-Chromium.zip"
+      "name": "VideoClipper-1.13.0-Chromium.zip",
+      "size": 321220,
+      "sha256": "f23a7645f2309a4a125583492abd8141492e24f1999475ecbc545da57208c8b5",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.0/VideoClipper-1.13.0-Chromium.zip"
     },
     {
-      "name": "VideoClipper-Helper-1.8.3-Windows-Setup.exe",
-      "size": 68401152,
-      "sha256": "0e2f5fb64f8b24dbfb2474ac0ff58d7139463460f36b064b4c1c33ffda94b335",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.8.3/VideoClipper-Helper-1.8.3-Windows-Setup.exe"
+      "name": "VideoClipper-Helper-1.9.0-Windows-Setup.exe",
+      "size": 68413952,
+      "sha256": "f815c61f9c377baca8a8c47f8bc65e9e4382fcfe89fb267115d9927894a7e2da",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Windows-Setup.exe"
     },
     {
-      "name": "VideoClipper-Helper-1.8.3-Windows.zip",
-      "size": 68365746,
-      "sha256": "2daae34136dfc08e179206521a8142f5f1883147ac729ff83e2bd13fbb8ec808",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.8.3/VideoClipper-Helper-1.8.3-Windows.zip"
+      "name": "VideoClipper-Helper-1.9.0-Windows.zip",
+      "size": 68378741,
+      "sha256": "6937bfe7a26dd0f0e5897464725b3e9a38fc9efa17899c2afb3b35be67f2dcbd",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Windows.zip"
     },
     {
-      "name": "VideoClipper-Helper-1.8.3-Linux-x86_64.tar.gz",
-      "size": 77659005,
-      "sha256": "ccf59be90ec251ff069a4c091587ec8cc6581111b6b3c31843608367f97bd9e3",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.8.3/VideoClipper-Helper-1.8.3-Linux-x86_64.tar.gz"
+      "name": "VideoClipper-Helper-1.9.0-Linux-x86_64.tar.gz",
+      "size": 77658337,
+      "sha256": "6c95c0a3ebd9e61ce638d885877f9df2f96ac39cdf0aadbd6647054fa6b520a0",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Linux-x86_64.tar.gz"
     },
     {
-      "name": "VideoClipper-1.12.13-SHA256SUMS.txt",
-      "size": 524,
-      "sha256": "64c1a45ff1049d057fb59903ab5fb0b8ee1d631e13358f7374217d436c2c64b6",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.13/VideoClipper-1.12.13-SHA256SUMS.txt"
+      "name": "VideoClipper-1.13.0-SHA256SUMS.txt",
+      "size": 522,
+      "sha256": "7ce3af6bf7c070cb83ad15fb6ba70e402b53cc8ef3cbcebff09e05cf7909550b",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.0/VideoClipper-1.13.0-SHA256SUMS.txt"
     }
   ]
 }

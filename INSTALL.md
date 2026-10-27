@@ -1,20 +1,20 @@
 # Install Video Clipper
 
-[Italiano](INSTALLAZIONE.md) · [Firefox add-on](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Downloads](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.12.12)
+[Italiano](INSTALLAZIONE.md) · [Firefox add-on](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Downloads](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.0)
 
-Video Clipper 1.12.12 has an English/Italian interface. Update both the extension and local helper **1.8.3** for the native Firefox MP4 duration/frame correction. Older extensions remain protocol-compatible with the new helper, but cannot activate this correction. Extension and helper update separately.
+Video Clipper 1.13.0 has an English/Italian interface. Update both the extension and local helper **1.9.0** for automatic verified page recovery and Collection. Older extensions remain protocol-compatible but do not activate these features. Extension and helper update separately.
 
 ## Windows — recommended
 
 1. Install the extension from Mozilla. Its first-run page opens **Guided setup**. You can reopen it from Settings at any time.
-2. [Download the Windows x64 installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.8.3/VideoClipper-Helper-1.8.3-Windows-Setup.exe), open it and click **Install**. Firefox is selected by default; select Chrome/Edge only if you use them.
+2. [Download the Windows x64 installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Windows-Setup.exe), open it and click **Install**. Firefox is selected by default; select Chrome/Edge only if you use them.
 3. Return to **Settings → Guided setup → Check connection**. Choose the folder where you want to save clips. Open a video, activate Video Clipper and test a short interval.
 
 The installer works for the current Windows account, under its local Programs/VideoClipper folder. It needs no administrator access or separate Python installation. It registers the helper automatically and preserves previous helper files. If browser registration fails, the previous connection is restored.
 
 Installed FFmpeg/ffprobe and encoders are reused when healthy. Otherwise, leave **Prepare video tools automatically if missing** checked: the installer downloads about 105 MB directly from gyan.dev, verifies the exact size and SHA-256, then prepares tools beside the helper. No PATH changes or manual extraction. The original vendor download and license remain in the installed folder. If you decline the download, both tools and libx264/AAC must already be available.
 
-The installer is not Authenticode signed. Download it from this repository and compare [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.8.3/VideoClipper-Helper-1.8.3-SHA256SUMS.txt). It does not bypass Windows security controls. If setup fails, run it again after resolving the reported connection/disk problem. Keep a working old helper folder until the replacement is verified.
+The installer is not Authenticode signed. Download it from this repository and compare [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-SHA256SUMS.txt). It does not bypass Windows security controls. If setup fails, run it again after resolving the reported connection/disk problem. Keep a working old helper folder until the replacement is verified.
 
 If Video Clipper was open during setup, close and reopen its panel. Reopen Firefox if it retains an old helper connection. The installer does not close the browser or modify its profiles.
 
@@ -24,13 +24,13 @@ In **Settings → General → Language**, choose **Automatic**, **Italiano** or 
 
 ## Linux x86_64
 
-[Download the helper archive](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.8.3/VideoClipper-Helper-1.8.3-Linux-x86_64.tar.gz). Extract it in full to a permanent folder and run `./installa-helper.sh firefox` as the user running Firefox. Do not use sudo for helper registration. Provide FFmpeg and ffprobe with libx264/AAC through your system's package manager, then reopen Firefox and run **Check connection**.
+[Download the helper archive](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Linux-x86_64.tar.gz). Extract it in full to a permanent folder and run `./installa-helper.sh firefox` as the user running Firefox. Do not use sudo for helper registration. Provide FFmpeg and ffprobe with libx264/AAC through your system's package manager, then reopen Firefox and run **Check connection**.
 
 Moving the helper folder requires registration again. Keep the bundled files together. Snap/Flatpak browser access to the native helper has not been verified.
 
 ## Chrome and Edge
 
-Extract the [Chromium extension ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/v1.12.12/VideoClipper-1.12.12-Chromium.zip) to a stable folder. In `chrome://extensions` or `edge://extensions`, enable developer mode and **Load unpacked** that folder.
+Extract the [Chromium extension ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.0/VideoClipper-1.13.0-Chromium.zip) to a stable folder. In `chrome://extensions` or `edge://extensions`, enable developer mode and **Load unpacked** that folder.
 
 On Windows, choose Chrome/Edge in the guided helper installer. Registering Firefox alone does not connect the other browsers. The portable helper can also register with `VideoClipperHelper.exe --install --browser chrome` or `--browser edge`. No Chrome Web Store or Edge Add-ons publication is claimed.
 
