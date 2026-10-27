@@ -1,10 +1,10 @@
 # Install Video Clipper
 
-[Italiano](INSTALLAZIONE.md) · [Firefox add-on](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Downloads](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.1)
+[Italiano](INSTALLAZIONE.md) · [Firefox add-on](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Downloads](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.2)
 
-Video Clipper 1.13.1 has an English/Italian interface and fixes Collection loading and file feedback. Collection and verified page recovery use local helper **1.9.0**. Extension and helper update separately.
+Video Clipper 1.13.2 has an English/Italian interface and fixes first-save recovery on pages with sidebar video advertisements. Collection and page recovery use local helper **1.9.0**. Extension and helper update separately.
 
-If helper 1.9.0 is already installed, update only the extension for the Collection loading/feedback fixes.
+If helper 1.9.0 is already installed, update only the extension for this first-save fix.
 
 ## Windows — recommended
 
@@ -32,7 +32,7 @@ Moving the helper folder requires registration again. Keep the bundled files tog
 
 ## Chrome and Edge
 
-Extract the [Chromium extension ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.1/VideoClipper-1.13.1-Chromium.zip) to a stable folder. In `chrome://extensions` or `edge://extensions`, enable developer mode and **Load unpacked** that folder.
+Extract the [Chromium extension ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.2/VideoClipper-1.13.2-Chromium.zip) to a stable folder. In `chrome://extensions` or `edge://extensions`, enable developer mode and **Load unpacked** that folder.
 
 On Windows, choose Chrome/Edge in the guided helper installer. Registering Firefox alone does not connect the other browsers. The portable helper can also register with `VideoClipperHelper.exe --install --browser chrome` or `--browser edge`. No Chrome Web Store or Edge Add-ons publication is claimed.
 

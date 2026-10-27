@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## 1.13.2 — first-save recovery beside video advertisements, 27 October 2026
+
+- Fixes a reproduced public XVideos case where two sidebar video advertisements made a blob-backed main player appear ambiguous. The first normal Save previously failed before page extraction.
+- Recognizes explicit advertising placements and excludes them from automatic selection and page-video uniqueness checks. The fix uses structural advertising markers, not video size, title, duration or media URL guesses. Main-player advertisements remain blocked, including blob-backed players; ordinary multiple-video pages and unmarked neighbors keep their guards.
+- Signed permanent 1.13.1 reproduces the failure. The new signed XPI saves the reported public page on one normal Save click; the created MP4 is independently checked for audio and the selected duration. No browser-session sharing or consent changes. The user URL, HTML and clip metadata remain private.
+- Six targeted local DOM/media cases, 101 JavaScript suites, 12 Chromium/native cases, 15 release-tool tests (2 environment skips), Firefox 142 native exports and signed/restarted Firefox 158 Windows/Linux collection exports pass. Only content.js and the manifest version change; helper 1.9.0 and its hash-bound tests are reused.
+- Italiano: corretto il primo salvataggio bloccato dai player pubblicitari laterali. Il caso reale ora produce la clip con un solo clic; helper invariato, nessun nuovo permesso.
+
 ## 1.13.1 — Collection loading and readable file errors, 27 October 2026
 
 - Saved Collection entries now refresh an already-open panel as soon as startup storage loading completes. A paused player no longer leaves restored clips apparently missing. Invalid/unavailable storage is reported without replacing saved data.
