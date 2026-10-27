@@ -1,16 +1,18 @@
 # Changes / Novità
 
-## Extension 1.13.9 — safer project recovery
+## Extension 1.13.13 — safer project recovery
 
-Video Clipper 1.13.9 improves project recovery and protects edits made while a project is being saved or restored.
+Video Clipper 1.13.13 improves project recovery and protects cuts and settings during player changes and automatic saving.
 
-- A saved composition is kept as a recoverable previous version when all of its ranges are replaced, even if the number of parts stays the same.
-- Manual recovery checks that the current ranges have not changed while the request was pending. Automatic recovery verifies all ranges and the active part before reporting success.
-- Disabling automatic project saving stops a pending automatic draft before its write starts. If the video duration changes during capture, the stale project is rejected.
+- A delayed restore cannot change a newly selected active part.
+- Replacing one of several ranges preserves the earlier composition as a recoverable previous version.
+- Re-enabling automatic project saving preserves edits made while it was disabled.
+- Applying current export settings after recovery persists both the restored ranges and the settings, including when no draft existed.
+- Queue outcome writes retain a bounded retry limit when storage fails; deferred project edits are saved after storage recovers.
 
-An isolated Firefox test saved and recovered eight distinct ranges; additional tests cover the races above. These safeguards cannot reconstruct cuts already absent from saved data. The native helper remains 1.9.3.
+The release also includes the recovery and stale-document fixes prepared in 1.13.10. Isolated tests cover Firefox project recovery, Chromium exports and project storage failures. Existing data cannot reconstruct cuts that were already absent. The native helper remains 1.9.3.
 
-Italiano: migliora il recupero dei progetti e protegge le modifiche ai tagli quando il salvataggio o il ripristino sono in corso. I tagli già assenti dai dati salvati non possono essere ricostruiti automaticamente.
+Italiano: più protezione per tagli, parte selezionata e impostazioni durante il recupero e il salvataggio dei progetti.
 
 ## Extension 1.13.7 — protect and verify project recovery
 

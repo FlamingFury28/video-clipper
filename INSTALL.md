@@ -1,8 +1,8 @@
 # Install Video Clipper
 
-[Italiano](INSTALLAZIONE.md) · [Firefox add-on](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Downloads](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.9)
+[Italiano](INSTALLAZIONE.md) · [Firefox add-on](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Downloads](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.13)
 
-Use extension **1.13.9** and helper **1.9.3**. The signed direct package is available from GitHub; the Mozilla catalog update has a separate review. They update separately; the helper adds bounded recovery for unavailable media manifests.
+Use extension **1.13.13** and helper **1.9.3**. The signed direct package is available from GitHub; the Mozilla catalog update has a separate review. They update separately; the helper adds bounded recovery for unavailable media manifests.
 
 If you have helper 1.9.1 or older, update the helper as well: updating only the extension does not include these fixes.
 
