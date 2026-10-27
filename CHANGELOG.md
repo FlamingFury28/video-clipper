@@ -1,5 +1,12 @@
 # Changes / Novità
 
+## Helper 1.9.3 — bounded source recovery and Windows setup, 27 October 2026
+
+- When page extraction finds no formats and every observed HLS/DASH manifest returns HTTP 410, retry the same page at most twice. Identity, session scope and DRM checks remain active. If the site keeps the manifests unavailable, the save can still fail and reports HTTP 410.
+- The Windows installer retries transient staging-directory move errors for a few seconds; it never overwrites a destination and remains cancellable. The installer is not Authenticode signed.
+- Tests include Windows/Linux native compatibility, collection and page recovery, signed Firefox local exports and Chromium integration. Three clean installer preparations and transient, persistent and collision failure tests pass. A short sample from the reported page was saved using helper 1.9.2 with the same logic; the real-page Firefox test was blocked by the site's cookie overlay.
+- Italiano: recupero automatico limitato quando i manifest risultano indisponibili con HTTP 410; migliorata l'affidabilita dell'installer Windows. Il successo dipende comunque dal sito.
+
 ## Helper 1.9.1 — valid source containers and reliable first Save, 27 October 2026
 
 - Fixes automatic page recovery incorrectly applying encoded-MP4 frame-count requirements to downloaded sources. Valid WebM, Matroska and fragmented MP4 can omit nb_frames. Source video coverage is checked separately; the final encoded MP4 still requires positive frames, valid duration and full video coverage.

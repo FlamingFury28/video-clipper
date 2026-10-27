@@ -1,12 +1,11 @@
 {
   "extensionVersion": "1.13.3",
-  "helperVersion": "1.9.1",
+  "helperVersion": "1.9.3",
   "helperChanged": true,
   "verifiedOn": "2026-10-27",
   "javaScriptSuitesPassed": 102,
   "javaScriptSnapshotDifference": null,
   "helperPythonTestsReused": 0,
-  "pythonEnvironmentSkips": 6,
   "helperEvidenceReusedFrom": null,
   "collectionEvidenceReusedFrom": "signed 1.13.2, unchanged panel/background/helper",
   "chromiumNativeCases": 12,
@@ -43,28 +42,28 @@
       "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.3/VideoClipper-1.13.3-Chromium.zip"
     },
     {
-      "name": "VideoClipper-Helper-1.9.1-Windows-Setup.exe",
-      "size": 68414976,
-      "sha256": "b81b4fd45be1b97a28376796e3f1daf4b632eb1785243c8bc36ad31ed76357d0",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.1/VideoClipper-Helper-1.9.1-Windows-Setup.exe"
+      "name": "VideoClipper-Helper-1.9.3-Windows-Setup.exe",
+      "size": 68413952,
+      "sha256": "6d0a209604c1f7d2e9ee75b5c96b1a9fb42c05c12fe61c33dcda2a833a6ba6b1",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-Windows-Setup.exe"
     },
     {
-      "name": "VideoClipper-Helper-1.9.1-Windows.zip",
-      "size": 68379580,
-      "sha256": "f7926b56d81db09efcc7fe610d96191dece6b060f3f50bc44e2c60ebb4516973",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.1/VideoClipper-Helper-1.9.1-Windows.zip"
+      "name": "VideoClipper-Helper-1.9.3-Windows.zip",
+      "size": 68378271,
+      "sha256": "85bff5d750bcd7f91524e73c42adb45ed8d277ca1c3f1f044053375e2cb0d7d2",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-Windows.zip"
     },
     {
-      "name": "VideoClipper-Helper-1.9.1-Linux-x86_64.tar.gz",
-      "size": 77664426,
-      "sha256": "4789df2cf26010d2b794c71eaa2ec038f412f4b793b060f32df775571aafee1e",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.1/VideoClipper-Helper-1.9.1-Linux-x86_64.tar.gz"
+      "name": "VideoClipper-Helper-1.9.3-Linux-x86_64.tar.gz",
+      "size": 77668781,
+      "sha256": "6c393c9bfffac53dcb334d2c8bf1a4f53b52b679428ac4bfabcddb6b650a2d3b",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-Linux-x86_64.tar.gz"
     },
     {
-      "name": "VideoClipper-Helper-1.9.1-SHA256SUMS.txt",
+      "name": "VideoClipper-Helper-1.9.3-SHA256SUMS.txt",
       "size": 326,
-      "sha256": "602bf03eb51420f2ff622c56046f133a58789aee6c84e262e74f8052a63b9b83",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.1/VideoClipper-Helper-1.9.1-SHA256SUMS.txt"
+      "sha256": "f93354144969886e760bfeaaf2c73bdaff8ea3dafe61790a01c77b50363f1387",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-SHA256SUMS.txt"
     },
     {
       "name": "VideoClipper-1.13.3-SHA256SUMS.txt",
@@ -73,12 +72,10 @@
       "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.3/VideoClipper-1.13.3-SHA256SUMS.txt"
     }
   ],
-  "helperPythonCases": 516,
-  "pythonVerification": "Full run retained; one refresh-only fake-media fixture corrected and its affected suite rerun, product unchanged.",
   "affectedSuiteRerun": 23,
   "helperHashes": {
-    "windows": "9bfb94168610b9d131cc5eb9b7a5afe4ffb495372763b0c054c55d6b7098a0c6",
-    "linux": "84bc6467ceac87ed8000a4404ae0d046fd08634e50658b9ea2bd25c3bc5037ef"
+    "Windows": "af394035cea5b41e3089acd6cb4c03d2501c2bd393b717a21667218e473a5702",
+    "Linux-x86_64": "8edf1f611b381869d5729cd8a208f4c143df21475e309d67ee960a223de53c23"
   },
   "targetedContainerTests": 9,
   "helperNativeCompatibilityCasesPerPlatform": 4,
@@ -94,10 +91,26 @@
       "158"
     ]
   },
-  "userPublicPageFailureReproduced": true,
-  "userExactIntervalFirstClickPassed": true,
   "userUrlAndMediaPublished": false,
   "installerPayloadVerified": true,
   "installerCleanPreparationVerified": true,
-  "extensionPayloadChanged": false
+  "extensionPayloadChanged": false,
+  "publicPageFirefoxVerified": false,
+  "publicPageShortNativeSampleVersion": "1.9.2 with identical logic except version",
+  "manifestRecoveryTests": 9,
+  "installerPreparations": 3,
+  "installerInjectedFailureCases": 3,
+  "notes193": "Previous exact-interval public page evidence is historical for helper 1.9.1. The 1.9.3 signed Firefox tests use local media. Persistent HTTP 410 may still fail.",
+  "previousHelper191Evidence": {
+    "helperPythonCases": 516,
+    "pythonVerification": "Full run retained; one refresh-only fake-media fixture corrected and its affected suite rerun, product unchanged.",
+    "pythonEnvironmentSkips": 6,
+    "userPublicPageFailureReproduced": true,
+    "userExactIntervalFirstClickPassed": true
+  },
+  "finalHelperTargetedManifestTests": 9,
+  "finalHelperTargetedSourceTests": 23,
+  "previousImplementationFullSuiteCases": 524,
+  "previousImplementationFullSuiteSkips": 6,
+  "previousImplementationFullSuiteNote": "Full run was on earlier one-retry implementation; final two-retry logic was tested separately."
 }

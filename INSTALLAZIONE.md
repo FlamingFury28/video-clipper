@@ -2,21 +2,21 @@
 
 [English](INSTALL.md) · [Estensione Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Download](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.3)
 
-Usa estensione **1.13.3** e helper **1.9.1**. L’estensione corregge la scelta dei player pubblicitari; il nuovo helper corregge VIDEO_OUTPUT_MISSING su sorgenti valide. Si aggiornano separatamente.
+Usa estensione **1.13.3** e helper **1.9.3**. Si aggiornano separatamente; l’helper recupera automaticamente alcuni casi di manifest non disponibili.
 
-Se hai l’helper1.9.0 o precedente, aggiorna anche quello: il solo aggiornamento dell’estensione Firefox non include questa correzione.
+Se hai l’helper 1.9.1 o precedente, aggiorna anche quello: il solo aggiornamento dell’estensione non include queste correzioni.
 
 ## Windows — percorso consigliato
 
 1. Installa l’estensione da Mozilla. Al primo avvio si apre **Installazione guidata**, raggiungibile anche dalle impostazioni.
-2. [Scarica il programma di installazione Windows x64](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.1/VideoClipper-Helper-1.9.1-Windows-Setup.exe), aprilo e premi **Installa**. Firefox è già selezionato; aggiungi Chrome/Edge solo se li usi.
+2. [Scarica il programma di installazione Windows x64](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-Windows-Setup.exe), aprilo e premi **Installa**. Firefox è già selezionato; aggiungi Chrome/Edge solo se li usi.
 3. Torna in **Impostazioni → Installazione guidata → Verifica collegamento**, scegli la cartella di destinazione e prova una breve clip.
 
 Il programma prepara una cartella stabile nell’account Windows, sotto Programs/VideoClipper, e registra l’helper per i browser scelti. Non servono privilegi amministrativi, Python o configurazioni manuali del PATH. I file dell’helper precedente vengono conservati; se la registrazione non riesce, viene ripristinato il collegamento precedente.
 
 Se FFmpeg, ffprobe e gli encoder necessari sono già disponibili e funzionanti, vengono riutilizzati. Altrimenti lascia selezionato **Prepara automaticamente gli strumenti video mancanti**: vengono scaricati circa 105 MB da gyan.dev, verificati per dimensione e SHA-256 e preparati accanto all’helper. L’archivio originale e la licenza restano nella cartella installata. Se rifiuti il download, gli strumenti con libx264/AAC devono essere già disponibili.
 
-L’installer non ha una firma Authenticode separata. Scaricalo da questo repository e confronta le [impronte SHA-256](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.1/VideoClipper-Helper-1.9.1-SHA256SUMS.txt). Non aggira i controlli di Windows. Se l’installazione fallisce, risolvi il problema di connessione/spazio indicato e avviala di nuovo. Conserva un’eventuale vecchia cartella funzionante finché la nuova è verificata.
+L’installer non ha una firma Authenticode separata. Scaricalo da questo repository e confronta le [impronte SHA-256](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-SHA256SUMS.txt). Non aggira i controlli di Windows. Se l’installazione fallisce, risolvi il problema di connessione/spazio indicato e avviala di nuovo. Conserva un’eventuale vecchia cartella funzionante finché la nuova è verificata.
 
 Se il pannello era aperto, chiudilo e riaprilo. Riavvia Firefox solo se mantiene il vecchio collegamento all’helper. L’installer non chiude il browser e non modifica i profili personali.
 
@@ -26,7 +26,7 @@ In **Impostazioni → Generali → Lingua**, scegli **Automatico**, **Italiano**
 
 ## Linux x86_64
 
-[Scarica l’archivio dell’helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.1/VideoClipper-Helper-1.9.1-Linux-x86_64.tar.gz), estrailo interamente in una cartella permanente ed esegui `./installa-helper.sh firefox` come utente del browser, senza sudo. FFmpeg e ffprobe con libx264/AAC devono essere disponibili tramite il sistema. Riapri Firefox ed esegui **Verifica collegamento**.
+[Scarica l’archivio dell’helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-Linux-x86_64.tar.gz), estrailo interamente in una cartella permanente ed esegui `./installa-helper.sh firefox` come utente del browser, senza sudo. FFmpeg e ffprobe con libx264/AAC devono essere disponibili tramite il sistema. Riapri Firefox ed esegui **Verifica collegamento**.
 
 Se sposti la cartella, registra di nuovo l’helper. Conserva insieme tutti i file estratti. Il collegamento con browser Snap/Flatpak non è verificato.
 
