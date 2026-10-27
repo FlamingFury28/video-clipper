@@ -14,18 +14,18 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-**1.13.2 fixes a failed first Save beside video advertisements.** Recognized sidebar advertising players no longer block verified page recovery or become the automatic selection. Reproduced on a public XVideos page with signed 1.13.1, then verified with the new signed version: one normal Save click creates a valid MP4 with audio and the selected duration. Update the extension; **helper 1.9.0 is unchanged**.
+**1.13.3 fixes more first-save failures with advertising players.** A larger video explicitly marked as an advertisement no longer wins automatic selection or blocks page recovery from an ad-only embedded frame. Returning from a manual choice to automatic selection now applies the same filter. Four local native-export cases save the correct film with one normal Save click, using the actual signed extension after restart on Windows and Linux. Update the extension; **helper 1.9.0 is unchanged**.
 
 **Already installed in Firefox?** Open **Add-ons and themes → gear menu → Check for Updates**. For a signed XPI already downloaded, choose **Install Add-on From File** in the same menu. Keep the installed extension: its settings are preserved. Firefox controls installation and catalog update availability.
 
 | Download | Use |
 |---|---|
-| [Firefox extension 1.13.2](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.2/VideoClipper-1.13.2-signed.xpi) | Mozilla-signed permanent installation |
+| [Firefox extension 1.13.3](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.3/VideoClipper-1.13.3-signed.xpi) | Mozilla-signed permanent installation |
 | [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
 | [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Windows.zip) | Advanced manual installation |
 | [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
-| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.2/VideoClipper-1.13.2-Chromium.zip) | Unpacked desktop installation; no store publication |
-| [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.2/VideoClipper-1.13.2-SHA256SUMS.txt) | Verify downloaded packages |
+| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.3/VideoClipper-1.13.3-Chromium.zip) | Unpacked desktop installation; no store publication |
+| [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.3/VideoClipper-1.13.3-SHA256SUMS.txt) | Verify downloaded packages |
 
 ## Clips from several videos
 
@@ -51,7 +51,7 @@ Firefox may revoke temporary page access on full navigation. Use **Keep active o
 
 The extension works with accessible HTML5 players, embedded frames, open shadow roots and dynamic pages. Choose another player manually when necessary. Source identity and duration checks help prevent saving the wrong video.
 
-The reported public-page first-save case is reproduced in isolated Firefox, alongside six local real-DOM/media advertising and ambiguity cases. The new signed XPI saves that public page on the first normal click, without enabling session sharing. One hundred and one JavaScript suites, twelve Chromium/native checks, native collection exports and signed restarts on Windows/Linux pass. Two ordinary videos and unmarked neighbors remain ambiguous; main-player advertisements stay blocked. Helper 1.9.0 is unchanged; its 507 Python tests (six environment skips) and native binary evidence are reused after hash comparison. The guided installer is for **Windows x64**. Linux uses the archive and system FFmpeg; Snap/Flatpak helper access is unverified. No verified helper package is available for macOS, Android or iOS.
+Three additional advertising-selection failures are reproduced with signed 1.13.2 in isolated Firefox. Version 1.13.3 passes ten targeted real-DOM/media cases, including nested frames, changing advertising markers and return to automatic selection. Four native first-click exports per platform verify the selected film's frames, audio and duration with the new signed extension after restart. The 102 JavaScript suites and twelve Chromium/native checks pass. Prior collection and helper tests are reused after matching unchanged component hashes. Ordinary multiple-video pages and unmarked neighbors remain guarded; main-player advertisements stay blocked. All new fixtures are local: these results do not establish universal website compatibility. Helper 1.9.0 is unchanged; its 507 Python tests (six environment skips) and native binary evidence are reused. The guided installer is for **Windows x64**. Linux uses the archive and system FFmpeg; Snap/Flatpak helper access is unverified. No verified helper package is available for macOS, Android or iOS.
 
 Some sites require optional, revocable per-site session access in the authenticated browser context. Advanced search and session access are separate. No other browser profile is read. DRM, live streams and closed shadow roots are unsupported. A full source video may need downloading before trimming. “Original” quality is not lossless. Website compatibility is not universal.
 

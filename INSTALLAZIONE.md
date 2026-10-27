@@ -1,8 +1,8 @@
 # Installa Video Clipper
 
-[English](INSTALL.md) · [Estensione Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Download](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.2)
+[English](INSTALL.md) · [Estensione Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Download](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.3)
 
-Video Clipper 1.13.2 ha l’interfaccia italiana e inglese e corregge il primo salvataggio nelle pagine con player pubblicitari laterali. Raccolta e recupero pagina usano l’helper locale **1.9.0**. Estensione e helper si aggiornano separatamente.
+Video Clipper 1.13.3 ha l’interfaccia italiana e inglese e corregge il primo salvataggio con player pubblicitari grandi o incorporati. Raccolta e recupero pagina usano l’helper locale **1.9.0**. Estensione e helper si aggiornano separatamente.
 
 Se l’helper 1.9.0 è già installato, aggiorna soltanto l’estensione per questa correzione al primo salvataggio.
 
@@ -32,7 +32,7 @@ Se sposti la cartella, registra di nuovo l’helper. Conserva insieme tutti i fi
 
 ## Chrome ed Edge
 
-Estrai lo [ZIP Chromium](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.2/VideoClipper-1.13.2-Chromium.zip) in una cartella stabile. Da `chrome://extensions` o `edge://extensions`, attiva la modalità sviluppatore e carica la cartella come estensione non pacchettizzata.
+Estrai lo [ZIP Chromium](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.3/VideoClipper-1.13.3-Chromium.zip) in una cartella stabile. Da `chrome://extensions` o `edge://extensions`, attiva la modalità sviluppatore e carica la cartella come estensione non pacchettizzata.
 
 Nel programma di installazione Windows seleziona anche il browser scelto. La registrazione per Firefox da sola non basta. In alternativa, l’helper portatile accetta `VideoClipperHelper.exe --install --browser chrome` oppure `--browser edge`. Non è dichiarata la pubblicazione negli store Chrome/Edge.
 

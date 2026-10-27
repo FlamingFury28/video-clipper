@@ -1,5 +1,14 @@
 # Changes / Novità
 
+## 1.13.3 — explicit advertising markers and embedded players, 27 October 2026
+
+- Fixes three additional failures reproduced with signed 1.13.2: a larger data-ad=true player winning selection, an ad-only child frame blocking main-page recovery, and an advertising marker placed around the frame in its parent document.
+- Uses explicit markers and accessible same-origin frame ancestry. Nested frames are bounded to 16 ancestors; inaccessible, cross-origin, opaque and unmarked contexts retain their guards. No size, title or duration guesses.
+- Returning from manual to automatic selection applies the same advertisement filter. Adding/removing the parent marker updates eligibility, so a recovered embedded video is not lost permanently. Main-player advertisements remain blocked.
+- Ten targeted local DOM/media cases and four native first-click export cases per platform pass. Actual signed/permanent Firefox 158 after restart on Windows and Linux produces the correct film, frames, audio and 1.2-second selection with one normal Save per case. Firefox 142 source exports also pass all four cases. These fixtures are local, not new live-site claims.
+- All 102 JavaScript suites, 12 Chromium/native checks, 15 release-tool tests (2 environment skips) and 3 permanent signature/restart checks pass. Only content.js and the manifest version change; helper 1.9.0 and collection evidence are reused after matching unchanged hashes. No new permissions.
+- Italiano: corretti altri blocchi del primo salvataggio con player pubblicitari grandi o incorporati e il ritorno alla selezione automatica. Verificati file, fotogrammi e audio; helper invariato.
+
 ## 1.13.2 — first-save recovery beside video advertisements, 27 October 2026
 
 - Fixes a reproduced public XVideos case where two sidebar video advertisements made a blob-backed main player appear ambiguous. The first normal Save previously failed before page extraction.

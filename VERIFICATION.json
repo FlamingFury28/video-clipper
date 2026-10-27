@@ -1,46 +1,46 @@
 {
-  "extensionVersion": "1.13.2",
+  "extensionVersion": "1.13.3",
   "helperVersion": "1.9.0",
   "helperChanged": false,
   "verifiedOn": "2026-10-27",
-  "javaScriptSuitesPassed": 101,
-  "javaScriptSnapshotDifference": "manifest version only; other 13 files byte-identical",
+  "javaScriptSuitesPassed": 102,
+  "javaScriptSnapshotDifference": null,
   "helperPythonTestsReused": 507,
   "pythonEnvironmentSkips": 6,
   "helperEvidenceReusedFrom": "1.13.0 / helper 1.9.0, source and binary hashes matched",
+  "collectionEvidenceReusedFrom": "signed 1.13.2, unchanged panel/background/helper",
   "chromiumNativeCases": 12,
   "releaseToolTests": 15,
   "releaseToolEnvironmentSkips": 2,
-  "targetedAdvertisingDomCases": 6,
-  "priorSignedPublicPageFailureReproduced": true,
-  "signedPublicPageFirstNormalSavePassed": true,
-  "publicPageUrlPublished": false,
-  "signedPublicOutputAudioAndSelectedDurationVerified": true,
-  "publicPageSessionSharingEnabled": false,
-  "nativeCollectionCases": {
-    "sourceWindows142": 6,
-    "sourceLinux158": 6,
-    "signedWindows158AfterRestart": 7,
-    "signedLinux158AfterRestart": 7
+  "targetedAdvertisingDomCases": 10,
+  "previousSignedFailureCasesReproduced": 3,
+  "nativeFirstClickCases": {
+    "sourceWindows142": 4,
+    "sourceLinux158": 4,
+    "signedWindows158AfterRestart": 4,
+    "signedLinux158AfterRestart": 4
   },
+  "temporalFramesAudioAndDurationVerified": true,
+  "fixtures": "local",
+  "publicWebsiteVisitedThisCycle": false,
   "signatureInstallRestartChecks": 3,
   "newManifestPermissions": false,
   "personalProfilesModified": false,
   "privateSourcesPublished": false,
   "directUnlistedChannelChanged": false,
-  "signedXpiSha256": "005e8ec15636ab884d03065a0247a9e201c90e33ee54e508e7f5fbbe00ded4f5",
+  "signedXpiSha256": "2acc85ba4da58364e2feb383100dc874fe1c7286867c90e197239ee692521795",
   "assets": [
     {
-      "name": "VideoClipper-1.13.2-signed.xpi",
-      "size": 331708,
-      "sha256": "005e8ec15636ab884d03065a0247a9e201c90e33ee54e508e7f5fbbe00ded4f5",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.2/VideoClipper-1.13.2-signed.xpi"
+      "name": "VideoClipper-1.13.3-signed.xpi",
+      "size": 331938,
+      "sha256": "2acc85ba4da58364e2feb383100dc874fe1c7286867c90e197239ee692521795",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.3/VideoClipper-1.13.3-signed.xpi"
     },
     {
-      "name": "VideoClipper-1.13.2-Chromium.zip",
-      "size": 321595,
-      "sha256": "f4925cfa25f05ffed50052dceaa100475f0c043918b8f7bdcb74df8e9325b3d6",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.2/VideoClipper-1.13.2-Chromium.zip"
+      "name": "VideoClipper-1.13.3-Chromium.zip",
+      "size": 321818,
+      "sha256": "a6aee9413481f3effe9d962945862292acad2091ebe0b623d1f5b2c26f550caa",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.3/VideoClipper-1.13.3-Chromium.zip"
     },
     {
       "name": "VideoClipper-Helper-1.9.0-Windows-Setup.exe",
@@ -61,10 +61,10 @@
       "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Linux-x86_64.tar.gz"
     },
     {
-      "name": "VideoClipper-1.13.2-SHA256SUMS.txt",
+      "name": "VideoClipper-1.13.3-SHA256SUMS.txt",
       "size": 522,
-      "sha256": "3e2e459ce5ca9e66ce314ff08850f4e9f6ef1690bd54a97f94c3d66afebbc914",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.2/VideoClipper-1.13.2-SHA256SUMS.txt"
+      "sha256": "628b37652b0353b55f14d8c4561666db66c7aef21f42b01a69b2d4bc45f3f0a3",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.3/VideoClipper-1.13.3-SHA256SUMS.txt"
     }
   ]
 }
