@@ -1,5 +1,12 @@
 # Changes / Novità
 
+## Extension 1.13.7 — protect and verify project recovery
+
+- Recovery now checks all saved ranges and the active part before reporting success. A document change during a pending save cancels the stale snapshot. Backups retain distinct names and durations, and stale recovery messages clear when a project is removed.
+- Before autosave or an explicit save replaces a project with fewer parts, retain the previous composition as a restorable previous version. If storage is full, fail without replacing the saved project. Existing earlier backups are never deleted automatically.
+- An isolated Firefox test saved eight distinct ranges, removed a part, and restored all eight from the previous version. Local background tests also cover reopening, failed recovery and full storage. This protects versions available at the time of saving; it cannot recreate already-lost ranges.
+- Italiano: se un progetto viene salvato con meno parti, conserva la versione precedente recuperabile. Se l'archivio è pieno, non sovrascrive il progetto. I tagli già assenti dai dati salvati non possono essere ricostruiti automaticamente.
+
 ## Helper 1.9.3 — bounded source recovery and Windows setup, 27 October 2026
 
 - When page extraction finds no formats and every observed HLS/DASH manifest returns HTTP 410, retry the same page at most twice. Identity, session scope and DRM checks remain active. If the site keeps the manifests unavailable, the save can still fail and reports HTTP 410.

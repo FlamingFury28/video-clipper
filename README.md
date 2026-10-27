@@ -14,20 +14,20 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-**Use extension 1.13.3 with helper 1.9.3.** The helper retries the same page at most twice when every observed media manifest returns HTTP 410 and extraction finds no formats. Existing identity, session and DRM checks remain in place. If the manifests remain unavailable, the save can still fail with a clearer error. The Windows installer also retries temporary staging-folder move failures without overwriting an existing installation. Update the helper separately from the extension.
+**Use extension 1.13.7 with helper 1.9.3.** When a saved project is replaced by a version with fewer parts, the previous version is retained and can be restored from Projects and queue. This cannot reconstruct parts already absent from saved data. The Mozilla catalog may still offer the previous version while its separate review is pending.  The helper retries the same page at most twice when every observed media manifest returns HTTP 410 and extraction finds no formats. Existing identity, session and DRM checks remain in place. If the manifests remain unavailable, the save can still fail with a clearer error. The Windows installer also retries temporary staging-folder move failures without overwriting an existing installation. Update the helper separately from the extension.
 
 **Already installed in Firefox?** Open **Add-ons and themes → gear menu → Check for Updates**. For a signed XPI already downloaded, choose **Install Add-on From File** in the same menu. Keep the installed extension: its settings are preserved. Firefox controls installation and catalog update availability.
 
 | Download | Use |
 |---|---|
-| [Firefox extension 1.13.3](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.3/VideoClipper-1.13.3-signed.xpi) | Mozilla-signed permanent installation |
+| [Firefox extension 1.13.7](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.7/VideoClipper-1.13.7-signed.xpi) | Mozilla-signed permanent installation |
 | [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
 | [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-Windows.zip) | Advanced manual installation |
 | [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
-| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.3/VideoClipper-1.13.3-Chromium.zip) | Unpacked desktop installation; no store publication |
-| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.3/VideoClipper-1.13.3-SHA256SUMS.txt) | Verify downloaded packages |
+| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.7/VideoClipper-1.13.7-Chromium.zip) | Unpacked desktop installation; no store publication |
+| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.7/VideoClipper-1.13.7-SHA256SUMS.txt) | Verify downloaded packages |
 
-[Helper 1.9.3 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-SHA256SUMS.txt) verify the new helper packages. Extension 1.13.3 packages and their original checksum file are unchanged.
+[Helper 1.9.3 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.7 package and its checksums are published separately.
 
 ## Clips from several videos
 
