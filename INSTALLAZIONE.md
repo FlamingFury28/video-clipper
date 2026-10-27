@@ -1,8 +1,10 @@
 # Installa Video Clipper
 
-[English](INSTALL.md) · [Estensione Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Download](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.0)
+[English](INSTALL.md) · [Estensione Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Download](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.1)
 
-Video Clipper 1.13.0 ha l’interfaccia italiana e inglese. Aggiorna sia l’estensione sia l’helper locale **1.9.0** per il recupero automatico verificato e la Raccolta. Le estensioni precedenti restano compatibili con il protocollo ma non attivano queste funzioni. Estensione e helper si aggiornano separatamente.
+Video Clipper 1.13.1 ha l’interfaccia italiana e inglese e corregge il caricamento e i messaggi della Raccolta. Raccolta e recupero verificato della pagina usano l’helper locale **1.9.0**. Estensione e helper si aggiornano separatamente.
+
+Se l’helper 1.9.0 è già installato, aggiorna soltanto l’estensione per le correzioni al caricamento e ai messaggi della Raccolta.
 
 ## Windows — percorso consigliato
 
@@ -30,7 +32,7 @@ Se sposti la cartella, registra di nuovo l’helper. Conserva insieme tutti i fi
 
 ## Chrome ed Edge
 
-Estrai lo [ZIP Chromium](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.0/VideoClipper-1.13.0-Chromium.zip) in una cartella stabile. Da `chrome://extensions` o `edge://extensions`, attiva la modalità sviluppatore e carica la cartella come estensione non pacchettizzata.
+Estrai lo [ZIP Chromium](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.1/VideoClipper-1.13.1-Chromium.zip) in una cartella stabile. Da `chrome://extensions` o `edge://extensions`, attiva la modalità sviluppatore e carica la cartella come estensione non pacchettizzata.
 
 Nel programma di installazione Windows seleziona anche il browser scelto. La registrazione per Firefox da sola non basta. In alternativa, l’helper portatile accetta `VideoClipperHelper.exe --install --browser chrome` oppure `--browser edge`. Non è dichiarata la pubblicazione negli store Chrome/Edge.
 

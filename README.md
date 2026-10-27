@@ -14,18 +14,18 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-**1.13.0 + helper 1.9.0: save on the first click and collect clips from different videos.** A single visible player that hides its direct file can now recover a verified source from its page automatically. Collection keeps saved clips available as you change videos, then joins them in your chosen order or exports separate files. Update **both** components for these features.
+**1.13.1 keeps Collection visible and its feedback readable.** Clips restored after a slow startup now appear immediately, including with a paused player. Opening a moved/missing clip or an unavailable helper reports the actual error, which remains visible during playback. Update the extension; **helper 1.9.0 is unchanged**. Automatic verified page recovery and multi-video collection remain available.
 
 **Already installed in Firefox?** Open **Add-ons and themes → gear menu → Check for Updates**. For a signed XPI already downloaded, choose **Install Add-on From File** in the same menu. Keep the installed extension: its settings are preserved. Firefox controls installation and catalog update availability.
 
 | Download | Use |
 |---|---|
-| [Firefox extension 1.13.0](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.0/VideoClipper-1.13.0-signed.xpi) | Mozilla-signed permanent installation |
+| [Firefox extension 1.13.1](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.1/VideoClipper-1.13.1-signed.xpi) | Mozilla-signed permanent installation |
 | [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
 | [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Windows.zip) | Advanced manual installation |
 | [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.0/VideoClipper-Helper-1.9.0-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
-| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.0/VideoClipper-1.13.0-Chromium.zip) | Unpacked desktop installation; no store publication |
-| [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.0/VideoClipper-1.13.0-SHA256SUMS.txt) | Verify downloaded packages |
+| [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.1/VideoClipper-1.13.1-Chromium.zip) | Unpacked desktop installation; no store publication |
+| [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.1/VideoClipper-1.13.1-SHA256SUMS.txt) | Verify downloaded packages |
 
 ## Clips from several videos
 
@@ -51,7 +51,7 @@ Firefox may revoke temporary page access on full navigation. Use **Keep active o
 
 The extension works with accessible HTML5 players, embedded frames, open shadow roots and dynamic pages. Choose another player manually when necessary. Source identity and duration checks help prevent saving the wrong video.
 
-Verified with real opaque/blob media and two-video navigation in isolated Firefox 142/158, including signed permanent/restarted Firefox 158 on Windows and Ubuntu. Joined frames, audio, order and duration are checked independently; separate exports are byte-identical to the collected files. Ninety-seven JavaScript suites, 507 Python tests (six environment skips), twelve Chromium/native checks and the final bilingual collection layouts pass. Automatic recovery rejects incompatible durations and ambiguous extraction results before publishing. No new manifest permissions or personal-profile changes. The guided installer is for **Windows x64**. Linux uses the archive and system FFmpeg; Snap/Flatpak helper access is unverified. No verified helper package is available for macOS, Android or iOS.
+The previous signed 1.13.0 reproduces the missing-file feedback defect. The fix is verified with real opaque/blob media, joined/separate exports and missing-file feedback during playback in isolated Firefox 142/158, including signed/restarted Firefox 158 on Windows and Ubuntu. One hundred JavaScript suites, twelve Chromium/native checks and bilingual layouts pass. Helper 1.9.0 and all player recognition code are unchanged; the prior 507 Python tests (six environment skips) and helper binary checks are reused after hash comparison. The guided installer is for **Windows x64**. Linux uses the archive and system FFmpeg; Snap/Flatpak helper access is unverified. No verified helper package is available for macOS, Android or iOS.
 
 Some sites require optional, revocable per-site session access in the authenticated browser context. Advanced search and session access are separate. No other browser profile is read. DRM, live streams and closed shadow roots are unsupported. A full source video may need downloading before trimming. “Original” quality is not lossless. Website compatibility is not universal.
 

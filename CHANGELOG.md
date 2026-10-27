@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## 1.13.1 — Collection loading and readable file errors, 27 October 2026
+
+- Saved Collection entries now refresh an already-open panel as soon as startup storage loading completes. A paused player no longer leaves restored clips apparently missing. Invalid/unavailable storage is reported without replacing saved data.
+- Opening a moved/missing MP4 or an unavailable helper now reports the actual error in Collection. Playback updates preserve the message; a new action or changed collection clears it, and old replies cannot replace the current action.
+- Previous signed permanent 1.13.0 reproduces the missing-file feedback failure. Fixed source and signed Firefox Windows/Linux exports verify opaque-player collection, navigation, ordered joined output, identical separate copies, restart persistence and stable missing-file feedback during playback.
+- 100 JavaScript suites, 12 Chromium/native cases, 15 release-tool tests (2 environment skips) and bilingual narrow layouts pass. Helper 1.9.0 and content.js are byte-identical; prior 507 Python tests (6 environment skips) and binary evidence are reused by hash. Update only the extension if helper 1.9.0 is installed.
+- Italiano: Raccolta visibile dopo un caricamento lento ed errori Apri file leggibili anche durante la riproduzione. Helper invariato, nessun nuovo permesso.
+
 ## 1.13.0 — verified page recovery and clips from multiple videos, 27 October 2026
 
 - Fixes the repeated first-click block for a unique visible opaque player. Page recovery starts automatically when appropriate, with a new helper capability gate, unique extraction, known provider/video identity checks and full-duration verification before output publication.
