@@ -6,7 +6,7 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 
 **English and Italian**, with automatic browser-language selection and an immediate language switch in Settings.
 
-**[Install for Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Download Windows helper installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-Windows-Setup.exe)** · **[English setup guide](INSTALL.md)** · **[Guida italiana](INSTALLAZIONE.md)**
+**[Install for Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Download Windows helper installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.99/VideoClipper-Helper-1.9.99-Windows-Setup.exe)** · **[English setup guide](INSTALL.md)** · **[Guida italiana](INSTALLAZIONE.md)**
 
 ## Start clipping
 
@@ -14,20 +14,20 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-**Use extension 1.13.13 with helper 1.9.3.** When a saved project is replaced by a version with fewer parts, the previous version is retained and can be restored from Projects and queue. This cannot reconstruct parts already absent from saved data. The Mozilla catalog currently offers version 1.13.8; a separate update is planned.  The helper retries the same page at most twice when every observed media manifest returns HTTP 410 and extraction finds no formats. Existing identity, session and DRM checks remain in place. If the manifests remain unavailable, the save can still fail with a clearer error. The Windows installer also retries temporary staging-folder move failures without overwriting an existing installation. Update the helper separately from the extension.
+**Use the signed Firefox extension 1.13.19 with helper 1.9.99.** The Firefox catalog currently offers 1.13.8; the signed direct package is available below. Update the helper separately. Selective download is the default and can avoid fetching the complete source for supported MP4, HLS and DASH videos; some sources still require a full download.
 
 **Already installed in Firefox?** Open **Add-ons and themes → gear menu → Check for Updates**. For a signed XPI already downloaded, choose **Install Add-on From File** in the same menu. Keep the installed extension: its settings are preserved. Firefox controls installation and catalog update availability.
 
 | Download | Use |
 |---|---|
-| [Firefox extension 1.13.13](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.13/VideoClipper-1.13.13-signed.xpi) | Mozilla-signed permanent installation |
-| [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
-| [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-Windows.zip) | Advanced manual installation |
-| [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
+| [Firefox extension 1.13.19](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.19/VideoClipper-1.13.19-signed.xpi) | Mozilla-signed permanent installation |
+| [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.99/VideoClipper-Helper-1.9.99-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
+| [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.99/VideoClipper-Helper-1.9.99-Windows.zip) | Advanced manual installation |
+| [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.99/VideoClipper-Helper-1.9.99-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
 | [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.13/VideoClipper-1.13.13-Chromium.zip) | Unpacked desktop installation; no store publication |
-| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.13/VideoClipper-1.13.13-SHA256SUMS.txt) | Verify downloaded packages |
+| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.19/VideoClipper-1.13.19-SHA256SUMS.txt) | Verify downloaded packages |
 
-[Helper 1.9.3 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.3/VideoClipper-Helper-1.9.3-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.13 package and its checksums are published separately.
+[Helper 1.9.99 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.99/VideoClipper-Helper-1.9.99-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.19 package and its checksums are published separately.
 
 ## Clips from several videos
 
@@ -53,7 +53,7 @@ Firefox may revoke temporary page access on full navigation. Use **Keep active o
 
 The extension works with accessible HTML5 players, embedded frames, open shadow roots and dynamic pages. Choose another player manually when necessary. Source identity and duration checks help prevent saving the wrong video.
 
-Helper 1.9.3 passes targeted manifest-recovery tests, signed Firefox local exports, native integration checks and installer failure tests. A short real-page sample was saved with the previous binary using the same logic; the actual page was not verified in Firefox because a cookie overlay blocked the test. Extension 1.13.3 passes 102 JavaScript suites and its signed restart/first-save checks. Helper 1.9.1 passes nine targeted real-container tests, native compatibility, Collection and page-recovery checks on Windows/Linux, and 12 Chromium/native checks. MP4/HLS exports pass after signed restarts on Firefox 142/158 Windows and 158 Linux. Three new container cases per platform verify source frames, audio and range with one Save. Python coverage comprises 516 cases, including six environment skips: the full run retained one fake-media refresh-fixture error; after a test-only fixture correction, all 23 affected-suite cases pass, alongside the nine container cases. The helper payload did not change during that rerun. The actual reported public-page interval now saves with helper 1.9.1 and the signed extension after restart. Its URL, HTML and media remain private. Strict final MP4 frame/timeline checks remain active. Website compatibility is not universal. The guided installer is for **Windows x64**. Linux uses the archive and system FFmpeg; Snap/Flatpak helper access is unverified. No verified helper package is available for macOS, Android or iOS.
+Helper 1.9.99 was tested with synthetic media and isolated Firefox on Windows and Linux. The tests cover selective downloads, source changes, multiple parts and HLS timing. Website compatibility is not universal. The guided installer is for **Windows x64**. Linux uses the archive and system FFmpeg; Snap/Flatpak helper access is unverified. No verified helper package is available for macOS, Android or iOS.
 
 Some sites require optional, revocable per-site session access in the authenticated browser context. Advanced search and session access are separate. No other browser profile is read. DRM, live streams and closed shadow roots are unsupported. A full source video may need downloading before trimming. “Original” quality is not lossless. Website compatibility is not universal.
 
