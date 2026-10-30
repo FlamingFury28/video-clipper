@@ -1,5 +1,12 @@
 # Changes / Novità
 
+## Helper 1.9.137 — selective WebM and slow sources
+
+- Improves selected WebM exports, including some clips near the end and sources that transfer data slowly. Validated source identity is preserved across requests and redirects.
+- Signed Firefox 1.13.19 was tested after permanent installation and restart with helpers on Windows and Linux; local media tests cover multiple parts, changed sources and interrupted transfers. A one-second public-site sample includes audio and video.
+- Some servers still require earlier data or a complete download. The Windows installer has no Authenticode signature; compare the supplied SHA-256 checksums.
+- Italiano: migliorati alcuni salvataggi WebM, le connessioni lente e i tagli vicini alla fine. Alcune sorgenti richiedono ancora dati precedenti o il download completo.
+
 ## Extension 1.13.13 — safer project recovery
 
 Video Clipper 1.13.13 improves project recovery and protects cuts and settings during player changes and automatic saving.
