@@ -1,5 +1,11 @@
 # Changes / Novità
 
+## Helper 1.9.139 — WebM with distant keyframes
+
+- Reduces data transferred for supported WebM clips when keyframes are far apart, including some selections near the end. Existing source-identity and detected-truncation checks remain in place.
+- Verified isolated Firefox 142/159 with signed extension 1.13.19 on Windows and Linux, long-keyframe media, source and binary regressions, multiple parts, cancellation and redirects. [Verification](HELPER-VERIFICATION-1.9.139.md).
+- Some servers or formats still require earlier data or a complete download. The helper and Windows installer are not Authenticode signed.
+
 ## Helper 1.9.138 — selective WebM ranges
 
 - Reduces data transferred for supported WebM selections, including clips at the start or end and some VP8/Vorbis, silent and delayed-audio files. Source identity is checked across requests and detected truncated media is rejected.
