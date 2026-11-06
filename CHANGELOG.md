@@ -1,5 +1,11 @@
 # Changes / Novità
 
+## Helper 1.9.138 — selective WebM ranges
+
+- Reduces data transferred for supported WebM selections, including clips at the start or end and some VP8/Vorbis, silent and delayed-audio files. Source identity is checked across requests and detected truncated media is rejected.
+- Verified isolated Firefox 142/159 and signed extension 1.13.19 on Windows and Linux, source and binary regressions, multiple parts, cancellation and redirects. A 30-second public-site sample saved with audio and video; traffic was not measured.
+- Some sources still require earlier data or a complete download. The helper and Windows installer are not Authenticode signed. [Verification](HELPER-VERIFICATION-1.9.138.md).
+
 ## Helper 1.9.137 — selective WebM and slow sources
 
 - Improves selected WebM exports, including some clips near the end and sources that transfer data slowly. Validated source identity is preserved across requests and redirects.
