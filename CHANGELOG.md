@@ -1,5 +1,11 @@
 # Changes / Novità
 
+## Helper 1.9.140 — selective WebM improvements
+
+- Reduces transferred data for some WebM clips, including multiple intervals, when partial responses can be verified as one source snapshot. Some servers still require earlier data or a full download.
+- Tested with isolated Firefox 142 and 159, the signed 1.13.19 extension, multiple and overlapping clips, sparse-frame and variable-rate media, source mutation, truncation and cancellation. [Verification](HELPER-VERIFICATION-1.9.140.md).
+- Windows installer and portable packages for Windows and Linux are in the [helper release](https://github.com/FlamingFury28/video-clipper/releases/tag/helper-v1.9.140); the Windows installer is not Authenticode-signed.
+
 ## Helper 1.9.139 — WebM with distant keyframes
 
 - Reduces data transferred for supported WebM clips when keyframes are far apart, including some selections near the end. Existing source-identity and detected-truncation checks remain in place.
