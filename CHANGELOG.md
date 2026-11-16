@@ -1,5 +1,15 @@
 # Changes / Novità
 
+## Extension 1.13.32 / Helper 1.9.178 — selective DASH clocks and EOF, 16 November 2026
+
+- Preserves original DASH packet clocks and the first partial selected frame in qualified H264/AV1/HEVC/VP9 sources, including AAC or Opus audio. Uses verified sample tables, copied-packet checks and decoded-frame witnesses.
+- Adds explicit SegmentList URL binding and verifies flat SIDX layouts. Video-only DASH saves with a warning; available audio cannot be silently omitted.
+- Fixes maximum OUT rejected when a player exposes 120.010 seconds and its MPD rounds to 120.000. Actual terminal fragments, sample coverage and the observed player end are checked. A wrong player duration or missing audio epoch is still rejected.
+- Restores typed M4A/M4V fragments and same-origin script or extensionless segment URLs. Changed manifests and altered local media remain rejected.
+- Exact Windows/Linux binaries with signed 1.13.31 pass 23 isolated Firefox exports (142/160), eight native compatibility cases and two preview checks. Ninety-six focused units pass. Independent comparisons verify images and waveform clocks; the maximum VP9/Opus export has 96 images and measured audio displacement of -0.5 ms. The installer passes isolated payload/preparation checks with no personal browser registration.
+- Controlled maximum-OUT VP9/Opus export observes 846,033 media bytes including player loading/preroll versus 8,487,727 full-fragment bytes, with segments 10–40 absent. This is a fixture measurement, not a fixed saving promise.
+- Extension 1.13.32 changes only its version and helper download links; all 15 other payload files match signed 1.13.31. Update the helper separately. No new permissions. Windows HEVC browser export remains unverified. Other site/format limits remain; private Python and workspace archives remain private.
+
 ## Extension 1.13.31 / Helper 1.9.177 — exact packet durations, 16 November 2026
 
 - Fixes omitted H264/AAC packet durations, including the Linux FFprobe 6 B-frame case left open in 1.9.176. Exact sample tables, addresses, sizes, hashes, tracks and clocks establish duration; frame rate is not guessed. Copied and finalized local MP4 tables are verified too.
