@@ -1,5 +1,15 @@
 # Changes / Novità
 
+## Extension 1.13.27 / Helper 1.9.173 — late players and fragment reliability, 16 November 2026
+
+- Adds late capture rearming for uniquely bound supported hls.js VOD players, including nested open components, while preserving playback position and source identity.
+- Fixes false clock rejection of fragmented MP4 initialization records and false missing audio between distant selected parts.
+- Repairs out-of-order MP4 fragments only after independently proving packet and timestamp identity. Fixes missing AAC duration metadata from FFprobe 6 without guessing sample lengths.
+- Verified one-click export of two parts after panel reopen with the actual signed package and exact Windows/Linux binaries. Independent frame and audio comparisons pass. Firefox signature enforcement, permanent installation and restart pass; MP4/HLS compatibility also passes on Firefox 142/160 with the prior signed extension.
+- **Update both extension and helper.** No new permissions. Selective export retains its source/clock checks and does not silently start a full-source download. Local synthetic fixtures do not guarantee every website.
+- Italiano: riarmo dei player hls.js compatibili già avviati, clock MP4 corretto e audio conservato fra tagli lontani. Aggiornare estensione e helper insieme; nessuna compatibilità universale promessa.
+- [Verification and package hashes](HELPER-VERIFICATION-1.9.173.md).
+
 ## Extension 1.13.26 — player detection and panel recovery, 16 November 2026
 
 - Fixes late-start export for supported Video.js players inside open web components, including nested components. Visible-player ambiguity and source identity safeguards remain enforced.
