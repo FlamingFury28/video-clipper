@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## Extension 1.13.31 / Helper 1.9.177 — exact packet durations, 16 November 2026
+
+- Fixes omitted H264/AAC packet durations, including the Linux FFprobe 6 B-frame case left open in 1.9.176. Exact sample tables, addresses, sizes, hashes, tracks and clocks establish duration; frame rate is not guessed. Copied and finalized local MP4 tables are verified too.
+- Finalizes joined VFR output when the preliminary final-packet duration is absent, avoiding an internal KeyError while retaining frame-count, clock and final duration checks. Missing audio remains a warning; no silent full-source fallback.
+- Sixty-two focused units pass. Exact Windows/Linux binaries with signed 1.13.30 pass 16 exports after permanent restart on Firefox 142/160: eight MP4/HLS plus eight normal/B-frame two-part tail exports. Independent comparisons verify 34 presented images and two PCM windows per tail at zero measured displacement. Eight native compatibility cases, two worker preview/export cases and isolated installer checks pass.
+- Extension 1.13.31 changes only manifest.version and helper URLs to 1.9.177; fifteen other files match 1.13.30. It receives its own signature/install/restart checks. Update the helper separately for the fixes.
+- Controlled Linux Firefox 160 B-frame traffic is 617,643 observed media bytes including loading/rearming versus 6,090,242 full-fragment bytes, with segments 10–40 absent. Saving adds no media requests in that paused test. Buffer/preroll overhead and site/format limits remain; this is not a fixed saving promise. Historical direct-DASH first-frame phase remains open. Private Python sources and workspace archives remain private.
+
 ## Extension 1.13.30 / Helper 1.9.176 — selected MediaSource windows, 16 November 2026
 
 - Fixes valid selected intervals rejected solely because unselected H264/AAC packets cross a finite append-window boundary. Complete admitted packets keep the exact observed clock; clipping requires a new random access point. Unknown clocks and incomplete selected video remain rejected.
