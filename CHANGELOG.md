@@ -1,5 +1,12 @@
 # Changes / Novità
 
+## Extension 1.13.33 / Helper 1.9.179 — YouJizz recovery, 16 November 2026
+
+- Helper 1.9.179 fixes selective recovery from YouJizz: protocol-relative CDN references inherit HTTPS, valid legacy HLS cache hints are accepted and raw network timeouts keep a precise diagnostic. The helper updates separately from the extension. The stricter native IN-frame comparison still shows about two frames of offset on this player; that is not claimed fixed.
+- Two real-page one-click exports with the exact Windows/Linux binaries produced 2-second, 48-frame MP4s with audio and unchanged markers. The bounded worker selected three HLS media segments, not the full source. The user's exact network timeout was not reproduced.
+- Eight Firefox 142/160 MP4/HLS compatibility exports, eight native cases, two previews and isolated installer checks passed. Twenty-five of 26 inherited HLS cases pass; the same repeated-AES-key expectation fails in the public parent. Fourteen focused new cases pass. The strict native image check remains failed and preserved.
+- The addon changes only its version and guided setup links; fifteen other files match signed 1.13.32. No new permissions. Unfinished DASH-period audio work is excluded. Private project sources and workspace archives are not published.
+
 ## Extension 1.13.32 / Helper 1.9.178 — selective DASH clocks and EOF, 16 November 2026
 
 - Preserves original DASH packet clocks and the first partial selected frame in qualified H264/AV1/HEVC/VP9 sources, including AAC or Opus audio. Uses verified sample tables, copied-packet checks and decoded-frame witnesses.
