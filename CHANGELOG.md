@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## Extension 1.13.26 — player detection and panel recovery, 16 November 2026
+
+- Fixes late-start export for supported Video.js players inside open web components, including nested components. Visible-player ambiguity and source identity safeguards remain enforced.
+- Fixes a panel reconnect race after quick close/reopen: an obsolete connection can no longer reject a new valid mount. Parts are retained; obsolete tokens and duplicate current mounts remain rejected.
+- Verified one-click export, two ranges after reopen and changed-source rejection in isolated Firefox 142/160, plus six actual collection cases. The signed package also exports after permanent install/restart on Windows and Linux; independent frame comparisons pass. Local synthetic fixtures do not certify every site.
+- No new permissions. Helper 1.9.172 is unchanged; no helper update is needed if it is already installed.
+- Italiano: corretti player nei componenti aperti e riconnessione del pannello, conservando i tagli e i controlli sulla sorgente. Restano i limiti di sito e formato.
+
 ## Extension 1.13.25 / Helper 1.9.172 — selective export, 16 November 2026
 
 - Exports qualified MP4/WebM byte windows and supported HLS/DASH segments. Authorized MediaSource tabs can reuse already loaded fragments with bounded temporary local storage and player/source identity checks.
