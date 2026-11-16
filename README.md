@@ -14,26 +14,26 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-**Install Firefox extension 1.13.34 and helper 1.9.180.** Both are available from the links below. Update both components for late rearming of supported hls.js/dash.js players and reliable selective export of already loaded MediaSource fragments. Selective download is the default for qualified MP4, WebM, HLS and DASH sources; unsupported sources can require the explicit full-source compatibility setting.
+**Install Firefox extension 1.13.35 and helper 1.9.180.** Both are available from the links below. Update both components for late rearming of supported hls.js/dash.js players and reliable selective export of already loaded MediaSource fragments. Selective download is the default for qualified MP4, WebM, HLS and DASH sources; unsupported sources can require the explicit full-source compatibility setting.
 
 **Already installed in Firefox?** Open **Add-ons and themes → gear menu → Check for Updates**. For a signed XPI already downloaded, choose **Install Add-on From File** in the same menu. Keep the installed extension: its settings are preserved. Firefox controls installation and catalog update availability.
 
 | Download | Use |
 |---|---|
-| [Firefox extension 1.13.34](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.34/VideoClipper-1.13.34-signed.xpi) | Mozilla-signed permanent installation |
+| [Firefox extension 1.13.35](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.35/VideoClipper-1.13.35-signed.xpi) | Mozilla-signed permanent installation |
 | [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
 | [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-Windows.zip) | Advanced manual installation |
 | [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
 | [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.13/VideoClipper-1.13.13-Chromium.zip) | Unpacked desktop installation; no store publication |
-| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.34/VideoClipper-1.13.34-SHA256SUMS.txt) | Verify downloaded packages |
+| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.35/VideoClipper-1.13.35-SHA256SUMS.txt) | Verify downloaded packages |
 
-[Helper 1.9.180 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.34 package and its checksums are published separately.
+[Helper 1.9.180 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.35 package and its checksums are published separately.
 
-Helper 1.9.180 fixes Beeg source resolution after its API changed: numeric API ids are normalized without changing the selected video identity, and the separate play-reference request supplies the HLS playlist. Updating the helper is sufficient for this fix; the signed 1.13.34 extension remains compatible. Existing YouJizz IN-frame timing limits remain documented.
+Helper 1.9.180 fixes Beeg source resolution after its API changed: numeric API ids are normalized without changing the selected video identity, and the separate play-reference request supplies the HLS playlist. Updating the helper is sufficient for this fix; the signed 1.13.35 extension remains compatible. Existing YouJizz IN-frame timing limits remain documented.
 
 ## Recover a failed save
 
-Version 1.13.34 keeps all parts and export settings of failed attempts before native download. **Resume save** reuses the original composition without re-entering times, including after reload. **Settings → Recovery → Recover failed saves** permits one automatic retry for verified recoverable errors on the same selected video. For a player without a stable identity, use **Resume on this video** on its saved project. Interrupted jobs with uncertain outcomes require explicit resume. Update the existing extension to preserve projects and queue entries.
+Version 1.13.35 keeps all parts and export settings of failed attempts before waiting for the player. A lost or slow response no longer discards the plan or replaces the original settings with later changes. **Resume save** reuses the original composition without re-entering times, including after reload. **Settings → Recovery → Recover failed saves** permits one automatic retry for verified recoverable errors on the same selected video. For a player without a stable identity, use **Resume on this video** on its saved project. Interrupted jobs with uncertain outcomes require explicit resume. Update the existing extension to preserve projects and queue entries.
 
 ## Clips from several videos
 
@@ -59,7 +59,7 @@ Firefox may revoke temporary page access on full navigation. Use **Keep active o
 
 The extension works with accessible HTML5 players, embedded frames, open shadow roots and dynamic pages. Choose another player manually when necessary. Source identity and duration checks help prevent saving the wrong video.
 
-Helper 1.9.180 was tested with permanently installed signed extension 1.13.34 on Firefox 142/160, Windows and Linux: eight deterministic MP4/HLS exports, three real Beeg one-click saves, eight native cases, two previews and isolated installer preparation. Windows Firefox 160 saved the complete requested 09:47.832–11:19.498 interval with H.264 video and AAC audio; Windows Firefox 142 and Linux Firefox 160 saved a two-second excerpt from the same IN point. Seven new API tests and nine parent transport tests pass. Forty-six unchanged helper modules retain prior evidence; their older tests are not claimed as new runs. The existing YouJizz native IN-frame offset remains unchanged. The guided installer is for Windows x64. Linux uses system FFmpeg; Snap/Flatpak, macOS and mobile helpers remain unverified. Windows HEVC browser export remains unverified.
+Helper 1.9.180 was tested with permanently installed signed extension 1.13.35 on Firefox 142/160, Windows and Linux: eight deterministic MP4/HLS exports, three real Beeg one-click saves, eight native cases, two previews and isolated installer preparation. Windows Firefox 160 saved the complete requested 09:47.832–11:19.498 interval with H.264 video and AAC audio; Windows Firefox 142 and Linux Firefox 160 saved a two-second excerpt from the same IN point. Seven new API tests and nine parent transport tests pass. Forty-six unchanged helper modules retain prior evidence; their older tests are not claimed as new runs. The existing YouJizz native IN-frame offset remains unchanged. The guided installer is for Windows x64. Linux uses system FFmpeg; Snap/Flatpak, macOS and mobile helpers remain unverified. Windows HEVC browser export remains unverified.
 
 Some sites require optional, revocable per-site session access in the authenticated browser context. Advanced search and session access are separate. No other browser profile is read. DRM, live streams and closed shadow roots are unsupported. Unsupported sources can require selecting full-source compatibility in Settings. Selective mode does not silently start a complete download. “Original” quality is not lossless. Website compatibility is not universal.
 
