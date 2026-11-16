@@ -1,6 +1,6 @@
 # Privacy / Trattamento dei dati
 
-Applies to Video Clipper 1.13.34 and local helper 1.9.180. Updated 16 November 2026.
+Applies to Video Clipper 1.13.35 and local helper 1.9.180. Updated 17 November 2026.
 
 ## English
 
@@ -32,7 +32,7 @@ Firefox's theme palette, or native browser light/dark colors, is used locally. B
 
 La preferenza della lingua resta sul dispositivo. I cataloghi di traduzione sono inclusi nell’estensione: nessun testo viene inviato a servizi di traduzione. La prima installazione apre una pagina locale di configurazione. L’installer Windows include l’helper binario verificato 1.9.180. Quando premi Installa e consenti gli strumenti mancanti, può scaricare FFmpeg 8.1.2 direttamente da gyan.dev, verificando dimensione e SHA-256 prima di prepararlo. Il fornitore riceve una normale richiesta di download (indirizzo IP e user-agent dell’installer), mai clip, indirizzi delle pagine o cookie del browser. Strumenti e licenze restano sul computer. L’estensione non avvia l’installer e non scarica gli strumenti automaticamente.
 
-Questa informativa riguarda Video Clipper 1.13.34 e helper locale 1.9.180, aggiornata il 16 novembre 2026.
+Questa informativa riguarda Video Clipper 1.13.35 e helper locale 1.9.180, aggiornata il 17 novembre 2026.
 
 Quando lo attivi, Video Clipper legge i player HTML5 accessibili della scheda scelta: indirizzi delle sorgenti, titolo, durata, posizione di riproduzione e geometria. Usa l'accesso alla scheda attiva; gli eventuali permessi per domini dei player incorporati vengono richiesti tramite tue azioni. Non ottiene inizialmente accesso permanente a tutti i siti.
 
