@@ -2,23 +2,23 @@
 
 [Italiano](INSTALLAZIONE.md) · [Firefox add-on](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Downloads](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.33)
 
-Install Firefox extension **1.13.33** from Mozilla Add-ons and helper **1.9.179** from this repository. Update both components for late capture rearming of supported hls.js/dash.js players and corrected native buffer handling. Extension and helper update separately; selective download is enabled by default for qualified sources.
+Install Firefox extension **1.13.33** from Mozilla Add-ons and helper **1.9.180** from this repository. Update both components for late capture rearming of supported hls.js/dash.js players and corrected native buffer handling. Extension and helper update separately; selective download is enabled by default for qualified sources.
 
-Helper 1.9.179 fixes selective recovery from YouJizz: protocol-relative CDN references inherit HTTPS, valid legacy HLS cache hints are accepted and raw network timeouts keep a precise diagnostic. The helper updates separately from the extension. The stricter native IN-frame comparison still shows about two frames of offset on this player; that is not claimed fixed.
+Helper 1.9.180 fixes Beeg source resolution after its API changed: numeric API ids are normalized without changing the selected video identity, and the separate play-reference request supplies the HLS playlist. Updating the helper is sufficient for this fix; the signed 1.13.33 extension remains compatible. Existing YouJizz IN-frame timing limits remain documented.
 
-After updating, **Check connection** should report helper **1.9.179**. The XPI alone does not update the installed helper.
+After updating, **Check connection** should report helper **1.9.180**. The XPI alone does not update the installed helper.
 
 ## Windows — recommended
 
 1. Install [Video Clipper from Mozilla Add-ons](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/). Its first-run page opens **Guided setup**. You can reopen it from Settings at any time.
-2. [Download the Windows x64 installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.179/VideoClipper-Helper-1.9.179-Windows-Setup.exe), open it and click **Install**. Firefox is selected by default; select Chrome/Edge only if you use them.
+2. [Download the Windows x64 installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-Windows-Setup.exe), open it and click **Install**. Firefox is selected by default; select Chrome/Edge only if you use them.
 3. Return to **Settings → Guided setup → Check connection**. Choose the folder where you want to save clips. Open a video, activate Video Clipper and test a short interval.
 
 The installer works for the current Windows account, under its local Programs/VideoClipper folder. It needs no administrator access or separate Python installation. It registers the helper automatically and preserves previous helper files. If browser registration fails, the previous connection is restored.
 
 Installed FFmpeg/ffprobe and encoders are reused when healthy. Otherwise, leave **Prepare video tools automatically if missing** checked: the installer downloads about 105 MB directly from gyan.dev, verifies the exact size and SHA-256, then prepares tools beside the helper. No PATH changes or manual extraction. The original vendor download and license remain in the installed folder. If you decline the download, both tools and libx264/AAC must already be available.
 
-The installer is not Authenticode signed. Download it from this repository and compare [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.179/VideoClipper-Helper-1.9.179-SHA256SUMS.txt). It does not bypass Windows security controls. If setup fails, keep its exact error code. A failed helper check or incomplete package is different from a failed tools download; use the displayed details when choosing what to retry. Keep a working old helper folder until the replacement is verified.
+The installer is not Authenticode signed. Download it from this repository and compare [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-SHA256SUMS.txt). It does not bypass Windows security controls. If setup fails, keep its exact error code. A failed helper check or incomplete package is different from a failed tools download; use the displayed details when choosing what to retry. Keep a working old helper folder until the replacement is verified.
 
 If Video Clipper was open during setup, close and reopen its panel. Reopen Firefox if it retains an old helper connection. The installer does not close the browser or modify its profiles.
 
@@ -28,7 +28,7 @@ In **Settings → General → Language**, choose **Automatic**, **Italiano** or 
 
 ## Linux x86_64
 
-[Download the helper archive](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.179/VideoClipper-Helper-1.9.179-Linux-x86_64.tar.gz). Extract it in full to a permanent folder and run `./installa-helper.sh firefox` as the user running Firefox. Do not use sudo for helper registration. Provide FFmpeg and ffprobe with libx264/AAC through your system's package manager, then reopen Firefox and run **Check connection**.
+[Download the helper archive](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-Linux-x86_64.tar.gz). Extract it in full to a permanent folder and run `./installa-helper.sh firefox` as the user running Firefox. Do not use sudo for helper registration. Provide FFmpeg and ffprobe with libx264/AAC through your system's package manager, then reopen Firefox and run **Check connection**.
 
 Moving the helper folder requires registration again. Keep the bundled files together. Snap/Flatpak browser access to the native helper has not been verified.
 
