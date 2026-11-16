@@ -1,5 +1,14 @@
 # Changes / Novità
 
+## Extension 1.13.30 / Helper 1.9.176 — selected MediaSource windows, 16 November 2026
+
+- Fixes valid selected intervals rejected solely because unselected H264/AAC packets cross a finite append-window boundary. Complete admitted packets keep the exact observed clock; clipping requires a new random access point. Unknown clocks and incomplete selected video remain rejected.
+- Limits local remuxing to the first complete boundary covering OUT, preserving packet/hash checks and avoiding an unselected clipped B-frame reference suffix. Missing audio remains a warning. Selective mode does not silently download the whole source.
+- Extension 1.13.30 changes only manifest.version and guided-setup helper URLs to 1.9.176. All fifteen other extension files match 1.13.29. Update the helper separately for the fixes.
+- Exact helper binaries qualified with signed 1.13.29 after permanent restart: Firefox 142/160 on Windows/Linux, eight MP4/HLS compatibility exports and four two-part tail exports, plus Windows Firefox 160 B-frame export. Independent image/PCM checks preserve identity and timing. Thirty-two focused units, eight native compatibility cases and two worker preview/export checks pass. Tests use isolated profiles and a verified null audio backend.
+- Controlled tail requests skip segments 10–40; initial loading, rearming and preroll still require data beyond exported bytes. Linux FFprobe 6 still rejects the additional B-frame case when packet durations are absent. Historical direct-DASH first-frame phase remains a separate open issue. Synthetic tests do not certify every website.
+- Helper 1.9.175 packages were kept local and never published after the additional remux defect was reproduced. No previous public package was overwritten. Private project Python sources remain private.
+
 ## Extension 1.13.29 / Helper 1.9.174 — dash.js and native buffer reliability, 16 November 2026
 
 - Adds late capture rearming for uniquely bound supported dash.js VOD players, retaining playback state, source identity and parts after panel reopen.
