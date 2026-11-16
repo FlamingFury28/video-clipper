@@ -1,5 +1,15 @@
 # Changes / Novità
 
+## Extension 1.13.29 / Helper 1.9.174 — dash.js and native buffer reliability, 16 November 2026
+
+- Adds late capture rearming for uniquely bound supported dash.js VOD players, retaining playback state, source identity and parts after panel reopen.
+- Accepts finite MSE append windows only when every observed packet is proved unclipped. Handles repeated MP4 initialization records only after proving they contain no samples.
+- Preserves valid captured data after rejected native append/remove calls. Tracks accepted operations queued before earlier completion events in a bounded FIFO.
+- The signed direct payload 1.13.28 exports two parts at 0.240–0.880 and 91.240–91.880 seconds on Firefox 142/160, Windows/Linux, after permanent installation and restart. Independent frame and audio checks pass. Catalog 1.13.29 has identical functional files and its own signature/install/restart proof.
+- **Update both components for the new path.** No new permissions or automatic full-source fallback. Late dash.js recovery initially requires one clear video track, at most one audio track and no text tracks; website and format limits remain.
+- Italiano: corretti cinque casi riprodotti nei player già avviati e nella cattura dei frammenti. Due parti distanti si salvano con un clic e restano alla riapertura. Aggiornare addon e helper174.
+- [Verification and package hashes](HELPER-VERIFICATION-1.9.174.md).
+
 ## Extension 1.13.27 / Helper 1.9.173 — late players and fragment reliability, 16 November 2026
 
 - Adds late capture rearming for uniquely bound supported hls.js VOD players, including nested open components, while preserving playback position and source identity.
