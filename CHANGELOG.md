@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## Extension 1.13.35 / existing helper 1.9.180 — keep cuts before player response, 17 November 2026
+
+- Fix two defects reproduced in signed 1.13.34: a lost snapshot reply could leave no durable recovery intent with draft autosave off; settings changed during a slow reply could replace the originally requested export settings.
+- Preserve all ordered clicked parts and freeze output settings/download mode before requesting the page snapshot. Resume retains the original audio, output grouping, quality, framing and destination after reload without re-entering times.
+- Distinguish PLAYER_TIMEOUT / PLAYER_DISCONNECTED from helper failures. Only a verified timeout on the exact same known source can use one automatic retry. Disconnections/uncertain outcomes remain explicit recovery cases.
+- Verify late replies do not duplicate output and pending cancellation does not restart. No new permissions, helper rebuild or cookie-consent change.
+- The actual reported Pornhub page is still behind its age/consent notice in the isolated browser; that notice was not accepted and its complete export is not claimed verified. Existing site/format and YouJizz IN-frame timing limits remain.
+
 ## Extension 1.13.34 / existing helper 1.9.180 — failed-save recovery, 16 November 2026
 
 - Preserve all ordered parts, filename and export settings before native download. Resume save reuses the original intent after editor/default changes or page reload; existing multipart projects and queues survive a signed upgrade.
