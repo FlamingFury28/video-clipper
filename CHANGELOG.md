@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## Helper 1.9.180 / existing extension 1.13.33 — Beeg source recovery, 16 November 2026
+
+- Fix a reproduced Beeg HTTP 400 caused by a prefix zero in an API integer id, while retaining the original selected public video id.
+- Follow the site's separate play-reference request when metadata no longer contains HLS resources. Verify matching metadata and playlist ids; preserve legacy responses and optional session consent.
+- Three real one-click saves pass with the exact Windows/Linux binaries, including the full reported 09:47.832–11:19.498 interval on Windows Firefox 160. Markers and paused player position remain unchanged.
+- Seven new API cases, nine parent transport cases, eight signed-addon MP4/HLS exports on Firefox 142/160, eight native cases, two previews and isolated installer preparation pass.
+- This is a helper-only update. Signed extension 1.13.33 stays unchanged. Existing encoding/timeline limits remain; paused selective-format research is excluded.
+
 ## Extension 1.13.33 / Helper 1.9.179 — YouJizz recovery, 16 November 2026
 
 - Helper 1.9.179 fixes selective recovery from YouJizz: protocol-relative CDN references inherit HTTPS, valid legacy HLS cache hints are accepted and raw network timeouts keep a precise diagnostic. The helper updates separately from the extension. The stricter native IN-frame comparison still shows about two frames of offset on this player; that is not claimed fixed.
