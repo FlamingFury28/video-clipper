@@ -1,5 +1,15 @@
 # Changes / Novità
 
+## Extension 1.13.25 / Helper 1.9.172 — selective export, 16 November 2026
+
+- Exports qualified MP4/WebM byte windows and supported HLS/DASH segments. Authorized MediaSource tabs can reuse already loaded fragments with bounded temporary local storage and player/source identity checks.
+- Preserves fractional IN/OUT frames, VFR transitions and verified end tails. Fixes Linux Opus delay and missing remux audio durations; missing audio saves with a warning.
+- Verifies multi-video collection joined/separate exports and eight-part project recovery. Corrects Italian/English error text and guided-setup links.
+- Windows setup now validates the exact version-pinned file inventory instead of rejecting the valid 574-file helper package.
+- Actual binaries and permanently signed Firefox 142/160 after restart were tested on Windows and Linux. MediaSource output has independent frame/audio comparisons; local fixtures do not certify every website.
+- Selective mode does not silently fall back to a complete download. Unsupported cases may require the explicit full-source compatibility setting. Update extension and helper together.
+- Italiano: download selettivo più preciso, frammenti già caricati nei player compatibili, audio mancante come avviso, tagli e recupero verificati. Nessuna compatibilità universale promessa.
+
 ## Helper 1.9.140 — selective WebM improvements
 
 - Reduces transferred data for some WebM clips, including multiple intervals, when partial responses can be verified as one source snapshot. Some servers still require earlier data or a full download.
