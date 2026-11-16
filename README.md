@@ -6,7 +6,7 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 
 **English and Italian**, with automatic browser-language selection and an immediate language switch in Settings.
 
-**[Install for Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Download Windows helper installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.178/VideoClipper-Helper-1.9.178-Windows-Setup.exe)** · **[English setup guide](INSTALL.md)** · **[Guida italiana](INSTALLAZIONE.md)**
+**[Install for Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Download Windows helper installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.179/VideoClipper-Helper-1.9.179-Windows-Setup.exe)** · **[English setup guide](INSTALL.md)** · **[Guida italiana](INSTALLAZIONE.md)**
 
 ## Start clipping
 
@@ -14,22 +14,22 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-**Install Firefox extension 1.13.32 and helper 1.9.178.** Both are available from the links below. Update both components for late rearming of supported hls.js/dash.js players and reliable selective export of already loaded MediaSource fragments. Selective download is the default for qualified MP4, WebM, HLS and DASH sources; unsupported sources can require the explicit full-source compatibility setting.
+**Install Firefox extension 1.13.33 and helper 1.9.179.** Both are available from the links below. Update both components for late rearming of supported hls.js/dash.js players and reliable selective export of already loaded MediaSource fragments. Selective download is the default for qualified MP4, WebM, HLS and DASH sources; unsupported sources can require the explicit full-source compatibility setting.
 
 **Already installed in Firefox?** Open **Add-ons and themes → gear menu → Check for Updates**. For a signed XPI already downloaded, choose **Install Add-on From File** in the same menu. Keep the installed extension: its settings are preserved. Firefox controls installation and catalog update availability.
 
 | Download | Use |
 |---|---|
-| [Firefox extension 1.13.32](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.32/VideoClipper-1.13.32-signed.xpi) | Mozilla-signed permanent installation |
-| [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.178/VideoClipper-Helper-1.9.178-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
-| [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.178/VideoClipper-Helper-1.9.178-Windows.zip) | Advanced manual installation |
-| [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.178/VideoClipper-Helper-1.9.178-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
+| [Firefox extension 1.13.33](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.33/VideoClipper-1.13.33-signed.xpi) | Mozilla-signed permanent installation |
+| [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.179/VideoClipper-Helper-1.9.179-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
+| [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.179/VideoClipper-Helper-1.9.179-Windows.zip) | Advanced manual installation |
+| [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.179/VideoClipper-Helper-1.9.179-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
 | [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.13/VideoClipper-1.13.13-Chromium.zip) | Unpacked desktop installation; no store publication |
-| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.32/VideoClipper-1.13.32-SHA256SUMS.txt) | Verify downloaded packages |
+| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.33/VideoClipper-1.13.33-SHA256SUMS.txt) | Verify downloaded packages |
 
-[Helper 1.9.178 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.178/VideoClipper-Helper-1.9.178-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.32 package and its checksums are published separately.
+[Helper 1.9.179 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.179/VideoClipper-Helper-1.9.179-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.33 package and its checksums are published separately.
 
-Helper 1.9.178 improves selective DASH export, including exact sample clocks, explicit segment lists, SIDX, videos without audio and valid maximum-OUT selections. It also retains correctly typed M4A/M4V and same-origin script or extensionless segment URLs. These fixes are in the helper: installing only the new extension does not replace it.
+Helper 1.9.179 fixes selective recovery from YouJizz: protocol-relative CDN references inherit HTTPS, valid legacy HLS cache hints are accepted and raw network timeouts keep a precise diagnostic. The helper updates separately from the extension. The stricter native IN-frame comparison still shows about two frames of offset on this player; that is not claimed fixed.
 
 ## Clips from several videos
 
@@ -55,7 +55,7 @@ Firefox may revoke temporary page access on full navigation. Use **Keep active o
 
 The extension works with accessible HTML5 players, embedded frames, open shadow roots and dynamic pages. Choose another player manually when necessary. Source identity and duration checks help prevent saving the wrong video.
 
-Helper 1.9.178 was tested with permanently installed signed extension 1.13.31 on Firefox 142/160, Windows and Linux. Catalog 1.13.32 only updates the extension version and guided-setup helper links; fifteen other payload files match 1.13.31 byte for byte. Exact binaries pass 23 browser exports, eight native compatibility cases, two preview checks and isolated installer preparation. Image and waveform checks cover captured/direct AV1, H264, VP9/Opus, silent SIDX, maximum OUT and script endpoints; Windows HEVC browser export remains unverified. Earlier editing, collection and recovery evidence is retained for unchanged code. The guided installer is for **Windows x64**. Linux uses the archive and system FFmpeg; Snap/Flatpak helper access is unverified. No verified helper package is available for macOS, Android or iOS.
+Helper 1.9.179 was tested with permanently installed signed extension 1.13.32 on Firefox 142/160, Windows and Linux: eight deterministic MP4/HLS exports, two real-page one-click saves, eight native cases, two previews and isolated installer preparation. The native YouJizz first-frame comparison still finds about two frames of offset and is not claimed passed. Catalog 1.13.33 only updates the version and helper links; fifteen other files are byte-identical to signed 1.13.32. Forty-four unchanged helper modules retain their previous qualified evidence; those older tests are not claimed to have run against the new binary. The guided installer is for Windows x64. Linux uses system FFmpeg; Snap/Flatpak, macOS and mobile helpers remain unverified. Windows HEVC browser export remains unverified.
 
 Some sites require optional, revocable per-site session access in the authenticated browser context. Advanced search and session access are separate. No other browser profile is read. DRM, live streams and closed shadow roots are unsupported. Unsupported sources can require selecting full-source compatibility in Settings. Selective mode does not silently start a complete download. “Original” quality is not lossless. Website compatibility is not universal.
 
@@ -65,4 +65,4 @@ Conversion runs locally. There is no Video Clipper cloud editing or analytics se
 
 The XPI is Mozilla signed. The helper/installer have no separate Authenticode signature; checksums and verification metadata are supplied. This repository contains public documentation and downloads. Project Python sources remain private.
 
-[Changes](CHANGELOG.md) · [Helper verification](HELPER-VERIFICATION-1.9.178.md) · [Older extension verification](VERIFICATION.json) · [Third-party notices](THIRD-PARTY-NOTICES.md) · [Report an issue](https://github.com/FlamingFury28/video-clipper/issues)
+[Changes](CHANGELOG.md) · [Helper verification](HELPER-VERIFICATION-1.9.179.md) · [Older extension verification](VERIFICATION.json) · [Third-party notices](THIRD-PARTY-NOTICES.md) · [Report an issue](https://github.com/FlamingFury28/video-clipper/issues)
