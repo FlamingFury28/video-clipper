@@ -1,5 +1,14 @@
 # Changes / Novità
 
+## Extension 1.13.34 / existing helper 1.9.180 — failed-save recovery, 16 November 2026
+
+- Preserve all ordered parts, filename and export settings before native download. Resume save reuses the original intent after editor/default changes or page reload; existing multipart projects and queues survive a signed upgrade.
+- Add one opt-out automatic retry for verified recoverable failures on the same selected source. Unknown/changed sources, uncertain interruptions, existing outputs, encoding already begun and separate-file jobs prevent automatic replay. Interrupted work remains available for explicit resume.
+- Fix a reproduced false SOURCE_CHANGED when queued cuts differ from the live editor. Alternate cuts require the correct job lock and exact document/player/revision/asset/audio identity.
+- Accept small duration refinements during an owned MSE capture only while identity/editor fields remain unchanged and saved cuts stay in bounds. Restore the paused player position after gathering.
+- Keep up to 20 private local failure summaries with original times and preparation checkpoints. Clear technical log deletes these without deleting projects. No cookie values, source URLs, titles, local paths, telemetry or new permissions.
+- The reported real Pornhub page remains behind its age/terms notice in the isolated browser; complete export of that exact page is not claimed verified. Helper 1.9.180 stays unchanged, including documented YouJizz IN-frame limits. Paused selective-format research is excluded.
+
 ## Helper 1.9.180 / existing extension 1.13.33 — Beeg source recovery, 16 November 2026
 
 - Fix a reproduced Beeg HTTP 400 caused by a prefix zero in an API integer id, while retaining the original selected public video id.
