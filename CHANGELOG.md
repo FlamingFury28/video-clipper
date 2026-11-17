@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## Helper 1.9.182 — Selective DASH periods / Periodi DASH selettivi
+
+With the existing signed extension 1.13.39, the new helper saves selected intervals across qualified clear DASH periods, with H.264 video and AAC LC mono/stereo audio. It preserves actual early/late audio transitions, avoids losing an edge sample at 44.1 kHz and keeps exact AAC packet timestamps. Joined files, numbered separate files and video-only saves with an audio warning are verified.
+
+Actual compiled helpers passed Firefox 142/160 checks on Windows and Linux. Three-period stereo exports match all 118 native player frames and all 219 AAC packets of an independent encode; native waveform checks cover both channels and both transitions. Shaka and dash.js cases are included. Eight ordinary MP4/HLS exports, eight native protocol cases, two previews and isolated installer preparation also pass. The extension XPI is unchanged; install helper 1.9.182 separately. Unqualified configurations do not silently start a complete download.
+
+Con l’estensione 1.13.39 già firmata, l’helper 1.9.182 salva intervalli anche attraverso più periodi DASH nei formati verificati H.264 e AAC LC mono/stereo. Corregge l’audio ai cambi di periodo, un campione perso sui bordi a 44,1 kHz e piccoli errori nei timestamp AAC. Verificati file uniti o separati e salvataggio senza audio con avviso, su Firefox 142/160 in Windows e Linux. Il pacchetto dell’estensione non cambia: aggiorna soltanto l’helper se hai già la 1.13.39. La compatibilità universale non è garantita.
+
 ## 1.13.39 + helper 1.9.181 — Legacy HLS selective clipping
 
 Extension 1.13.39 with helper 1.9.181 improves selective clipping from older HLS players, including the verified FluidPlayer/hls.js 0.12.4 path. It keeps native video timing and AAC audio, gathers missing segments even when loading was stopped, and restores the player’s position and loading state. Install both components for these legacy-player corrections. Earlier helpers keep their ordinary source path; universal website support is not claimed.
