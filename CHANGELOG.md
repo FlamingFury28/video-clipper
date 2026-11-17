@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## Helper 1.9.184 — Selective Opus periods / Periodi Opus selettivi
+
+Helper 1.9.184 adds selective saving for qualified DASH videos whose Opus audio spans several periods. It keeps the original audio continuity and precise image timestamps, including a boundary inside an audio packet. Single clips and joined parts are verified through the normal Save button without downloading the full source. Original PCM and final AAC were checked independently, including native Firefox 160 playback on Windows and Linux. If extension 1.13.39 is installed, update only the helper. Unqualified formats still require an explicit compatibility choice.
+
+L’helper 1.9.184 aggiunge il salvataggio selettivo dei video DASH verificati con audio Opus distribuito su più periodi. Mantiene la continuità dell’audio e i tempi precisi delle immagini anche quando il cambio cade dentro un pacchetto audio. Clip singole e parti unite sono verificate dal normale pulsante Salva senza scaricare tutta la sorgente. I campioni originali e l’AAC finale sono controllati in modo indipendente, anche rispetto alla riproduzione nativa di Firefox 160 su Windows e Linux. Se hai l’estensione 1.13.39, aggiorna soltanto l’helper. I formati non verificati richiedono ancora una scelta esplicita di compatibilità.
+
+Verified scope: clear finite fragmented-MP4 DASH, H.264 and a stable Opus configuration; original coded packets, explicit Period/PTO mapping and bounded decoder preroll. Exact video clock retained for qualified Opus movies and joined parts. Original mono/stereo Opus decoding is checked at 2.5, 10, 20, 40, 60 and 120 ms packet durations. Existing AAC/HLS rendering commands remain byte-identical without the new Opus attestation. Firefox 142 native capture marks its recorded audio track muted: its image and saved-PCM checks are reported separately, not as a native waveform pass. Nonintegral original track offsets and changing/unqualified configurations remain outside this new path. No implicit full-source fallback or new extension permissions.
+
 ## Helper 1.9.183 — HLS cut boundaries / Bordi dei tagli HLS
 
 Helper 1.9.183 corrects the IN/OUT clock for qualified XVideos clear HLS sources with H.264 video without B frames. It retains the image already visible at IN, preserves original audio delays and supports joined or separate parts. Actual compiled Windows/Linux helpers were checked with permanently installed Firefox 142/160; the long-cut reference verifies all 3,061 video frames and 5,740 AAC packets. Other codecs and reordered streams retain their existing bounded paths. If extension 1.13.39 is installed, update only the helper. Support is not universal; full-source compatibility remains an explicit setting.
