@@ -1,6 +1,6 @@
 # Privacy / Trattamento dei dati
 
-Applies to Video Clipper 1.13.35 and local helper 1.9.180. Updated 17 November 2026.
+Applies to Video Clipper 1.13.38 and local helper 1.9.180. Updated 17 November 2026.
 
 ## English
 
@@ -15,6 +15,8 @@ Browser-session access is optional, initially disabled, site-scoped and revocabl
 Cookie values/session tokens are not stored in preferences, history or diagnostic reports. The helper may use a temporary cookie jar, scoped to authorized requests and redirects. Temporary data is cleaned after completion, error or cancellation; cleanup failures are reported. Exported videos remain in your chosen destination. This policy concerns the current extension/helper pair, not older releases' legacy protocols.
 
 Local extension storage holds preferences, consented domains, output profiles/site associations, watermark images, projects and recent-result history. Projects retain clip names, hashed source/page identifiers, intervals and output settings so they can resume when the same video is available. History contains result names, intervals, status and local output paths, with configurable retention; clearing it removes references, not exported files. Private-window projects and jobs are not added to persistent projects/history. An exported file is still written to disk when you save from a private window.
+
+Cuts-only backups are explicit local JSON downloads containing duration, ordered millisecond ranges and the active part, without page addresses, titles, paths, cookies or output settings. They are also available in private windows; exporting writes the chosen file to disk. Import explicitly applies the file to the selected video after validation and does not start a download or upload it. A duration match alone does not establish that two videos are the same.
 
 Watermark images are converted locally to bounded PNG data, kept in local extension storage and sent only to the local export job that uses them. Diagnostic exports omit the image. Removing the current image does not remove copies retained in an existing project/profile or a settings backup you previously exported. Settings backups are user-requested JSON files and may include local paths, names, site associations and images; review them before sharing.
 
@@ -32,7 +34,7 @@ Firefox's theme palette, or native browser light/dark colors, is used locally. B
 
 La preferenza della lingua resta sul dispositivo. I cataloghi di traduzione sono inclusi nell’estensione: nessun testo viene inviato a servizi di traduzione. La prima installazione apre una pagina locale di configurazione. L’installer Windows include l’helper binario verificato 1.9.180. Quando premi Installa e consenti gli strumenti mancanti, può scaricare FFmpeg 8.1.2 direttamente da gyan.dev, verificando dimensione e SHA-256 prima di prepararlo. Il fornitore riceve una normale richiesta di download (indirizzo IP e user-agent dell’installer), mai clip, indirizzi delle pagine o cookie del browser. Strumenti e licenze restano sul computer. L’estensione non avvia l’installer e non scarica gli strumenti automaticamente.
 
-Questa informativa riguarda Video Clipper 1.13.35 e helper locale 1.9.180, aggiornata il 17 novembre 2026.
+Questa informativa riguarda Video Clipper 1.13.38 e helper locale 1.9.180, aggiornata il 17 novembre 2026.
 
 Quando lo attivi, Video Clipper legge i player HTML5 accessibili della scheda scelta: indirizzi delle sorgenti, titolo, durata, posizione di riproduzione e geometria. Usa l'accesso alla scheda attiva; gli eventuali permessi per domini dei player incorporati vengono richiesti tramite tue azioni. Non ottiene inizialmente accesso permanente a tutti i siti.
 
@@ -43,6 +45,8 @@ L'accesso alla sessione del browser è facoltativo, inizialmente disattivato, li
 Valori dei cookie e token non vengono conservati nelle preferenze, nella cronologia o nei rapporti diagnostici. L'helper può usare un file cookie temporaneo, limitato a richieste e reindirizzamenti autorizzati. I dati temporanei vengono ripuliti dopo completamento, errore o annullamento; eventuali errori di pulizia sono segnalati. I video esportati restano nella destinazione scelta. Questa informativa riguarda la coppia corrente, non i protocolli legacy delle vecchie versioni.
 
 L'archivio locale dell'estensione conserva preferenze, domini autorizzati, profili di esportazione/associazioni ai siti, immagini watermark, progetti e cronologia dei risultati. I progetti contengono nome, identificatori hash di pagina/sorgente, intervalli e impostazioni per riprendere lo stesso video quando disponibile. La cronologia conserva nomi dei risultati, intervalli, stato e percorsi locali, con durata configurabile. Svuotarla elimina i riferimenti, non i file. Progetti e salvataggi delle finestre private non vengono aggiunti agli archivi persistenti; un video esportato da una finestra privata viene comunque scritto sul disco.
+
+Le copie dei soli tagli sono file JSON locali creati su richiesta: contengono durata, intervalli ordinati in millisecondi e parte attiva, senza indirizzi, titoli, percorsi, cookie o impostazioni di uscita. Sono disponibili anche nelle finestre private; l’esportazione scrive il file sul disco. L’importazione applica esplicitamente il file al video selezionato dopo la validazione, senza avviare un download o caricarlo online. La sola corrispondenza della durata non dimostra che due video siano lo stesso filmato.
 
 Le immagini watermark sono convertite localmente in PNG di dimensioni limitate, conservate nell'archivio locale e inviate solo al lavoro di esportazione che le usa. I rapporti diagnostici le escludono. Rimuovere l'immagine corrente non rimuove copie già conservate in progetti/profili o backup delle impostazioni esportati in precedenza. I backup JSON sono creati su richiesta e possono includere percorsi locali, nomi, associazioni ai siti e immagini: controllali prima di condividerli.
 
