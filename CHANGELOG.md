@@ -1,5 +1,17 @@
 # Changes / Novità
 
+## Helper 1.9.185 — Native DASH clocks / Clock DASH del browser
+
+Helper 1.9.185 lets qualified Firefox DASH clips save selectively when period offsets do not align with the original track clocks. It follows the browser's actual video and audio timing instead of rejecting those sources or moving a boundary image. It also fixes a later-part save failure caused by a rounded local movie start. Single clips and joined parts are checked through one Save click with cuts and playback settings preserved. If extension 1.13.39 is installed, update only the helper.
+
+L’helper 1.9.185 permette di salvare in modo selettivo le clip DASH verificate in Firefox anche quando il cambio di periodo non coincide con i clock originali delle tracce. Mantiene i tempi effettivi di immagini e audio del browser e corregge un errore nel salvataggio delle parti successive, causato dall’arrotondamento dell’inizio del file intermedio. Clip singole e parti unite sono verificate con un clic su Salva, conservando tagli e impostazioni di riproduzione. Se hai l’estensione 1.13.39, aggiorna soltanto l’helper.
+
+Qualified scope: recognized Firefox native-host invocation, finite clear H.264 DASH with stable AAC or Opus across bound periods. Original coded bytes and MP4 tables stay unchanged and are checked independently. Firefox presentation offsets are converted per container clock; the output keeps the exact first-image origin even between microseconds. Engine identity is internal host metadata, never chosen from a page field or HTTP user-agent. No new extension permission or implicit full-source fallback.
+
+Verified with original stereo Opus, AAC 48 kHz and mono AAC 44.1 kHz, negative and positive offsets, every output image against the native player, original PCM and independent final AAC. Windows/Linux compiled helpers and permanently installed signed Firefox 142/160 checked separately. The Windows recorder's constant sub-sample phase is calibrated only before the splice and held fixed afterwards; no product PCM or timeline correction. Muted Firefox 142 native audio recording is not claimed as a waveform pass; its saved PCM/reference is qualified separately. 120 corrupt packet/table/configuration witnesses are rejected and 4,138 numeric vectors match an independent control.
+
+Unknown/Chromium fractional clock policies, ambiguous half-microsecond offsets without observed evidence and video-only fractional periods remain outside this new path. Existing earlier qualified paths remain available; explicit full-source compatibility is unchanged.
+
 ## Helper 1.9.184 — Selective Opus periods / Periodi Opus selettivi
 
 Helper 1.9.184 adds selective saving for qualified DASH videos whose Opus audio spans several periods. It keeps the original audio continuity and precise image timestamps, including a boundary inside an audio packet. Single clips and joined parts are verified through the normal Save button without downloading the full source. Original PCM and final AAC were checked independently, including native Firefox 160 playback on Windows and Linux. If extension 1.13.39 is installed, update only the helper. Unqualified formats still require an explicit compatibility choice.
