@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## Extension 1.13.41 / Helper 1.9.187 — Legacy HLS first frame / Primo fotogramma HLS
+
+Extension 1.13.41 and helper 1.9.187 improve selective clipping from qualified legacy HLS H.264 players, including the first displayed frame. Reordered initial decode samples and distant parts preserve the native video/AAC timeline. Joined and separate exports are verified; missing source audio warns without blocking saving. Projects, queue, markers and output settings survive upgrade and recovery. Update both components for the IN=0 correction. This does not claim universal website or format support.
+
+Estensione 1.13.41 e helper 1.9.187 migliorano i tagli selettivi nei player HLS H.264 verificati, anche dal primo fotogramma. Campioni iniziali riordinati e parti distanti mantengono i tempi nativi di immagini e audio. Verificati file uniti e separati; l’audio assente produce un avviso senza bloccare il salvataggio. Progetti, coda, marcatori e impostazioni restano conservati dopo aggiornamento e recupero. Aggiorna entrambi i componenti per la correzione da IN=0. La compatibilità non è universale per ogni sito o formato.
+
+Catalog version 1.13.41 has the same runtime payload as approved direct version 1.13.40, except manifest.version. Silent isolated Firefox 142/160 on Windows/Linux verifies native images, independent AAC, permanent signature/restart and multipart projects/queue/cuts-file preservation. No new permissions, personal-profile changes or implicit full-source download fallback.
+
 ## Helper 1.9.186 — Video-only DASH / DASH senza audio
 
 Helper 1.9.186 fixes selective saving of qualified video-only DASH clips across periods. Fractional offsets, a different segment-index clock and negative decoder preroll no longer block these verified cases; microsecond timing follows Firefox so a boundary image is preserved. Unselected VTT subtitles no longer reject the selected video. H.264, VP9 and AV1 sources were checked in isolated Firefox, with joined or separate MP4 output. Missing audio is a warning and does not block saving. Cuts and playback settings stay intact. If extension 1.13.39 is installed, update only the helper.
