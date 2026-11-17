@@ -1,5 +1,11 @@
 # Changes / Novità
 
+## 1.13.43 and helper 1.9.189 — Selective DASH clips after seeking
+
+The extension remembers short audio gaps observed in the selected Shaka player while you mark your cuts. The helper checks the original audio samples, so a supported DASH clip can still be exported after the player drops that section from its buffer. Joined and separate files use the same clip timings.
+
+L’estensione conserva in memoria le brevi pause audio osservate sul player Shaka selezionato mentre imposti i tagli. L’helper verifica i campioni originali e può salvare una clip DASH supportata anche dopo che il tratto è uscito dal buffer. Le parti unite e i file separati mantengono gli stessi minutaggi.
+
 ## Helper 1.9.188 — DASH configuration changes and valid AAC tails
 
 Helper 1.9.188 adds verified selective DASH saves across H.264 configuration or resolution changes, keeping one stable output size for joined or separate parts. It also fixes valid AAC clips ending at the original source tail on Windows and Linux. Selected fragments, decode neighbors and small original configuration witnesses are fetched; no implicit complete-source fallback. Update only the helper if extension 1.13.41 is already installed. Website and format support remains limited to verified paths.
