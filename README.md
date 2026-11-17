@@ -6,7 +6,7 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 
 **English and Italian**, with automatic browser-language selection and an immediate language switch in Settings.
 
-**[Install for Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Download Windows helper installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.182/VideoClipper-Helper-1.9.182-Windows-Setup.exe)** · **[English setup guide](INSTALL.md)** · **[Guida italiana](INSTALLAZIONE.md)**
+**[Install for Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Download Windows helper installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.183/VideoClipper-Helper-1.9.183-Windows-Setup.exe)** · **[English setup guide](INSTALL.md)** · **[Guida italiana](INSTALLAZIONE.md)**
 
 ## Start clipping
 
@@ -14,24 +14,26 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-**Install Firefox extension 1.13.39 and helper 1.9.182.** Both are available from the links below. Update both components for late rearming of supported hls.js/dash.js players and reliable selective export of already loaded MediaSource fragments. Selective download is the default for qualified MP4, WebM, HLS and DASH sources; unsupported sources can require the explicit full-source compatibility setting.
+**Install Firefox extension 1.13.39 and helper 1.9.183.** Both are available from the links below. Update both components for late rearming of supported hls.js/dash.js players and reliable selective export of already loaded MediaSource fragments. Selective download is the default for qualified MP4, WebM, HLS and DASH sources; unsupported sources can require the explicit full-source compatibility setting.
 
-The XVideos HLS source detection and full failed-project recovery delivered in 1.13.38 remain included. For the older-HLS AAC and native timing corrections in 1.13.39, install helper 1.9.182 separately.
+The XVideos HLS source detection and full failed-project recovery delivered in 1.13.38 remain included. For the older-HLS AAC and native timing corrections in 1.13.39, install helper 1.9.183 separately.
 
 **Already installed in Firefox?** Open **Add-ons and themes → gear menu → Check for Updates**. For a signed XPI already downloaded, choose **Install Add-on From File** in the same menu. Keep the installed extension: its settings are preserved. Firefox controls installation and catalog update availability.
 
 | Download | Use |
 |---|---|
 | [Firefox extension 1.13.39](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.39/VideoClipper-1.13.39-signed.xpi) | Mozilla-signed permanent installation |
-| [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.182/VideoClipper-Helper-1.9.182-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
-| [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.182/VideoClipper-Helper-1.9.182-Windows.zip) | Advanced manual installation |
-| [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.182/VideoClipper-Helper-1.9.182-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
+| [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.183/VideoClipper-Helper-1.9.183-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
+| [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.183/VideoClipper-Helper-1.9.183-Windows.zip) | Advanced manual installation |
+| [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.183/VideoClipper-Helper-1.9.183-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
 | [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.13/VideoClipper-1.13.13-Chromium.zip) | Unpacked desktop installation; no store publication |
 | [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.39/VideoClipper-1.13.39-SHA256SUMS.txt) | Verify downloaded packages |
 
-[Helper 1.9.182 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.182/VideoClipper-Helper-1.9.182-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.39 package and its checksums are published separately.
+[Helper 1.9.182 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.183/VideoClipper-Helper-1.9.183-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.39 package and its checksums are published separately.
 
-Helper 1.9.182 adds selective clipping across qualified clear DASH periods with H.264 video and AAC LC mono/stereo audio. It preserves native timing at early and late transitions, retains valid 44.1 kHz edge samples and supports one joined file or separate files. Actual Firefox 142/160 exports were verified on Windows and Linux, including three-period stereo sources and Shaka/dash.js players. The older HLS corrections from helper 1.9.181 remain included. If extension 1.13.39 is already installed, update only the helper for these DASH fixes. Website and format support is not universal.
+Helper 1.9.183 corrects the IN/OUT clock for qualified XVideos clear HLS sources with H.264 video without B frames. It retains the image already visible at IN, preserves original audio delays and supports joined or separate parts. Actual compiled Windows/Linux helpers were checked with permanently installed Firefox 142/160; the long-cut reference verifies all 3,061 video frames and 5,740 AAC packets. Other codecs and reordered streams retain their existing bounded paths. If extension 1.13.39 is installed, update only the helper. Support is not universal; full-source compatibility remains an explicit setting.
+
+Helper 1.9.182 introduced selective clipping across qualified clear DASH periods with H.264 video and AAC LC mono/stereo audio. It preserves native timing at early and late transitions, retains valid 44.1 kHz edge samples and supports one joined file or separate files. Actual Firefox 142/160 exports were verified on Windows and Linux, including three-period stereo sources and Shaka/dash.js players. The older HLS corrections from helper 1.9.181 remain included. If extension 1.13.39 is already installed, update only the helper for these DASH fixes. Website and format support is not universal.
 
 ## Preserve your cuts and recover a failed save
 
