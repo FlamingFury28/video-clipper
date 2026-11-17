@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## 1.13.39 + helper 1.9.181 — Legacy HLS selective clipping
+
+Extension 1.13.39 with helper 1.9.181 improves selective clipping from older HLS players, including the verified FluidPlayer/hls.js 0.12.4 path. It keeps native video timing and AAC audio, gathers missing segments even when loading was stopped, and restores the player’s position and loading state. Install both components for these legacy-player corrections. Earlier helpers keep their ordinary source path; universal website support is not claimed.
+
+L’estensione 1.13.39 con l’helper 1.9.181 migliora i tagli selettivi dai player HLS meno recenti, incluso il percorso FluidPlayer/hls.js 0.12.4 verificato. Conserva tempi video e audio AAC nativi, raccoglie i segmenti mancanti anche quando il caricamento era fermo e ripristina posizione e stato del player. Per queste correzioni aggiorna entrambi. Gli helper precedenti mantengono il percorso ordinario; non è garantito ogni sito.
+
+Verified with the compiled helper on Windows Firefox 142/160 and Linux Firefox 160: one-click H.264/AAC exports, native image comparison and preserved markers/playhead. Two distant parts of an original numbered fixture retain all sampled frames without fetching intervening segments. Strict guards still reject real clock gaps, video without random access, advertisements, protected tracks and ambiguous engines. Projects, cuts backup/import and recovery from 1.13.38 remain included. Broader selective-format work continues.
+
 ## 1.13.38 — Project preservation and cuts backup
 
 Version 1.13.38 expands the projects archive from 40 to 200 entries without deleting existing work. In **Clip → Project and shortcuts**, use **Save a copy of cuts** for a local JSON containing all ordered ranges, the active part and duration, even when project storage is unavailable. **Load cuts onto this video** explicitly restores those ranges after checking the current video and duration; this file does not include output settings or source identity. Private-window cuts can be exported and imported without creating persistent projects. Existing saved projects retain their export settings. Older matching XVideos drafts can use **Restore onto this video** to reopen the editor without starting a download. If a save fails, its status is shown instead of a misleading success.
