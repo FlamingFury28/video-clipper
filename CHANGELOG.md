@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## 1.13.38 — Project preservation and cuts backup
+
+Version 1.13.38 expands the projects archive from 40 to 200 entries without deleting existing work. In **Clip → Project and shortcuts**, use **Save a copy of cuts** for a local JSON containing all ordered ranges, the active part and duration, even when project storage is unavailable. **Load cuts onto this video** explicitly restores those ranges after checking the current video and duration; this file does not include output settings or source identity. Private-window cuts can be exported and imported without creating persistent projects. Existing saved projects retain their export settings. Older matching XVideos drafts can use **Restore onto this video** to reopen the editor without starting a download. If a save fails, its status is shown instead of a misleading success.
+
+La 1.13.38 amplia l’archivio da 40 a 200 progetti senza eliminare quelli esistenti. In **Clip → Progetto e scorciatoie**, usa **Salva copia dei tagli** per creare un JSON locale con tutte le parti ordinate, parte attiva e durata, anche quando Conserva progetto non è disponibile. **Carica tagli su questo video** ripristina esplicitamente gli intervalli dopo aver verificato video corrente e durata: il file non contiene impostazioni di uscita né identità della sorgente. Funziona anche in una finestra privata senza creare progetti persistenti. I progetti già conservati mantengono le impostazioni di esportazione. I vecchi progetti XVideos compatibili possono usare **Recupera su questo video** per riaprire l’editor senza avviare un download. Un salvataggio fallito mostra il suo esito senza conferme ingannevoli.
+
+Verified with actual cuts-file download/import, all-part recovery after reload, and preservation of the original 40 projects on isolated Firefox 142/160 Windows and Firefox 160 Linux. Separate private-mode and real XVideos editor-recovery tests pass; the old-schema draft used there is a controlled fixture. Helper 1.9.180 and source-detection modules are unchanged. The existing long-cut OUT-frame discrepancy of about one frame remains; no recovery of never-recorded closed-page cuts is claimed.
+
 ## Extension 1.13.37 / existing helper 1.9.180 — resume older XVideos cuts, 17 November 2026
 
 - Fix a second defect found while qualifying the actual1.13.35→1.13.36 upgrade: old projects retained their cuts/settings, but their page-only asset hash no longer matched the new UUID-bound video, so no resume action was offered.
