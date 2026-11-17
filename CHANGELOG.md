@@ -1,5 +1,11 @@
 # Changes / Novità
 
+## 1.13.45 / helper 1.9.190
+
+Fixes a selective DASH save when the selected Shaka player changes AAC configuration in a scene that has not been buffered. With helper 1.9.190, Video Clipper can use the neighboring original segments if it observed the selected player from startup and can verify the audio boundary. Joined and separate clips keep their markers. A failed buffered export also returns the player to its previous position.
+
+Corregge il salvataggio selettivo quando il player Shaka cambia configurazione audio AAC in una scena ancora da caricare. Con l’helper 1.9.190, Video Clipper può usare i segmenti vicini al taglio quando ha osservato il player selezionato fin dall’avvio e può verificare il limite della traccia. I marcatori vengono conservati per le clip unite e separate. Se il salvataggio dal buffer fallisce, il video torna al punto precedente.
+
 ## 1.13.43 and helper 1.9.189 — Selective DASH clips after seeking
 
 The extension remembers short audio gaps observed in the selected Shaka player while you mark your cuts. The helper checks the original audio samples, so a supported DASH clip can still be exported after the player drops that section from its buffer. Joined and separate files use the same clip timings.
