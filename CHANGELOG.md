@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## Helper 1.9.186 — Video-only DASH / DASH senza audio
+
+Helper 1.9.186 fixes selective saving of qualified video-only DASH clips across periods. Fractional offsets, a different segment-index clock and negative decoder preroll no longer block these verified cases; microsecond timing follows Firefox so a boundary image is preserved. Unselected VTT subtitles no longer reject the selected video. H.264, VP9 and AV1 sources were checked in isolated Firefox, with joined or separate MP4 output. Missing audio is a warning and does not block saving. Cuts and playback settings stay intact. If extension 1.13.39 is installed, update only the helper.
+
+L’helper 1.9.186 corregge il salvataggio selettivo dei video DASH senza audio verificati attraverso più periodi. Offset frazionari, un clock diverso nell’indice dei segmenti e il preroll negativo non bloccano più questi casi; i tempi seguono Firefox per conservare l’immagine al cambio di periodo. I sottotitoli VTT non selezionati non fanno rifiutare il video. Sorgenti H.264, VP9 e AV1 sono state verificate in Firefox isolato, con MP4 unito o file separati. L’audio assente produce un avviso e il salvataggio prosegue. Tagli e impostazioni di riproduzione restano intatti. Con l’estensione 1.13.39 aggiorna solo l’helper.
+
+Verified on Windows and Linux with silent isolated Firefox tests. The transfer stays bounded to the required media fragments, decoder neighbours and source checks; there is no automatic full-source fallback. HEVC native browser export and the remaining format limits stay unverified.
+
 ## Helper 1.9.185 — Native DASH clocks / Clock DASH del browser
 
 Helper 1.9.185 lets qualified Firefox DASH clips save selectively when period offsets do not align with the original track clocks. It follows the browser's actual video and audio timing instead of rejecting those sources or moving a boundary image. It also fixes a later-part save failure caused by a rounded local movie start. Single clips and joined parts are checked through one Save click with cuts and playback settings preserved. If extension 1.13.39 is installed, update only the helper.
