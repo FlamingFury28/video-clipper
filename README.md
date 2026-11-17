@@ -6,7 +6,7 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 
 **English and Italian**, with automatic browser-language selection and an immediate language switch in Settings.
 
-**[Install for Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Download Windows helper installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-Windows-Setup.exe)** · **[English setup guide](INSTALL.md)** · **[Guida italiana](INSTALLAZIONE.md)**
+**[Install for Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Download Windows helper installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.181/VideoClipper-Helper-1.9.181-Windows-Setup.exe)** · **[English setup guide](INSTALL.md)** · **[Guida italiana](INSTALLAZIONE.md)**
 
 ## Start clipping
 
@@ -14,24 +14,24 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-**Install Firefox extension 1.13.38 and helper 1.9.180.** Both are available from the links below. Update both components for late rearming of supported hls.js/dash.js players and reliable selective export of already loaded MediaSource fragments. Selective download is the default for qualified MP4, WebM, HLS and DASH sources; unsupported sources can require the explicit full-source compatibility setting.
+**Install Firefox extension 1.13.39 and helper 1.9.181.** Both are available from the links below. Update both components for late rearming of supported hls.js/dash.js players and reliable selective export of already loaded MediaSource fragments. Selective download is the default for qualified MP4, WebM, HLS and DASH sources; unsupported sources can require the explicit full-source compatibility setting.
 
-Extension 1.13.38 fixes `SELECTIVE_UNAVAILABLE` on the bound XVideos HLS player. If helper 1.9.180 is already connected, update only the extension. Existing failed-save projects retain all original parts and output settings; use **Resume on this video** when the old plan had no stable source identity.
+The XVideos HLS source detection and full failed-project recovery delivered in 1.13.38 remain included. For the older-HLS AAC and native timing corrections in 1.13.39, install helper 1.9.181 separately.
 
 **Already installed in Firefox?** Open **Add-ons and themes → gear menu → Check for Updates**. For a signed XPI already downloaded, choose **Install Add-on From File** in the same menu. Keep the installed extension: its settings are preserved. Firefox controls installation and catalog update availability.
 
 | Download | Use |
 |---|---|
-| [Firefox extension 1.13.38](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.38/VideoClipper-1.13.38-signed.xpi) | Mozilla-signed permanent installation |
-| [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
-| [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-Windows.zip) | Advanced manual installation |
-| [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
+| [Firefox extension 1.13.39](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.39/VideoClipper-1.13.39-signed.xpi) | Mozilla-signed permanent installation |
+| [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.181/VideoClipper-Helper-1.9.181-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
+| [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.181/VideoClipper-Helper-1.9.181-Windows.zip) | Advanced manual installation |
+| [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.181/VideoClipper-Helper-1.9.181-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
 | [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.13/VideoClipper-1.13.13-Chromium.zip) | Unpacked desktop installation; no store publication |
-| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.38/VideoClipper-1.13.38-SHA256SUMS.txt) | Verify downloaded packages |
+| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.39/VideoClipper-1.13.39-SHA256SUMS.txt) | Verify downloaded packages |
 
-[Helper 1.9.180 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.38 package and its checksums are published separately.
+[Helper 1.9.181 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.181/VideoClipper-Helper-1.9.181-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.39 package and its checksums are published separately.
 
-Helper 1.9.180 fixes Beeg source resolution after its API changed: numeric API ids are normalized without changing the selected video identity, and the separate play-reference request supplies the HLS playlist. Updating the helper is sufficient for this fix; the signed 1.13.38 extension remains compatible. Existing YouJizz IN-frame timing limits remain documented.
+Extension 1.13.39 with helper 1.9.181 improves selective clipping from older HLS players, including the verified FluidPlayer/hls.js 0.12.4 path. It keeps native video timing and AAC audio, gathers missing segments even when loading was stopped, and restores the player’s position and loading state. Install both components for these legacy-player corrections. Earlier helpers keep their ordinary source path; universal website support is not claimed.
 
 ## Preserve your cuts and recover a failed save
 
