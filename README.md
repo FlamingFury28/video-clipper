@@ -14,28 +14,30 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-**Install Firefox extension 1.13.37 and helper 1.9.180.** Both are available from the links below. Update both components for late rearming of supported hls.js/dash.js players and reliable selective export of already loaded MediaSource fragments. Selective download is the default for qualified MP4, WebM, HLS and DASH sources; unsupported sources can require the explicit full-source compatibility setting.
+**Install Firefox extension 1.13.38 and helper 1.9.180.** Both are available from the links below. Update both components for late rearming of supported hls.js/dash.js players and reliable selective export of already loaded MediaSource fragments. Selective download is the default for qualified MP4, WebM, HLS and DASH sources; unsupported sources can require the explicit full-source compatibility setting.
 
-Extension 1.13.37 fixes `SELECTIVE_UNAVAILABLE` on the bound XVideos HLS player. If helper 1.9.180 is already connected, update only the extension. Existing failed-save projects retain all original parts and output settings; use **Resume on this video** when the old plan had no stable source identity.
+Extension 1.13.38 fixes `SELECTIVE_UNAVAILABLE` on the bound XVideos HLS player. If helper 1.9.180 is already connected, update only the extension. Existing failed-save projects retain all original parts and output settings; use **Resume on this video** when the old plan had no stable source identity.
 
 **Already installed in Firefox?** Open **Add-ons and themes → gear menu → Check for Updates**. For a signed XPI already downloaded, choose **Install Add-on From File** in the same menu. Keep the installed extension: its settings are preserved. Firefox controls installation and catalog update availability.
 
 | Download | Use |
 |---|---|
-| [Firefox extension 1.13.37](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.37/VideoClipper-1.13.37-signed.xpi) | Mozilla-signed permanent installation |
+| [Firefox extension 1.13.38](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.38/VideoClipper-1.13.38-signed.xpi) | Mozilla-signed permanent installation |
 | [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
 | [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-Windows.zip) | Advanced manual installation |
 | [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
 | [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.13/VideoClipper-1.13.13-Chromium.zip) | Unpacked desktop installation; no store publication |
-| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.37/VideoClipper-1.13.37-SHA256SUMS.txt) | Verify downloaded packages |
+| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.38/VideoClipper-1.13.38-SHA256SUMS.txt) | Verify downloaded packages |
 
-[Helper 1.9.180 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.37 package and its checksums are published separately.
+[Helper 1.9.180 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.180/VideoClipper-Helper-1.9.180-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.38 package and its checksums are published separately.
 
-Helper 1.9.180 fixes Beeg source resolution after its API changed: numeric API ids are normalized without changing the selected video identity, and the separate play-reference request supplies the HLS playlist. Updating the helper is sufficient for this fix; the signed 1.13.37 extension remains compatible. Existing YouJizz IN-frame timing limits remain documented.
+Helper 1.9.180 fixes Beeg source resolution after its API changed: numeric API ids are normalized without changing the selected video identity, and the separate play-reference request supplies the HLS playlist. Updating the helper is sufficient for this fix; the signed 1.13.38 extension remains compatible. Existing YouJizz IN-frame timing limits remain documented.
 
-## Recover a failed save
+## Preserve your cuts and recover a failed save
 
-Version 1.13.37 keeps all parts and export settings of failed attempts before waiting for the player. A lost or slow response no longer discards the plan or replaces the original settings with later changes. **Resume save** reuses the original composition without re-entering times, including after reload. **Settings → Recovery → Recover failed saves** permits one automatic retry for verified recoverable errors on the same selected video. For a player without a stable identity, use **Resume on this video** on its saved project. Interrupted jobs with uncertain outcomes require explicit resume. Update the existing extension to preserve projects and queue entries.
+Version 1.13.38 expands the projects archive from 40 to 200 entries without deleting existing work. In **Clip → Project and shortcuts**, use **Save a copy of cuts** for a local JSON containing all ordered ranges, the active part and duration, even when project storage is unavailable. **Load cuts onto this video** explicitly restores those ranges after checking the current video and duration; this file does not include output settings or source identity. Private-window cuts can be exported and imported without creating persistent projects. Existing saved projects retain their export settings. Older matching XVideos drafts can use **Restore onto this video** to reopen the editor without starting a download. If a save fails, its status is shown instead of a misleading success.
+
+Version 1.13.38 keeps all parts and export settings of failed attempts before waiting for the player. A lost or slow response no longer discards the plan or replaces the original settings with later changes. **Resume save** reuses the original composition without re-entering times, including after reload. **Settings → Recovery → Recover failed saves** permits one automatic retry for verified recoverable errors on the same selected video. For a player without a stable identity, use **Resume on this video** on its saved project. Interrupted jobs with uncertain outcomes require explicit resume. Update the existing extension to preserve projects and queue entries.
 
 ## Clips from several videos
 
