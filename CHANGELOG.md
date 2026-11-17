@@ -1,5 +1,13 @@
 # Changes / Novità
 
+## Helper 1.9.188 — DASH configuration changes and valid AAC tails
+
+Helper 1.9.188 adds verified selective DASH saves across H.264 configuration or resolution changes, keeping one stable output size for joined or separate parts. It also fixes valid AAC clips ending at the original source tail on Windows and Linux. Selected fragments, decode neighbors and small original configuration witnesses are fetched; no implicit complete-source fallback. Update only the helper if extension 1.13.41 is already installed. Website and format support remains limited to verified paths.
+
+Verified with actual compiled Windows/Linux helpers in silent isolated Firefox 142/160, one-click joined/separate exports, native images, native audio recordings and independent AAC controls. Original source identity, sample-table/payload checks and every selected range remain strict. Signed extension 1.13.41 is unchanged. Private source and user/browser data are excluded.
+
+L’helper 1.9.188 aggiunge i tagli selettivi DASH verificati attraverso cambi di configurazione o risoluzione H.264, con dimensioni di uscita stabili per parti unite o separate. Corregge inoltre i tagli AAC validi fino alla fine della sorgente su Windows e Linux. Scarica i frammenti selezionati, i vicini necessari alla decodifica e piccoli frammenti originali di verifica della configurazione; nessun download completo automatico. Se hai già l’estensione 1.13.41, aggiorna soltanto l’helper. Restano i limiti dei siti e formati verificati.
+
 ## Extension 1.13.41 / Helper 1.9.187 — Legacy HLS first frame / Primo fotogramma HLS
 
 Extension 1.13.41 and helper 1.9.187 improve selective clipping from qualified legacy HLS H.264 players, including the first displayed frame. Reordered initial decode samples and distant parts preserve the native video/AAC timeline. Joined and separate exports are verified; missing source audio warns without blocking saving. Projects, queue, markers and output settings survive upgrade and recovery. Update both components for the IN=0 correction. This does not claim universal website or format support.
