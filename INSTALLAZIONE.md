@@ -1,10 +1,10 @@
 # Installa Video Clipper
 
-[English](INSTALL.md) · [Estensione Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Download](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.39)
+[English](INSTALL.md) · [Estensione Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Download](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.41)
 
-Installa l’estensione Firefox **1.13.39** dal catalogo Mozilla e l’helper **1.9.186** da questo repository. Aggiorna entrambi per il riarmo dei player hls.js/dash.js compatibili già avviati e la gestione corretta dei buffer nativi. Estensione e helper si aggiornano separatamente; il download selettivo è predefinito per le sorgenti qualificate.
+Installa l’estensione Firefox **1.13.41** dal catalogo Mozilla e l’helper **1.9.187** da questo repository. Aggiorna entrambi per il riarmo dei player hls.js/dash.js compatibili già avviati e la gestione corretta dei buffer nativi. Estensione e helper si aggiornano separatamente; il download selettivo è predefinito per le sorgenti qualificate.
 
-L’helper 1.9.186 corregge il salvataggio selettivo dei video DASH senza audio verificati attraverso più periodi. Offset frazionari, un clock diverso nell’indice dei segmenti e il preroll negativo non bloccano più questi casi; i tempi seguono Firefox per conservare l’immagine al cambio di periodo. I sottotitoli VTT non selezionati non fanno rifiutare il video. Sorgenti H.264, VP9 e AV1 sono state verificate in Firefox isolato, con MP4 unito o file separati. L’audio assente produce un avviso e il salvataggio prosegue. Tagli e impostazioni di riproduzione restano intatti. Con l’estensione 1.13.39 aggiorna solo l’helper.
+Estensione 1.13.41 e helper 1.9.187 migliorano i tagli selettivi nei player HLS H.264 verificati, anche dal primo fotogramma. Campioni iniziali riordinati e parti distanti mantengono i tempi nativi di immagini e audio. Verificati file uniti e separati; l’audio assente produce un avviso senza bloccare il salvataggio. Progetti, coda, marcatori e impostazioni restano conservati dopo aggiornamento e recupero. Aggiorna entrambi i componenti per la correzione da IN=0. La compatibilità non è universale per ogni sito o formato.
 
 Restano incluse le correzioni Opus già verificate nella 1.9.184:
 
@@ -16,7 +16,7 @@ L’helper 1.9.183 corregge i tempi IN/OUT delle sorgenti HLS XVideos verificate
 
 L’helper 1.9.182 ha introdotto i tagli selettivi attraverso più periodi DASH nei formati verificati H.264 e AAC LC mono/stereo. Conserva i tempi nativi ai cambi audio, evita la perdita di un campione sui bordi a 44,1 kHz e permette file uniti o separati. Le prove con binari reali su Firefox 142/160, Windows e Linux, includono sorgenti stereo a tre periodi e player Shaka/dash.js. Restano incluse le correzioni HLS dell’helper 1.9.181. Se hai già l’estensione 1.13.39, per queste correzioni DASH aggiorna soltanto l’helper. Non è garantito ogni sito o formato.
 
-Dopo l’aggiornamento, **Verifica collegamento** deve mostrare l’helper **1.9.186**. Il solo XPI non aggiorna l’helper installato.
+Dopo l’aggiornamento, **Verifica collegamento** deve mostrare l’helper **1.9.187**. Il solo XPI non aggiorna l’helper installato.
 
 La 1.13.38 conserva tutte le parti e le impostazioni dei tentativi falliti prima di attendere la risposta del player. Una risposta persa o lenta non elimina più il piano e le impostazioni cambiate dopo il clic non sostituiscono quelle originali. **Riprendi salvataggio** riusa la composizione originale senza reinserire i tempi, anche dopo una ricarica. **Impostazioni → Recupero → Recupera i salvataggi falliti** abilita un solo tentativo automatico per gli errori recuperabili sullo stesso video. Se il player non ha un’identità stabile, usa **Riprendi su questo video** sul progetto conservato. I lavori interrotti con esito incerto richiedono una ripresa esplicita. Non rimuovere l’estensione per aggiornarla: progetti e coda restano conservati.
 
@@ -27,14 +27,14 @@ La 1.13.38 amplia l’archivio da 40 a 200 progetti senza eliminare quelli esist
 ## Windows — percorso consigliato
 
 1. Installa [Video Clipper dal catalogo Mozilla](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/). Al primo avvio si apre **Installazione guidata**, raggiungibile anche dalle impostazioni.
-2. [Scarica il programma di installazione Windows x64](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.186/VideoClipper-Helper-1.9.186-Windows-Setup.exe), aprilo e premi **Installa**. Firefox è già selezionato; aggiungi Chrome/Edge solo se li usi.
+2. [Scarica il programma di installazione Windows x64](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.187/VideoClipper-Helper-1.9.187-Windows-Setup.exe), aprilo e premi **Installa**. Firefox è già selezionato; aggiungi Chrome/Edge solo se li usi.
 3. Torna in **Impostazioni → Installazione guidata → Verifica collegamento**, scegli la cartella di destinazione e prova una breve clip.
 
 Il programma prepara una cartella stabile nell’account Windows, sotto Programs/VideoClipper, e registra l’helper per i browser scelti. Non servono privilegi amministrativi, Python o configurazioni manuali del PATH. I file dell’helper precedente vengono conservati; se la registrazione non riesce, viene ripristinato il collegamento precedente.
 
 Se FFmpeg, ffprobe e gli encoder necessari sono già disponibili e funzionanti, vengono riutilizzati. Altrimenti lascia selezionato **Prepara automaticamente gli strumenti video mancanti**: vengono scaricati circa 105 MB da gyan.dev, verificati per dimensione e SHA-256 e preparati accanto all’helper. L’archivio originale e la licenza restano nella cartella installata. Se rifiuti il download, gli strumenti con libx264/AAC devono essere già disponibili.
 
-L’installer non ha una firma Authenticode separata. Scaricalo da questo repository e confronta le [impronte SHA-256](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.186/VideoClipper-Helper-1.9.186-SHA256SUMS.txt). Non aggira i controlli di Windows. Se l’installazione fallisce, conserva il codice esatto: un controllo tecnico dell’helper o un pacchetto incompleto richiedono una verifica diversa da un download degli strumenti non riuscito. Usa i dettagli mostrati per scegliere cosa riprovare. Conserva un’eventuale vecchia cartella funzionante finché la nuova è verificata.
+L’installer non ha una firma Authenticode separata. Scaricalo da questo repository e confronta le [impronte SHA-256](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.187/VideoClipper-Helper-1.9.187-SHA256SUMS.txt). Non aggira i controlli di Windows. Se l’installazione fallisce, conserva il codice esatto: un controllo tecnico dell’helper o un pacchetto incompleto richiedono una verifica diversa da un download degli strumenti non riuscito. Usa i dettagli mostrati per scegliere cosa riprovare. Conserva un’eventuale vecchia cartella funzionante finché la nuova è verificata.
 
 Se il pannello era aperto, chiudilo e riaprilo. Riavvia Firefox solo se mantiene il vecchio collegamento all’helper. L’installer non chiude il browser e non modifica i profili personali.
 
@@ -44,7 +44,7 @@ In **Impostazioni → Generali → Lingua**, scegli **Automatico**, **Italiano**
 
 ## Linux x86_64
 
-[Scarica l’archivio dell’helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.186/VideoClipper-Helper-1.9.186-Linux-x86_64.tar.gz), estrailo interamente in una cartella permanente ed esegui `./installa-helper.sh firefox` come utente del browser, senza sudo. FFmpeg e ffprobe con libx264/AAC devono essere disponibili tramite il sistema. Riapri Firefox ed esegui **Verifica collegamento**.
+[Scarica l’archivio dell’helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.187/VideoClipper-Helper-1.9.187-Linux-x86_64.tar.gz), estrailo interamente in una cartella permanente ed esegui `./installa-helper.sh firefox` come utente del browser, senza sudo. FFmpeg e ffprobe con libx264/AAC devono essere disponibili tramite il sistema. Riapri Firefox ed esegui **Verifica collegamento**.
 
 Se sposti la cartella, registra di nuovo l’helper. Conserva insieme tutti i file estratti. Il collegamento con browser Snap/Flatpak non è verificato.
 
