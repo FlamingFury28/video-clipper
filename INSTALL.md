@@ -1,16 +1,18 @@
 # Install Video Clipper
 
-[Italiano](INSTALLAZIONE.md) · [Firefox add-on](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Downloads](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.37)
+[Italiano](INSTALLAZIONE.md) · [Firefox add-on](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Downloads](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.38)
 
-Install Firefox extension **1.13.37** from Mozilla Add-ons and helper **1.9.180** from this repository. Update both components for late capture rearming of supported hls.js/dash.js players and corrected native buffer handling. Extension and helper update separately; selective download is enabled by default for qualified sources.
+Install Firefox extension **1.13.38** from Mozilla Add-ons and helper **1.9.180** from this repository. Update both components for late capture rearming of supported hls.js/dash.js players and corrected native buffer handling. Extension and helper update separately; selective download is enabled by default for qualified sources.
 
-Helper 1.9.180 fixes Beeg source resolution after its API changed: numeric API ids are normalized without changing the selected video identity, and the separate play-reference request supplies the HLS playlist. Updating the helper is sufficient for this fix; the signed 1.13.37 extension remains compatible. Existing YouJizz IN-frame timing limits remain documented.
+Helper 1.9.180 fixes Beeg source resolution after its API changed: numeric API ids are normalized without changing the selected video identity, and the separate play-reference request supplies the HLS playlist. Updating the helper is sufficient for this fix; the signed 1.13.38 extension remains compatible. Existing YouJizz IN-frame timing limits remain documented.
 
 After updating, **Check connection** should report helper **1.9.180**. The XPI alone does not update the installed helper.
 
-Version 1.13.37 keeps all parts and export settings of failed attempts before waiting for the player. A lost or slow response no longer discards the plan or replaces the original settings with later changes. **Resume save** reuses the original composition without re-entering times, including after reload. **Settings → Recovery → Recover failed saves** permits one automatic retry for verified recoverable errors on the same selected video. For a player without a stable identity, use **Resume on this video** on its saved project. Interrupted jobs with uncertain outcomes require explicit resume. Update the existing extension to preserve projects and queue entries.
+Version 1.13.38 keeps all parts and export settings of failed attempts before waiting for the player. A lost or slow response no longer discards the plan or replaces the original settings with later changes. **Resume save** reuses the original composition without re-entering times, including after reload. **Settings → Recovery → Recover failed saves** permits one automatic retry for verified recoverable errors on the same selected video. For a player without a stable identity, use **Resume on this video** on its saved project. Interrupted jobs with uncertain outcomes require explicit resume. Update the existing extension to preserve projects and queue entries.
 
-Extension 1.13.37 fixes `SELECTIVE_UNAVAILABLE` on the bound XVideos HLS player. If helper 1.9.180 is already connected, update only the extension. Existing failed-save projects retain all original parts and output settings; use **Resume on this video** when the old plan had no stable source identity.
+Extension 1.13.38 fixes `SELECTIVE_UNAVAILABLE` on the bound XVideos HLS player. If helper 1.9.180 is already connected, update only the extension. Existing failed-save projects retain all original parts and output settings; use **Resume on this video** when the old plan had no stable source identity.
+
+Version 1.13.38 expands the projects archive from 40 to 200 entries without deleting existing work. In **Clip → Project and shortcuts**, use **Save a copy of cuts** for a local JSON containing all ordered ranges, the active part and duration, even when project storage is unavailable. **Load cuts onto this video** explicitly restores those ranges after checking the current video and duration; this file does not include output settings or source identity. Private-window cuts can be exported and imported without creating persistent projects. Existing saved projects retain their export settings. Older matching XVideos drafts can use **Restore onto this video** to reopen the editor without starting a download. If a save fails, its status is shown instead of a misleading success.
 
 ## Windows — recommended
 
