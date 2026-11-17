@@ -1,5 +1,20 @@
 # Changes / Novità
 
+## Extension 1.13.37 / existing helper 1.9.180 — resume older XVideos cuts, 17 November 2026
+
+- Fix a second defect found while qualifying the actual1.13.35→1.13.36 upgrade: old projects retained their cuts/settings, but their page-only asset hash no longer matched the new UUID-bound video, so no resume action was offered.
+- Offer explicit Resume on this video only for the exact legacy XVideos binding, same page/audio context and compatible duration/ranges. Keep all original ordered parts and output settings. No automatic reassignment to a different known media UUID.
+- Verify actual failed-save recovery from1.13.35 with two parts and custom output settings, without entering new times, plus four negative stored-plan guards. Retain the selected-player HLS recognition from1.13.36 and the existing helper1.9.180.
+- Keep existing long-clip boundary and site/format limitations documented below. No new permissions, helper rebuild, cookie-consent change or private-source publication.
+
+## Extension 1.13.36 / existing helper 1.9.180 — XVideos selected-player HLS, 17 November 2026
+
+- Reproduce `SELECTIVE_UNAVAILABLE` with signed 1.13.35 and actual helper 1.9.180: the custom XVideos player was missed and page extraction omitted codec declarations.
+- Bind the exact native video, main container and active HLS engine to the page identifier and stable media UUID. Exclude unrelated players, attached ads, fake playback, live and DRM. Signed-token renewal retains cuts; a different media UUID requires confirmation.
+- Verify real-site one-click short exports on Firefox 142/160 Windows and Firefox160 Linux with audio/video and native edge-frame comparisons; separately exercise controlled native DOM rival/ad/identity cases. The subsequent upgrade test found that old page-only projects needed the explicit legacy recovery added in1.13.37.
+- No new permission, helper build or silent full-video compatibility fallback. The short HLS trace consumes four of65 media segments including probes.
+- Keep a known boundary limit visible: a122.419-second request completes with audio/video, duration122.44 and unchanged cuts, but its strict native OUT-frame comparison finds roughly one frame of discrepancy in the unchanged helper path. Frame-exact long-clip boundaries are not claimed.
+
 ## Extension 1.13.35 / existing helper 1.9.180 — keep cuts before player response, 17 November 2026
 
 - Fix two defects reproduced in signed 1.13.34: a lost snapshot reply could leave no durable recovery intent with draft autosave off; settings changed during a slow reply could replace the originally requested export settings.
