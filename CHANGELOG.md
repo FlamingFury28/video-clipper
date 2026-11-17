@@ -1,5 +1,15 @@
 # Changes / Novità
 
+## Helper 1.9.183 — HLS cut boundaries / Bordi dei tagli HLS
+
+Helper 1.9.183 corrects the IN/OUT clock for qualified XVideos clear HLS sources with H.264 video without B frames. It retains the image already visible at IN, preserves original audio delays and supports joined or separate parts. Actual compiled Windows/Linux helpers were checked with permanently installed Firefox 142/160; the long-cut reference verifies all 3,061 video frames and 5,740 AAC packets. Other codecs and reordered streams retain their existing bounded paths. If extension 1.13.39 is installed, update only the helper. Support is not universal; full-source compatibility remains an explicit setting.
+
+L’helper 1.9.183 corregge i tempi IN/OUT delle sorgenti HLS XVideos verificate, con video H.264 senza B-frame. Conserva l’immagine già visibile all’IN, mantiene gli eventuali ritardi originali dell’audio e permette parti unite o separate. I binari Windows/Linux sono verificati con Firefox 142/160 installato in modo permanente; il controllo del taglio lungo verifica tutti i 3.061 fotogrammi e i 5.740 pacchetti AAC. Altri codec e flussi con riordino mantengono i percorsi parziali esistenti. Se hai l’estensione 1.13.39, aggiorna soltanto l’helper. Non è garantito ogni formato; il download completo resta una scelta esplicita di compatibilità.
+
+The new path uses original bounded MPEG-TS packet clocks and a fine local movie timescale. A warning-only video save remains available for silent inputs; unsupported valid codecs, B frames and changing audio track sets keep the existing checked route. No implicit full-source fallback or extension permission change.
+
+Verified: actual Windows 160 long cut 172.871–295.290 s, Linux 160 short cut, Linux 142 joined parts and Windows 142 separate files, all with signed extension 1.13.39 and restart. The long native image check and independent frame-index control pass; its independent AAC reference is bound to 431 unchanged original PES access units. The earlier reference with a millisecond movie clock remains recorded as failed rather than being overwritten. Firefox tests use an isolated null audio backend. Legacy DASH/audio component evidence is reused for unchanged paths; the previous 1.9.182 release records its full qualification below.
+
 ## Helper 1.9.182 — Selective DASH periods / Periodi DASH selettivi
 
 With the existing signed extension 1.13.39, the new helper saves selected intervals across qualified clear DASH periods, with H.264 video and AAC LC mono/stereo audio. It preserves actual early/late audio transitions, avoids losing an edge sample at 44.1 kHz and keeps exact AAC packet timestamps. Joined files, numbered separate files and video-only saves with an audio warning are verified.
