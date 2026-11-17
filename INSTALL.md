@@ -2,9 +2,11 @@
 
 [Italiano](INSTALLAZIONE.md) · [Firefox add-on](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Downloads](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.41)
 
-Install Firefox extension **1.13.41** from Mozilla Add-ons and helper **1.9.187** from this repository. Update both components for late capture rearming of supported hls.js/dash.js players and corrected native buffer handling. Extension and helper update separately; selective download is enabled by default for qualified sources.
+Install Firefox extension **1.13.41** from Mozilla Add-ons and helper **1.9.188** from this repository. Update both components for late capture rearming of supported hls.js/dash.js players and corrected native buffer handling. Extension and helper update separately; selective download is enabled by default for qualified sources.
 
-Extension 1.13.41 and helper 1.9.187 improve selective clipping from qualified legacy HLS H.264 players, including the first displayed frame. Reordered initial decode samples and distant parts preserve the native video/AAC timeline. Joined and separate exports are verified; missing source audio warns without blocking saving. Projects, queue, markers and output settings survive upgrade and recovery. Update both components for the IN=0 correction. This does not claim universal website or format support.
+Helper 1.9.188 adds verified selective DASH saves across H.264 configuration or resolution changes, keeping one stable output size for joined or separate parts. It also fixes valid AAC clips ending at the original source tail on Windows and Linux. Selected fragments, decode neighbors and small original configuration witnesses are fetched; no implicit complete-source fallback. Update only the helper if extension 1.13.41 is already installed. Website and format support remains limited to verified paths.
+
+Extension 1.13.41 and helper 1.9.188 improve selective clipping from qualified legacy HLS H.264 players, including the first displayed frame. Reordered initial decode samples and distant parts preserve the native video/AAC timeline. Joined and separate exports are verified; missing source audio warns without blocking saving. Projects, queue, markers and output settings survive upgrade and recovery. Update both components for the IN=0 correction. This does not claim universal website or format support.
 
 The Opus corrections already verified in 1.9.184 remain included:
 
@@ -16,25 +18,25 @@ Helper 1.9.183 corrects the IN/OUT clock for qualified XVideos clear HLS sources
 
 Helper 1.9.182 introduced selective clipping across qualified clear DASH periods with H.264 video and AAC LC mono/stereo audio. It preserves native timing at early and late transitions, retains valid 44.1 kHz edge samples and supports one joined file or separate files. Actual Firefox 142/160 exports were verified on Windows and Linux, including three-period stereo sources and Shaka/dash.js players. The older HLS corrections from helper 1.9.181 remain included. If extension 1.13.39 is already installed, update only the helper for these DASH fixes. Website and format support is not universal.
 
-After updating, **Check connection** should report helper **1.9.187**. The XPI alone does not update the installed helper.
+After updating, **Check connection** should report helper **1.9.188**. The XPI alone does not update the installed helper.
 
 Version 1.13.38 keeps all parts and export settings of failed attempts before waiting for the player. A lost or slow response no longer discards the plan or replaces the original settings with later changes. **Resume save** reuses the original composition without re-entering times, including after reload. **Settings → Recovery → Recover failed saves** permits one automatic retry for verified recoverable errors on the same selected video. For a player without a stable identity, use **Resume on this video** on its saved project. Interrupted jobs with uncertain outcomes require explicit resume. Update the existing extension to preserve projects and queue entries.
 
-The XVideos HLS source detection and full failed-project recovery delivered in 1.13.38 remain included. For the older-HLS AAC and native timing corrections in 1.13.39, install helper 1.9.187 separately.
+The XVideos HLS source detection and full failed-project recovery delivered in 1.13.38 remain included. For the older-HLS AAC and native timing corrections in 1.13.39, install helper 1.9.188 separately.
 
 Version 1.13.38 expands the projects archive from 40 to 200 entries without deleting existing work. In **Clip → Project and shortcuts**, use **Save a copy of cuts** for a local JSON containing all ordered ranges, the active part and duration, even when project storage is unavailable. **Load cuts onto this video** explicitly restores those ranges after checking the current video and duration; this file does not include output settings or source identity. Private-window cuts can be exported and imported without creating persistent projects. Existing saved projects retain their export settings. Older matching XVideos drafts can use **Restore onto this video** to reopen the editor without starting a download. If a save fails, its status is shown instead of a misleading success.
 
 ## Windows — recommended
 
 1. Install [Video Clipper from Mozilla Add-ons](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/). Its first-run page opens **Guided setup**. You can reopen it from Settings at any time.
-2. [Download the Windows x64 installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.187/VideoClipper-Helper-1.9.187-Windows-Setup.exe), open it and click **Install**. Firefox is selected by default; select Chrome/Edge only if you use them.
+2. [Download the Windows x64 installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.188/VideoClipper-Helper-1.9.188-Windows-Setup.exe), open it and click **Install**. Firefox is selected by default; select Chrome/Edge only if you use them.
 3. Return to **Settings → Guided setup → Check connection**. Choose the folder where you want to save clips. Open a video, activate Video Clipper and test a short interval.
 
 The installer works for the current Windows account, under its local Programs/VideoClipper folder. It needs no administrator access or separate Python installation. It registers the helper automatically and preserves previous helper files. If browser registration fails, the previous connection is restored.
 
 Installed FFmpeg/ffprobe and encoders are reused when healthy. Otherwise, leave **Prepare video tools automatically if missing** checked: the installer downloads about 105 MB directly from gyan.dev, verifies the exact size and SHA-256, then prepares tools beside the helper. No PATH changes or manual extraction. The original vendor download and license remain in the installed folder. If you decline the download, both tools and libx264/AAC must already be available.
 
-The installer is not Authenticode signed. Download it from this repository and compare [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.187/VideoClipper-Helper-1.9.187-SHA256SUMS.txt). It does not bypass Windows security controls. If setup fails, keep its exact error code. A failed helper check or incomplete package is different from a failed tools download; use the displayed details when choosing what to retry. Keep a working old helper folder until the replacement is verified.
+The installer is not Authenticode signed. Download it from this repository and compare [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.188/VideoClipper-Helper-1.9.188-SHA256SUMS.txt). It does not bypass Windows security controls. If setup fails, keep its exact error code. A failed helper check or incomplete package is different from a failed tools download; use the displayed details when choosing what to retry. Keep a working old helper folder until the replacement is verified.
 
 If Video Clipper was open during setup, close and reopen its panel. Reopen Firefox if it retains an old helper connection. The installer does not close the browser or modify its profiles.
 
@@ -44,7 +46,7 @@ In **Settings → General → Language**, choose **Automatic**, **Italiano** or 
 
 ## Linux x86_64
 
-[Download the helper archive](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.187/VideoClipper-Helper-1.9.187-Linux-x86_64.tar.gz). Extract it in full to a permanent folder and run `./installa-helper.sh firefox` as the user running Firefox. Do not use sudo for helper registration. Provide FFmpeg and ffprobe with libx264/AAC through your system's package manager, then reopen Firefox and run **Check connection**.
+[Download the helper archive](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.188/VideoClipper-Helper-1.9.188-Linux-x86_64.tar.gz). Extract it in full to a permanent folder and run `./installa-helper.sh firefox` as the user running Firefox. Do not use sudo for helper registration. Provide FFmpeg and ffprobe with libx264/AAC through your system's package manager, then reopen Firefox and run **Check connection**.
 
 Moving the helper folder requires registration again. Keep the bundled files together. Snap/Flatpak browser access to the native helper has not been verified.
 
