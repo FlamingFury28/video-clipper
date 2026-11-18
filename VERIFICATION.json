@@ -1,25 +1,25 @@
 {
-  "extensionVersion": "1.13.49",
-  "helperVersion": "1.9.191",
-  "signedXpiSha256": "f7fee5e3105ccbf46c94fd9cd89d73c0a38b3116a8f444b205b393bcae5f93c4",
+  "extensionVersion": "1.13.51",
+  "helperVersion": "1.9.192",
+  "signedXpiSha256": "c0004c87a0cdcb006599d6c975d221b2d175b16d57ef22e6e9e98136065be4a9",
   "permanentInstallAndRestartCases": 3,
-  "verifiedUpgradeFrom": "1.13.47",
+  "verifiedUpgradeFrom": "1.13.49",
   "existingMultipartProjectsAndQueuePreserved": true,
   "personalProfilesModified": false,
   "privateUserDataPublished": false,
-  "mozillaCatalogVersion": "1.13.49",
+  "mozillaCatalogVersion": "1.13.51",
   "assets": [
     {
-      "name": "VideoClipper-1.13.49-SHA256SUMS.txt",
+      "name": "VideoClipper-1.13.51-SHA256SUMS.txt",
       "size": 98,
-      "sha256": "fc81cae0cc60d254ac71d9153af4ea4f255678a0954883cc4d231718e6361078",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.49/VideoClipper-1.13.49-SHA256SUMS.txt"
+      "sha256": "db38cb8f73ce57bb3984e830ce29343638625898845507e80383a81a6fff00dd",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.51/VideoClipper-1.13.51-SHA256SUMS.txt"
     },
     {
-      "name": "VideoClipper-1.13.49-signed.xpi",
-      "size": 397689,
-      "sha256": "f7fee5e3105ccbf46c94fd9cd89d73c0a38b3116a8f444b205b393bcae5f93c4",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.49/VideoClipper-1.13.49-signed.xpi"
+      "name": "VideoClipper-1.13.51-signed.xpi",
+      "size": 398397,
+      "sha256": "c0004c87a0cdcb006599d6c975d221b2d175b16d57ef22e6e9e98136065be4a9",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.51/VideoClipper-1.13.51-signed.xpi"
     }
   ],
   "selectiveExports": [
@@ -28,22 +28,22 @@
       "frames": 84,
       "outputs": 1,
       "selectedSegments": 14,
-      "totalSegments": 120,
-      "transferUpperBound": 1431338,
-      "fullMediaBytes": 6409486
+      "totalSegments": 180,
+      "transferUpperBound": 1390173,
+      "fullMediaBytes": 9618741
     },
     {
       "browser": "142.0",
       "frames": 84,
       "outputs": 2,
       "selectedSegments": 14,
-      "totalSegments": 120,
-      "transferUpperBound": 1362126,
-      "fullMediaBytes": 6409486
+      "totalSegments": 180,
+      "transferUpperBound": 1390173,
+      "fullMediaBytes": 9618741
     }
   ],
   "limitations": [
-    "Late activation was verified on a controlled two-period same-origin Shaka 5.3.1 AAC presentation in Firefox.",
+    "Selective export with a remote playhead was verified on two controlled three-period Shaka 5.3.1 AAC presentations in Firefox.",
     "Sources without verifiable timing or selective access can need the explicit full-download setting.",
     "Closing a tab can lose cuts that were never recorded in storage or saved in a file."
   ],

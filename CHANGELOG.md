@@ -1,5 +1,11 @@
 # Changes / Novità
 
+## 1.13.51 / helper 1.9.192
+
+Save a clip on a compatible multi-period DASH video even when playback is in a different period. Video Clipper keeps your cuts and playback position for both joined and separate MP4 files. Install helper 1.9.192 for this change.
+
+Sui video DASH compatibili puoi salvare i tagli anche quando il player si trova in un altro periodo del video. Sia con un MP4 unico sia con file separati, i tagli e la posizione del player vengono conservati. Questa novità richiede l’helper 1.9.192.
+
 ## 1.13.49 / helper 1.9.191
 
 On XVideos, seeking before clicking Save could trigger a source-changed error. Video Clipper now recognizes the video while the player refreshes its quality level. Compatible Shaka players can also save just the selected segments when the playhead is past an audio track transition. Cuts and playback position are preserved. The existing 1.9.191 helper works with this release.

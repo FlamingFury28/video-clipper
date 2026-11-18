@@ -6,7 +6,7 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 
 **English and Italian**, with automatic browser-language selection and an immediate language switch in Settings.
 
-**[Install for Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Download Windows helper installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.191/VideoClipper-Helper-1.9.191-Windows-Setup.exe)** · **[English setup guide](INSTALL.md)** · **[Guida italiana](INSTALLAZIONE.md)**
+**[Install for Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/)** · **[Download Windows helper installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.192/VideoClipper-Helper-1.9.192-Windows-Setup.exe)** · **[English setup guide](INSTALL.md)** · **[Guida italiana](INSTALLAZIONE.md)**
 
 ## Start clipping
 
@@ -14,9 +14,9 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-**Install Firefox extension 1.13.49 and helper 1.9.191.** Selective download is the default for supported MP4, WebM, HLS and DASH videos.
+**Install Firefox extension 1.13.51 and helper 1.9.192.** Selective download is the default for supported MP4, WebM, HLS and DASH videos.
 
-On XVideos, seeking before clicking Save could trigger a source-changed error. Video Clipper now recognizes the video while the player refreshes its quality level. Compatible Shaka players can also save just the selected segments when the playhead is past an audio track transition. Cuts and playback position are preserved. The existing 1.9.191 helper works with this release.
+Save a clip on a compatible multi-period DASH video even when playback is in a different period. Video Clipper keeps your cuts and playback position for both joined and separate MP4 files. Install helper 1.9.192 for this change.
 
 The XVideos HLS source detection and full failed-project recovery delivered in 1.13.38 remain included.
 
@@ -24,14 +24,14 @@ The XVideos HLS source detection and full failed-project recovery delivered in 1
 
 | Download | Use |
 |---|---|
-| [Firefox extension 1.13.49](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.49/VideoClipper-1.13.49-signed.xpi) | Mozilla-signed permanent installation |
-| [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.191/VideoClipper-Helper-1.9.191-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
-| [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.191/VideoClipper-Helper-1.9.191-Windows.zip) | Advanced manual installation |
-| [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.191/VideoClipper-Helper-1.9.191-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
+| [Firefox extension 1.13.51](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.51/VideoClipper-1.13.51-signed.xpi) | Mozilla-signed permanent installation |
+| [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.192/VideoClipper-Helper-1.9.192-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
+| [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.192/VideoClipper-Helper-1.9.192-Windows.zip) | Advanced manual installation |
+| [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.192/VideoClipper-Helper-1.9.192-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
 | [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.13/VideoClipper-1.13.13-Chromium.zip) | Unpacked desktop installation; no store publication |
-| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.49/VideoClipper-1.13.49-SHA256SUMS.txt) | Verify downloaded packages |
+| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.51/VideoClipper-1.13.51-SHA256SUMS.txt) | Verify downloaded packages |
 
-[Helper 1.9.191 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.191/VideoClipper-Helper-1.9.191-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.49 package and its checksums are published separately.
+[Helper 1.9.192 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.192/VideoClipper-Helper-1.9.192-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.51 package and its checksums are published separately.
 
 Extension 1.13.41 and helper 1.9.188 improve selective clipping from qualified legacy HLS H.264 players, including the first displayed frame. Reordered initial decode samples and distant parts preserve the native video/AAC timeline. Joined and separate exports are verified; missing source audio warns without blocking saving. Projects, queue, markers and output settings survive upgrade and recovery. Update both components for the IN=0 correction. This does not claim universal website or format support.
 
