@@ -1,10 +1,10 @@
 # Install Video Clipper
 
-[Italiano](INSTALLAZIONE.md) · [Firefox add-on](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Downloads](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.51)
+[Italiano](INSTALLAZIONE.md) · [Firefox add-on](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Downloads](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.53)
 
-Install Firefox extension **1.13.51** from Mozilla Add-ons and helper **1.9.192** from GitHub.
+Install Firefox extension **1.13.53** from Mozilla Add-ons and helper **1.9.193** from GitHub.
 
-Save a clip on a compatible multi-period DASH video even when playback is in a different period. Video Clipper keeps your cuts and playback position for both joined and separate MP4 files. Install helper 1.9.192 for this change.
+Save multiple clips across separate audio transitions in a compatible DASH video. Helper 1.9.193 downloads the segments needed for your selections. You can export one joined MP4 or separate files.
 
 Helper 1.9.188 adds verified selective DASH saves across H.264 configuration or resolution changes, keeping one stable output size for joined or separate parts. It also fixes valid AAC clips ending at the original source tail on Windows and Linux. Selected fragments, decode neighbors and small original configuration witnesses are fetched; no implicit complete-source fallback. Website and format support remains limited to verified paths.
 
@@ -12,15 +12,15 @@ Extension 1.13.41 and helper 1.9.188 improve selective clipping from qualified l
 
 The Opus corrections already verified in 1.9.184 remain included:
 
-Helper 1.9.184 adds selective saving for qualified DASH videos whose Opus audio spans several periods. It keeps the original audio continuity and precise image timestamps, including a boundary inside an audio packet. Single clips and joined parts are verified through the normal Save button without downloading the full source. Original PCM and final AAC were checked independently, including native Firefox 160 playback on Windows and Linux. If extension 1.13.39 is installed, update only the helper. Unqualified formats still require an explicit compatibility choice.
+Helper 1.9.184 adds selective saving for qualified DASH videos whose Opus audio spans several periods. It keeps the original audio continuity and precise image timestamps, including a boundary inside an audio packet. Single clips and joined parts are verified through the normal Save button without downloading the full source. Original PCM and final AAC were checked independently, including native Firefox 160 playback on Windows and Linux. Unqualified formats still require an explicit compatibility choice.
 
 The HLS corrections already verified in 1.9.183 remain included:
 
-Helper 1.9.183 corrects the IN/OUT clock for qualified XVideos clear HLS sources with H.264 video without B frames. It retains the image already visible at IN, preserves original audio delays and supports joined or separate parts. Actual compiled Windows/Linux helpers were checked with permanently installed Firefox 142/160; the long-cut reference verifies all 3,061 video frames and 5,740 AAC packets. Other codecs and reordered streams retain their existing bounded paths. If extension 1.13.39 is installed, update only the helper. Support is not universal; full-source compatibility remains an explicit setting.
+Helper 1.9.183 corrects the IN/OUT clock for qualified XVideos clear HLS sources with H.264 video without B frames. It retains the image already visible at IN, preserves original audio delays and supports joined or separate parts. Actual compiled Windows/Linux helpers were checked with permanently installed Firefox 142/160; the long-cut reference verifies all 3,061 video frames and 5,740 AAC packets. Other codecs and reordered streams retain their existing bounded paths. Support is not universal; full-source compatibility remains an explicit setting.
 
-Helper 1.9.182 introduced selective clipping across qualified clear DASH periods with H.264 video and AAC LC mono/stereo audio. It preserves native timing at early and late transitions, retains valid 44.1 kHz edge samples and supports one joined file or separate files. Actual Firefox 142/160 exports were verified on Windows and Linux, including three-period stereo sources and Shaka/dash.js players. The older HLS corrections from helper 1.9.181 remain included. If extension 1.13.39 is already installed, update only the helper for these DASH fixes. Website and format support is not universal.
+Helper 1.9.182 introduced selective clipping across qualified clear DASH periods with H.264 video and AAC LC mono/stereo audio. It preserves native timing at early and late transitions, retains valid 44.1 kHz edge samples and supports one joined file or separate files. Actual Firefox 142/160 exports were verified on Windows and Linux, including three-period stereo sources and Shaka/dash.js players. The older HLS corrections from helper 1.9.181 remain included. Website and format support is not universal.
 
-After updating, **Check connection** should report helper **1.9.192**. The XPI alone does not update the installed helper.
+After updating, **Check connection** should report helper **1.9.193**. The XPI alone does not update the installed helper.
 
 Version 1.13.38 keeps all parts and export settings of failed attempts before waiting for the player. A lost or slow response no longer discards the plan or replaces the original settings with later changes. **Resume save** reuses the original composition without re-entering times, including after reload. **Settings → Recovery → Recover failed saves** permits one automatic retry for verified recoverable errors on the same selected video. For a player without a stable identity, use **Resume on this video** on its saved project. Interrupted jobs with uncertain outcomes require explicit resume. Update the existing extension to preserve projects and queue entries.
 
@@ -31,14 +31,14 @@ Version 1.13.38 expands the projects archive from 40 to 200 entries without dele
 ## Windows — recommended
 
 1. Install [Video Clipper from Mozilla Add-ons](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/). Its first-run page opens **Guided setup**. You can reopen it from Settings at any time.
-2. [Download the Windows x64 installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.192/VideoClipper-Helper-1.9.192-Windows-Setup.exe), open it and click **Install**. Firefox is selected by default; select Chrome/Edge only if you use them.
+2. [Download the Windows x64 installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.193/VideoClipper-Helper-1.9.193-Windows-Setup.exe), open it and click **Install**. Firefox is selected by default; select Chrome/Edge only if you use them.
 3. Return to **Settings → Guided setup → Check connection**. Choose the folder where you want to save clips. Open a video, activate Video Clipper and test a short interval.
 
 The installer works for the current Windows account, under its local Programs/VideoClipper folder. It needs no administrator access or separate Python installation. It registers the helper automatically and preserves previous helper files. If browser registration fails, the previous connection is restored.
 
 Installed FFmpeg/ffprobe and encoders are reused when healthy. Otherwise, leave **Prepare video tools automatically if missing** checked: the installer downloads about 105 MB directly from gyan.dev, verifies the exact size and SHA-256, then prepares tools beside the helper. No PATH changes or manual extraction. The original vendor download and license remain in the installed folder. If you decline the download, both tools and libx264/AAC must already be available.
 
-The installer is not Authenticode signed. Download it from this repository and compare [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.192/VideoClipper-Helper-1.9.192-SHA256SUMS.txt). It does not bypass Windows security controls. If setup fails, keep its exact error code. A failed helper check or incomplete package is different from a failed tools download; use the displayed details when choosing what to retry. Keep a working old helper folder until the replacement is verified.
+The installer is not Authenticode signed. Download it from this repository and compare [SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.193/VideoClipper-Helper-1.9.193-SHA256SUMS.txt). It does not bypass Windows security controls. If setup fails, keep its exact error code. A failed helper check or incomplete package is different from a failed tools download; use the displayed details when choosing what to retry. Keep a working old helper folder until the replacement is verified.
 
 If Video Clipper was open during setup, close and reopen its panel. Reopen Firefox if it retains an old helper connection. The installer does not close the browser or modify its profiles.
 
@@ -48,7 +48,7 @@ In **Settings → General → Language**, choose **Automatic**, **Italiano** or 
 
 ## Linux x86_64
 
-[Download the helper archive](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.192/VideoClipper-Helper-1.9.192-Linux-x86_64.tar.gz). Extract it in full to a permanent folder and run `./installa-helper.sh firefox` as the user running Firefox. Do not use sudo for helper registration. Provide FFmpeg and ffprobe with libx264/AAC through your system's package manager, then reopen Firefox and run **Check connection**.
+[Download the helper archive](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.193/VideoClipper-Helper-1.9.193-Linux-x86_64.tar.gz). Extract it in full to a permanent folder and run `./installa-helper.sh firefox` as the user running Firefox. Do not use sudo for helper registration. Provide FFmpeg and ffprobe with libx264/AAC through your system's package manager, then reopen Firefox and run **Check connection**.
 
 Moving the helper folder requires registration again. Keep the bundled files together. Snap/Flatpak browser access to the native helper has not been verified.
 

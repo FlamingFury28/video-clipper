@@ -1,5 +1,11 @@
 # Changes / Novità
 
+## 1.13.53 / helper 1.9.193
+
+Save multiple clips across separate audio transitions in a compatible DASH video. Helper 1.9.193 downloads the segments needed for your selections. You can export one joined MP4 or separate files.
+
+Puoi salvare più tagli che attraversano cambi di traccia audio diversi nello stesso video DASH compatibile. Con l’helper 1.9.193 vengono scaricati i segmenti necessari per le parti selezionate. Puoi ottenere un MP4 unico oppure file separati.
+
 ## 1.13.51 / helper 1.9.192
 
 Save a clip on a compatible multi-period DASH video even when playback is in a different period. Video Clipper keeps your cuts and playback position for both joined and separate MP4 files. Install helper 1.9.192 for this change.

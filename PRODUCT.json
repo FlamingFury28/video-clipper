@@ -1,12 +1,12 @@
 {
   "name": "Video Clipper",
-  "version": "1.13.51",
-  "extensionVersion": "1.13.51",
-  "helperVersion": "1.9.192",
+  "version": "1.13.53",
+  "extensionVersion": "1.13.53",
+  "helperVersion": "1.9.193",
   "extensionId": "video-clipper@local",
   "interfaceLanguage": "auto",
   "homepage": "https://github.com/FlamingFury28/video-clipper",
-  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.51",
+  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.53",
   "versionScope": "latest-published-extension",
   "pythonBundled": true,
   "ffmpegBundled": false,
@@ -24,18 +24,18 @@
   },
   "mozilla": {
     "directDistribution": {
-      "version": "1.13.50",
+      "version": "1.13.52",
       "channel": "unlisted",
       "status": "approved",
-      "download": "https://addons.mozilla.org/firefox/downloads/file/5269301/video_clipper_in_out_mp4-1.13.50.xpi"
+      "download": "https://addons.mozilla.org/firefox/downloads/file/5269378/video_clipper_in_out_mp4-1.13.52.xpi"
     },
     "catalog": {
-      "version": "1.13.51",
+      "version": "1.13.53",
       "status": "approved",
       "publicAvailabilityConfirmed": true,
       "separateChannel": true,
-      "helperVersion": "1.9.192",
-      "download": "https://addons.mozilla.org/firefox/downloads/file/5269318/video_clipper_in_out_mp4-1.13.51.xpi"
+      "helperVersion": "1.9.193",
+      "download": "https://addons.mozilla.org/firefox/downloads/file/5269396/video_clipper_in_out_mp4-1.13.53.xpi"
     }
   },
   "platforms": [
@@ -118,40 +118,40 @@
   ],
   "assets": [
     {
-      "name": "VideoClipper-1.13.51-SHA256SUMS.txt",
+      "name": "VideoClipper-1.13.53-SHA256SUMS.txt",
       "size": 98,
-      "sha256": "db38cb8f73ce57bb3984e830ce29343638625898845507e80383a81a6fff00dd",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.51/VideoClipper-1.13.51-SHA256SUMS.txt"
+      "sha256": "ed2bd5f641cc4c271ce3afdb53e17a08d6ace283fafa8491b09de38ab144175f",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.53/VideoClipper-1.13.53-SHA256SUMS.txt"
     },
     {
-      "name": "VideoClipper-1.13.51-signed.xpi",
-      "size": 398397,
-      "sha256": "c0004c87a0cdcb006599d6c975d221b2d175b16d57ef22e6e9e98136065be4a9",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.51/VideoClipper-1.13.51-signed.xpi"
+      "name": "VideoClipper-1.13.53-signed.xpi",
+      "size": 399091,
+      "sha256": "9e8235096337b96ddcde312efe32fcc81f5d7fed03be618bcc9845f753f5e738",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.53/VideoClipper-1.13.53-signed.xpi"
     },
     {
-      "name": "VideoClipper-Helper-1.9.192-Linux-x86_64.tar.gz",
-      "size": 82763177,
-      "sha256": "2ff05dd062e821dc536014e1aa9e400fab0a012e89baac408f46e15c5d6d3f0d",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.192/VideoClipper-Helper-1.9.192-Linux-x86_64.tar.gz"
+      "name": "VideoClipper-Helper-1.9.193-Linux-x86_64.tar.gz",
+      "size": 82763404,
+      "sha256": "b9534dc361fe849d9d201a1d44c3066415f051186a4934daacbcec7e3dc00d89",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.193/VideoClipper-Helper-1.9.193-Linux-x86_64.tar.gz"
     },
     {
-      "name": "VideoClipper-Helper-1.9.192-SHA256SUMS.txt",
+      "name": "VideoClipper-Helper-1.9.193-SHA256SUMS.txt",
       "size": 332,
-      "sha256": "9b137483f63653351d0639505681b1fb944253af8f93f25e2d4dc9fbe335e192",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.192/VideoClipper-Helper-1.9.192-SHA256SUMS.txt"
+      "sha256": "283f4fafac8b01eb926ac90767b751cb3b640458f1ad63c4e1ba2c2fcf3eec03",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.193/VideoClipper-Helper-1.9.193-SHA256SUMS.txt"
     },
     {
-      "name": "VideoClipper-Helper-1.9.192-Windows-Setup.exe",
-      "size": 73642496,
-      "sha256": "2097b251caa22e36b5fd717cef17f1e7b0ecd016b0818139e2d53ba868660d07",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.192/VideoClipper-Helper-1.9.192-Windows-Setup.exe"
+      "name": "VideoClipper-Helper-1.9.193-Windows-Setup.exe",
+      "size": 73643008,
+      "sha256": "20451bf266fee4fd477d37e29a9fed6bbba7b47a17478be7e513fdb4fff8928d",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.193/VideoClipper-Helper-1.9.193-Windows-Setup.exe"
     },
     {
-      "name": "VideoClipper-Helper-1.9.192-Windows.zip",
-      "size": 73603782,
-      "sha256": "1399a9302b1f221922f4e166a0040ba277a88cd4ead255074efc1499cfde81d5",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.192/VideoClipper-Helper-1.9.192-Windows.zip"
+      "name": "VideoClipper-Helper-1.9.193-Windows.zip",
+      "size": 73604304,
+      "sha256": "73240ac33cd37cb4eafa8ef8dccbc1cd4c9bf57605661e0dd76d74b53bfce56f",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.193/VideoClipper-Helper-1.9.193-Windows.zip"
     }
   ],
   "recommendedFirefoxInstall": "https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/",
@@ -160,7 +160,7 @@
     "it"
   ],
   "windowsSetup": {
-    "helperVersion": "1.9.192",
+    "helperVersion": "1.9.193",
     "perUser": true,
     "administratorRequired": false,
     "pythonInstallationRequired": false,
@@ -173,7 +173,7 @@
       "bytes": 109728040
     },
     "authenticodeSigned": false,
-    "wrapperVersion": "1.9.192.1",
+    "wrapperVersion": "1.9.193.1",
     "helperEngineRebuilt": true,
     "reusedFromRelease": null,
     "updateRequiredFromHelper181": true,
@@ -181,5 +181,5 @@
     "updateRequiredForCollectionAndPageRecovery": true,
     "updateRequiredFromHelper190ForValidContainers": true
   },
-  "helperRelease": "https://github.com/FlamingFury28/video-clipper/releases/tag/helper-v1.9.192"
+  "helperRelease": "https://github.com/FlamingFury28/video-clipper/releases/tag/helper-v1.9.193"
 }
