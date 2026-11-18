@@ -1,5 +1,11 @@
 # Changes / Novità
 
+## 1.13.55 / helper 1.9.193
+
+Save just your selected ranges from more DASH players, including Shaka 5.3.1 through 5.3.5 on compatible media CDNs. Joined and separate clips now work when the site uses nested media folders or shares timing information between tracks. If you already have helper 1.9.193, update only the extension.
+
+Il download dei soli intervalli ora funziona anche su player Shaka da 5.3.1 a 5.3.5 che servono video DASH da un CDN compatibile. Puoi salvare parti distanti, unite o separate, anche quando il sito organizza i segmenti in sottocartelle o condivide i tempi tra più tracce. Se hai già l’helper 1.9.193, basta aggiornare l’estensione.
+
 ## 1.13.53 / helper 1.9.193
 
 Save multiple clips across separate audio transitions in a compatible DASH video. Helper 1.9.193 downloads the segments needed for your selections. You can export one joined MP4 or separate files.

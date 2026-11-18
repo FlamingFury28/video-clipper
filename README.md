@@ -14,9 +14,9 @@ Turn a moment from a web video into an MP4 on your computer. Mark IN/OUT, previe
 2. On Windows x64, download the helper installer above and click **Install**. It prepares a permanent folder, connects Firefox and reuses installed video tools. If tools are missing, it can download a fixed, SHA-256-verified FFmpeg package from gyan.dev (about 105 MB). No administrator access, Python installation or manual PATH changes.
 3. Return to **Settings → Guided setup → Check connection**, choose an output folder, then try a short clip.
 
-**Install Firefox extension 1.13.53 and helper 1.9.193.** Selective download is the default for supported MP4, WebM, HLS and DASH videos.
+**Install Firefox extension 1.13.55 and helper 1.9.193.** Selective download is the default for supported MP4, WebM, HLS and DASH videos.
 
-Save multiple clips across separate audio transitions in a compatible DASH video. Helper 1.9.193 downloads the segments needed for your selections. You can export one joined MP4 or separate files.
+Save just your selected ranges from more DASH players, including Shaka 5.3.1 through 5.3.5 on compatible media CDNs. Joined and separate clips now work when the site uses nested media folders or shares timing information between tracks. If you already have helper 1.9.193, update only the extension.
 
 The XVideos HLS source detection and full failed-project recovery delivered in 1.13.38 remain included.
 
@@ -24,14 +24,14 @@ The XVideos HLS source detection and full failed-project recovery delivered in 1
 
 | Download | Use |
 |---|---|
-| [Firefox extension 1.13.53](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.53/VideoClipper-1.13.53-signed.xpi) | Mozilla-signed permanent installation |
+| [Firefox extension 1.13.55](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.55/VideoClipper-1.13.55-signed.xpi) | Mozilla-signed permanent installation |
 | [Windows x64 guided installer](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.193/VideoClipper-Helper-1.9.193-Windows-Setup.exe) | Recommended helper setup; English / Italiano |
 | [Windows portable helper ZIP](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.193/VideoClipper-Helper-1.9.193-Windows.zip) | Advanced manual installation |
 | [Linux x86_64 helper](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.193/VideoClipper-Helper-1.9.193-Linux-x86_64.tar.gz) | Extract and run installa-helper.sh; system FFmpeg required |
 | [Chrome / Edge extension](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.13/VideoClipper-1.13.13-Chromium.zip) | Unpacked desktop installation; no store publication |
-| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.53/VideoClipper-1.13.53-SHA256SUMS.txt) | Verify downloaded packages |
+| [Extension SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.55/VideoClipper-1.13.55-SHA256SUMS.txt) | Verify downloaded packages |
 
-[Helper 1.9.193 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.193/VideoClipper-Helper-1.9.193-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.53 package and its checksums are published separately.
+[Helper 1.9.193 SHA-256 checksums](https://github.com/FlamingFury28/video-clipper/releases/download/helper-v1.9.193/VideoClipper-Helper-1.9.193-SHA256SUMS.txt) verify the new helper packages. The signed 1.13.55 package and its checksums are published separately.
 
 Extension 1.13.41 and helper 1.9.188 improve selective clipping from qualified legacy HLS H.264 players, including the first displayed frame. Reordered initial decode samples and distant parts preserve the native video/AAC timeline. Joined and separate exports are verified; missing source audio warns without blocking saving. Projects, queue, markers and output settings survive upgrade and recovery. Update both components for the IN=0 correction. This does not claim universal website or format support.
 

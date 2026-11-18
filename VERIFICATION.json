@@ -1,25 +1,25 @@
 {
-  "extensionVersion": "1.13.53",
+  "extensionVersion": "1.13.55",
   "helperVersion": "1.9.193",
-  "signedXpiSha256": "9e8235096337b96ddcde312efe32fcc81f5d7fed03be618bcc9845f753f5e738",
+  "signedXpiSha256": "147b2c93814545778d80e2deff594260d2fc7c269aef04b8ce1584693ee4a660",
   "permanentInstallAndRestartCases": 3,
-  "verifiedUpgradeFrom": "1.13.51",
+  "verifiedUpgradeFrom": "1.13.53",
   "existingMultipartProjectsAndQueuePreserved": true,
   "personalProfilesModified": false,
   "privateUserDataPublished": false,
-  "mozillaCatalogVersion": "1.13.53",
+  "mozillaCatalogVersion": "1.13.55",
   "assets": [
     {
-      "name": "VideoClipper-1.13.53-SHA256SUMS.txt",
+      "name": "VideoClipper-1.13.55-SHA256SUMS.txt",
       "size": 98,
-      "sha256": "ed2bd5f641cc4c271ce3afdb53e17a08d6ace283fafa8491b09de38ab144175f",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.53/VideoClipper-1.13.53-SHA256SUMS.txt"
+      "sha256": "6b295fcc2a73b240f1037431e0335beafee23e56a7a655c250bc65b110aeb1e9",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.55/VideoClipper-1.13.55-SHA256SUMS.txt"
     },
     {
-      "name": "VideoClipper-1.13.53-signed.xpi",
-      "size": 399091,
-      "sha256": "9e8235096337b96ddcde312efe32fcc81f5d7fed03be618bcc9845f753f5e738",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.53/VideoClipper-1.13.53-signed.xpi"
+      "name": "VideoClipper-1.13.55-signed.xpi",
+      "size": 399799,
+      "sha256": "147b2c93814545778d80e2deff594260d2fc7c269aef04b8ce1584693ee4a660",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.55/VideoClipper-1.13.55-signed.xpi"
     }
   ],
   "selectiveExports": [
@@ -29,7 +29,7 @@
       "outputs": 1,
       "selectedSegments": 18,
       "totalSegments": 240,
-      "transferUpperBound": 1502343,
+      "transferUpperBound": 1509438,
       "fullMediaBytes": 12819806
     },
     {
@@ -38,12 +38,12 @@
       "outputs": 2,
       "selectedSegments": 18,
       "totalSegments": 240,
-      "transferUpperBound": 1502343,
+      "transferUpperBound": 1509060,
       "fullMediaBytes": 12819806
     }
   ],
   "limitations": [
-    "Selective export with a remote playhead was verified on a controlled four-period Shaka 5.3.1 AAC presentation with two distinct audio changes in Firefox.",
+    "Selective CDN export was verified on synthetic four-period DASH AAC media in Firefox, with nested directories and inherited templates, using Shaka versions 5.3.1 through 5.3.5.",
     "Sources without verifiable timing or selective access can need the explicit full-download setting.",
     "Closing a tab can lose cuts that were never recorded in storage or saved in a file."
   ],

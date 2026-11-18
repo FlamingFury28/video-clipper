@@ -1,10 +1,10 @@
 # Installa Video Clipper
 
-[English](INSTALL.md) · [Estensione Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Download](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.53)
+[English](INSTALL.md) · [Estensione Firefox](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Download](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.55)
 
-Installa l’estensione Firefox **1.13.53** dal catalogo Mozilla e l’helper **1.9.193** da GitHub.
+Installa l’estensione Firefox **1.13.55** dal catalogo Mozilla e l’helper **1.9.193** da GitHub.
 
-Puoi salvare più tagli che attraversano cambi di traccia audio diversi nello stesso video DASH compatibile. Con l’helper 1.9.193 vengono scaricati i segmenti necessari per le parti selezionate. Puoi ottenere un MP4 unico oppure file separati.
+Il download dei soli intervalli ora funziona anche su player Shaka da 5.3.1 a 5.3.5 che servono video DASH da un CDN compatibile. Puoi salvare parti distanti, unite o separate, anche quando il sito organizza i segmenti in sottocartelle o condivide i tempi tra più tracce. Se hai già l’helper 1.9.193, basta aggiornare l’estensione.
 
 L’helper 1.9.188 aggiunge i tagli selettivi DASH verificati attraverso cambi di configurazione o risoluzione H.264, con dimensioni di uscita stabili per parti unite o separate. Corregge inoltre i tagli AAC validi fino alla fine della sorgente su Windows e Linux. Scarica i frammenti selezionati, i vicini necessari alla decodifica e piccoli frammenti originali di verifica della configurazione; nessun download completo automatico. Restano i limiti dei siti e formati verificati.
 

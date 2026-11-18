@@ -1,10 +1,10 @@
 # Privacy / Trattamento dei dati
 
-Applies to Video Clipper 1.13.53 and local helper 1.9.193. Updated 18 November 2026.
+Applies to Video Clipper 1.13.55 and local helper 1.9.193. Updated 18 November 2026.
 
 ## English
 
-When you select Save, a supported DASH player may need a timing check at an audio change near your cut. The extension requests the manifest, two audio initializations and up to four nearby fragments from the page’s own origin. These requests omit cookies and referrers and reject redirects. The extension measures the audio timing in memory. The local helper receives the timing and file hashes to verify the same source.
+When you select Save, a supported DASH player may need a timing check at an audio change near your cut. The extension requests the manifest, two audio initializations and up to four nearby fragments for each relevant audio change. Requests go to the origin of the selected media manifest. When this is a separate CDN, it must allow the website’s origin through CORS. These requests omit cookies and referrers and reject redirects. The extension measures the audio timing in memory. The local helper receives the timing and file hashes to verify the same source.
 
 While the panel is active, the extension can keep short audio-gap timings for the selected player in page memory. Saving a clip sends matching timings to the local helper.
 
@@ -36,13 +36,13 @@ Firefox's theme palette, or native browser light/dark colors, is used locally. B
 
 ## Italiano
 
-Quando scegli Salva, un player DASH supportato può richiedere una verifica dei tempi se l’audio cambia vicino al taglio. L’estensione legge il manifesto, due inizializzazioni audio e fino a quattro frammenti vicini dalla stessa origine della pagina. Le richieste omettono cookie e referrer e rifiutano i reindirizzamenti. L’estensione misura i tempi in memoria e invia all’helper locale la misura e le impronte dei file per verificare la sorgente.
+Quando scegli Salva, un player DASH supportato può richiedere una verifica dei tempi se l’audio cambia vicino al taglio. L’estensione legge il manifesto, due inizializzazioni audio e fino a quattro frammenti vicini per ogni cambio audio interessato. Le richieste raggiungono l’origine del manifesto del video selezionato. Se si tratta di un CDN separato, deve consentire l’accesso dall’origine del sito tramite CORS. Le richieste omettono cookie e referrer e rifiutano i reindirizzamenti. L’estensione misura i tempi in memoria e invia all’helper locale la misura e le impronte dei file per verificare la sorgente.
 
 Con il pannello attivo, l’estensione può conservare in memoria i tempi delle brevi pause audio del player selezionato. Al salvataggio invia i tempi corrispondenti all’helper locale.
 
 La preferenza della lingua resta sul dispositivo. I cataloghi di traduzione sono inclusi nell’estensione: nessun testo viene inviato a servizi di traduzione. La prima installazione apre una pagina locale di configurazione. L’installer Windows include l’helper binario verificato 1.9.193. Quando premi Installa e consenti gli strumenti mancanti, può scaricare FFmpeg 8.1.2 direttamente da gyan.dev, verificando dimensione e SHA-256 prima di prepararlo. Il fornitore riceve una normale richiesta di download (indirizzo IP e user-agent dell’installer), mai clip, indirizzi delle pagine o cookie del browser. Strumenti e licenze restano sul computer. L’estensione non avvia l’installer e non scarica gli strumenti automaticamente.
 
-Questa informativa riguarda Video Clipper 1.13.53 e helper locale 1.9.193, aggiornata il 18 novembre 2026.
+Questa informativa riguarda Video Clipper 1.13.55 e helper locale 1.9.193, aggiornata il 18 novembre 2026.
 
 Quando lo attivi, Video Clipper legge i player HTML5 accessibili della scheda scelta: indirizzi delle sorgenti, titolo, durata, posizione di riproduzione e geometria. Usa l'accesso alla scheda attiva; gli eventuali permessi per domini dei player incorporati vengono richiesti tramite tue azioni. Non ottiene inizialmente accesso permanente a tutti i siti.
 
