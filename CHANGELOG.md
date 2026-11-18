@@ -1,5 +1,11 @@
 # Changes / Novità
 
+## 1.13.49 / helper 1.9.191
+
+On XVideos, seeking before clicking Save could trigger a source-changed error. Video Clipper now recognizes the video while the player refreshes its quality level. Compatible Shaka players can also save just the selected segments when the playhead is past an audio track transition. Cuts and playback position are preserved. The existing 1.9.191 helper works with this release.
+
+Su XVideos, spostarsi nel video prima di premere Salva poteva far apparire “sorgente cambiata”. Video Clipper ora riconosce il filmato anche mentre il player aggiorna la qualità. Con i player Shaka compatibili puoi salvare solo i segmenti selezionati anche quando hai già superato il cambio di traccia audio. I tagli e la posizione di riproduzione vengono conservati. Puoi continuare a usare l’helper 1.9.191.
+
 ## 1.13.47 / helper 1.9.191
 
 Save supported DASH clips even when you open Video Clipper after the player has started. For an AAC audio change near your cuts, helper 1.9.191 verifies the original nearby segments. Joined and separate clips keep your times. You can cancel during preparation and save again with the same selection.

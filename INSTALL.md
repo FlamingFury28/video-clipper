@@ -1,10 +1,10 @@
 # Install Video Clipper
 
-[Italiano](INSTALLAZIONE.md) · [Firefox add-on](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Downloads](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.47)
+[Italiano](INSTALLAZIONE.md) · [Firefox add-on](https://addons.mozilla.org/firefox/addon/video-clipper-in-out-mp4/) · [Downloads](https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.49)
 
-Install Firefox extension **1.13.47** from Mozilla Add-ons and helper **1.9.191** from GitHub. Update both to use the new selective DASH clipping support.
+Install Firefox extension **1.13.49** from Mozilla Add-ons and helper **1.9.191** from GitHub. If helper 1.9.191 is already installed, update only the extension.
 
-Save supported DASH clips even when you open Video Clipper after the player has started. For an AAC audio change near your cuts, helper 1.9.191 verifies the original nearby segments. Joined and separate clips keep your times. You can cancel during preparation and save again with the same selection.
+On XVideos, seeking before clicking Save could trigger a source-changed error. Video Clipper now recognizes the video while the player refreshes its quality level. Compatible Shaka players can also save just the selected segments when the playhead is past an audio track transition. Cuts and playback position are preserved. The existing 1.9.191 helper works with this release.
 
 Helper 1.9.188 adds verified selective DASH saves across H.264 configuration or resolution changes, keeping one stable output size for joined or separate parts. It also fixes valid AAC clips ending at the original source tail on Windows and Linux. Selected fragments, decode neighbors and small original configuration witnesses are fetched; no implicit complete-source fallback. Website and format support remains limited to verified paths.
 

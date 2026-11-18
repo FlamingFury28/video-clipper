@@ -1,6 +1,6 @@
 # Privacy / Trattamento dei dati
 
-Applies to Video Clipper 1.13.47 and local helper 1.9.191. Updated 18 November 2026.
+Applies to Video Clipper 1.13.49 and local helper 1.9.191. Updated 18 November 2026.
 
 ## English
 
@@ -42,7 +42,7 @@ Con il pannello attivo, l’estensione può conservare in memoria i tempi delle 
 
 La preferenza della lingua resta sul dispositivo. I cataloghi di traduzione sono inclusi nell’estensione: nessun testo viene inviato a servizi di traduzione. La prima installazione apre una pagina locale di configurazione. L’installer Windows include l’helper binario verificato 1.9.191. Quando premi Installa e consenti gli strumenti mancanti, può scaricare FFmpeg 8.1.2 direttamente da gyan.dev, verificando dimensione e SHA-256 prima di prepararlo. Il fornitore riceve una normale richiesta di download (indirizzo IP e user-agent dell’installer), mai clip, indirizzi delle pagine o cookie del browser. Strumenti e licenze restano sul computer. L’estensione non avvia l’installer e non scarica gli strumenti automaticamente.
 
-Questa informativa riguarda Video Clipper 1.13.47 e helper locale 1.9.191, aggiornata il 17 novembre 2026.
+Questa informativa riguarda Video Clipper 1.13.49 e helper locale 1.9.191, aggiornata il 18 novembre 2026.
 
 Quando lo attivi, Video Clipper legge i player HTML5 accessibili della scheda scelta: indirizzi delle sorgenti, titolo, durata, posizione di riproduzione e geometria. Usa l'accesso alla scheda attiva; gli eventuali permessi per domini dei player incorporati vengono richiesti tramite tue azioni. Non ottiene inizialmente accesso permanente a tutti i siti.
 

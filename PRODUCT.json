@@ -1,12 +1,12 @@
 {
   "name": "Video Clipper",
-  "version": "1.13.47",
-  "extensionVersion": "1.13.47",
+  "version": "1.13.49",
+  "extensionVersion": "1.13.49",
   "helperVersion": "1.9.191",
   "extensionId": "video-clipper@local",
   "interfaceLanguage": "auto",
   "homepage": "https://github.com/FlamingFury28/video-clipper",
-  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.47",
+  "release": "https://github.com/FlamingFury28/video-clipper/releases/tag/v1.13.49",
   "versionScope": "latest-published-extension",
   "pythonBundled": true,
   "ffmpegBundled": false,
@@ -24,18 +24,18 @@
   },
   "mozilla": {
     "directDistribution": {
-      "version": "1.13.46",
+      "version": "1.13.48",
       "channel": "unlisted",
       "status": "approved",
-      "download": "https://addons.mozilla.org/firefox/downloads/file/5269117/video_clipper_in_out_mp4-1.13.46.xpi"
+      "download": "https://addons.mozilla.org/firefox/downloads/file/5269226/video_clipper_in_out_mp4-1.13.48.xpi"
     },
     "catalog": {
-      "version": "1.13.47",
+      "version": "1.13.49",
       "status": "approved",
       "publicAvailabilityConfirmed": true,
       "separateChannel": true,
       "helperVersion": "1.9.191",
-      "download": "https://addons.mozilla.org/firefox/downloads/file/5269139/video_clipper_in_out_mp4-1.13.47.xpi"
+      "download": "https://addons.mozilla.org/firefox/downloads/file/5269246/video_clipper_in_out_mp4-1.13.49.xpi"
     }
   },
   "platforms": [
@@ -118,16 +118,16 @@
   ],
   "assets": [
     {
-      "name": "VideoClipper-1.13.47-SHA256SUMS.txt",
+      "name": "VideoClipper-1.13.49-SHA256SUMS.txt",
       "size": 98,
-      "sha256": "b3645077685e2abe765988ae14b262259944c8e0ea5b73d7621b1735da757853",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.47/VideoClipper-1.13.47-SHA256SUMS.txt"
+      "sha256": "fc81cae0cc60d254ac71d9153af4ea4f255678a0954883cc4d231718e6361078",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.49/VideoClipper-1.13.49-SHA256SUMS.txt"
     },
     {
-      "name": "VideoClipper-1.13.47-signed.xpi",
-      "size": 397078,
-      "sha256": "82d8771ad5f4e4f91969dba8f58da8ecebfabc475ac5d9d9a05cffac6224f857",
-      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.47/VideoClipper-1.13.47-signed.xpi"
+      "name": "VideoClipper-1.13.49-signed.xpi",
+      "size": 397689,
+      "sha256": "f7fee5e3105ccbf46c94fd9cd89d73c0a38b3116a8f444b205b393bcae5f93c4",
+      "url": "https://github.com/FlamingFury28/video-clipper/releases/download/v1.13.49/VideoClipper-1.13.49-signed.xpi"
     },
     {
       "name": "VideoClipper-Helper-1.9.191-Linux-x86_64.tar.gz",
